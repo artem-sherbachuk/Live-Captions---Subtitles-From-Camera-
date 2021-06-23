@@ -24,7 +24,7 @@ final class VideoPlayerViewController: AVPlayerViewController {
         super.viewDidLoad()
         self.videoGravity = .resizeAspectFill
         player = AVPlayer(url: url)
-        showsPlaybackControls = true
+        showsPlaybackControls = false
     }
 
     func play() {
