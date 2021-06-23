@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y9z-KT-dzs">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="qC6-9b-rpC">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="y9z-KT-dzs" customClass="OnboardingViewController" customModule="Hearing_Aid_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dgx-2P-kK2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_subscription" translatesAutoresizingMaskIntoConstraints="NO" id="wfk-ZE-5y5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bW5-TE-Fgz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4eH-7E-Y2J">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Allow Microphone Usage" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuv-JW-MZB" customClass="SpringLabel" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                <rect key="frame" x="16" y="44" width="382" height="95.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                <color key="textColor" name="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dear User, for proper work with speech recognition &amp; hearing aid, we need your microphone usage permission. Thank You!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0p-0o-STW">
+                                <rect key="frame" x="16" y="147.5" width="382" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w4m-6c-uWG" customClass="SubscriptionButtonView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                <rect key="frame" x="57" y="423" width="300" height="60"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ley-5r-Tq2">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVC-aK-9Tu">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                            <state key="normal" title="Next">
+                                                <color key="titleColor" name="textColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="buttonActionWithSender:" destination="w4m-6c-uWG" eventType="touchUpInside" id="xhb-nt-bmd"/>
+                                                <action selector="nextWithSender:" destination="y9z-KT-dzs" eventType="touchUpInside" id="M7h-9l-wBF"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="XVC-aK-9Tu" firstAttribute="top" secondItem="ley-5r-Tq2" secondAttribute="top" id="0U1-U8-3GY"/>
+                                        <constraint firstAttribute="bottom" secondItem="XVC-aK-9Tu" secondAttribute="bottom" id="d2J-vO-VF7"/>
+                                        <constraint firstItem="XVC-aK-9Tu" firstAttribute="leading" secondItem="ley-5r-Tq2" secondAttribute="leading" id="lrq-3J-yLI"/>
+                                        <constraint firstAttribute="trailing" secondItem="XVC-aK-9Tu" secondAttribute="trailing" id="oQs-uV-fs8"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="YKt-3G-NUt"/>
+                                    <constraint firstAttribute="height" constant="60" id="m2O-bd-eVk"/>
+                                </constraints>
+                                <blurEffect style="regular"/>
+                                <connections>
+                                    <outlet property="button" destination="XVC-aK-9Tu" id="Xey-Lt-OwP"/>
+                                </connections>
+                            </visualEffectView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XE9-zg-3B4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wfk-ZE-5y5" firstAttribute="leading" secondItem="dgx-2P-kK2" secondAttribute="leading" id="0NE-bD-vrg"/>
+                            <constraint firstItem="XE9-zg-3B4" firstAttribute="trailing" secondItem="zuv-JW-MZB" secondAttribute="trailing" constant="16" id="0aV-ty-rYr"/>
+                            <constraint firstAttribute="trailing" secondItem="bW5-TE-Fgz" secondAttribute="trailing" id="4Di-LR-Hsk"/>
+                            <constraint firstItem="zuv-JW-MZB" firstAttribute="leading" secondItem="XE9-zg-3B4" secondAttribute="leading" constant="16" id="6Wd-Xy-QDC"/>
+                            <constraint firstAttribute="trailing" secondItem="wfk-ZE-5y5" secondAttribute="trailing" id="ABG-bl-jrX"/>
+                            <constraint firstItem="w4m-6c-uWG" firstAttribute="centerY" secondItem="XE9-zg-3B4" secondAttribute="centerY" id="K4u-aX-pnN"/>
+                            <constraint firstItem="zuv-JW-MZB" firstAttribute="top" secondItem="XE9-zg-3B4" secondAttribute="top" id="QY6-in-IFg"/>
+                            <constraint firstAttribute="bottom" secondItem="wfk-ZE-5y5" secondAttribute="bottom" id="dAF-s4-mje"/>
+                            <constraint firstItem="bW5-TE-Fgz" firstAttribute="leading" secondItem="dgx-2P-kK2" secondAttribute="leading" id="dLk-eQ-zTE"/>
+                            <constraint firstItem="XE9-zg-3B4" firstAttribute="trailing" secondItem="o0p-0o-STW" secondAttribute="trailing" constant="16" id="iCX-nM-Wys"/>
+                            <constraint firstItem="o0p-0o-STW" firstAttribute="leading" secondItem="XE9-zg-3B4" secondAttribute="leading" constant="16" id="kZl-uH-nzw"/>
+                            <constraint firstItem="wfk-ZE-5y5" firstAttribute="top" secondItem="dgx-2P-kK2" secondAttribute="top" id="oiu-lO-j2o"/>
+                            <constraint firstAttribute="bottom" secondItem="bW5-TE-Fgz" secondAttribute="bottom" id="ptU-R6-oA9"/>
+                            <constraint firstItem="bW5-TE-Fgz" firstAttribute="top" secondItem="dgx-2P-kK2" secondAttribute="top" id="sdw-km-eWT"/>
+                            <constraint firstItem="w4m-6c-uWG" firstAttribute="centerX" secondItem="XE9-zg-3B4" secondAttribute="centerX" id="tCB-i8-ctD"/>
+                            <constraint firstItem="o0p-0o-STW" firstAttribute="top" secondItem="zuv-JW-MZB" secondAttribute="bottom" constant="8" id="wVP-Kh-Ytb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="o0p-0o-STW" id="gYy-b7-LSH"/>
+                        <outlet property="nextButton" destination="w4m-6c-uWG" id="CQJ-mB-FuQ"/>
+                        <outlet property="titleLabel" destination="zuv-JW-MZB" id="HgD-iQ-vym"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="52e-sO-YTA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49.275362318840585" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_subscription" width="1561" height="2701"/>
+        <namedColor name="textColor">
+            <color red="0.26100000739097595" green="0.26100000739097595" blue="0.26100000739097595" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

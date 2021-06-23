@@ -1,0 +1,1833 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71EB27DED1F78A3BF2169608 /* Pods_Dictation_To_Text.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53A19CEEC0407829843597C /* Pods_Dictation_To_Text.framework */; };
+		832FB96D267C9D3200DF4177 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FB96C267C9D3200DF4177 /* ButtonView.swift */; };
+		832FB96F267CD17500DF4177 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 832FB96E267CD17500DF4177 /* GoogleService-Info.plist */; };
+		832FB975267CF5E300DF4177 /* Implode.ahap in Resources */ = {isa = PBXBuildFile; fileRef = 832FB971267CF5E300DF4177 /* Implode.ahap */; };
+		832FB976267CF5E300DF4177 /* Implode.wav in Resources */ = {isa = PBXBuildFile; fileRef = 832FB972267CF5E300DF4177 /* Implode.wav */; };
+		832FB977267CF5E300DF4177 /* Spawn.ahap in Resources */ = {isa = PBXBuildFile; fileRef = 832FB973267CF5E300DF4177 /* Spawn.ahap */; };
+		832FB978267CF5E300DF4177 /* Spawn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 832FB974267CF5E300DF4177 /* Spawn.wav */; };
+		832FB97A267CF5F000DF4177 /* CustomHaptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FB979267CF5F000DF4177 /* CustomHaptic.swift */; };
+		834E51C4267F6FDE00BEC04D /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834E51C3267F6FDE00BEC04D /* TextView.swift */; };
+		834EB73526482F9600026F01 /* ParticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834EB73326482F9600026F01 /* ParticleView.swift */; };
+		834EB73926482FEC00026F01 /* Particle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 834EB73826482FEC00026F01 /* Particle.sks */; };
+		8398B7A22660E9D900E34DC8 /* OnboardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8398B7A12660E9D900E34DC8 /* OnboardingViewController.storyboard */; };
+		8398B7A52660E9E000E34DC8 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398B7A42660E9E000E34DC8 /* OnboardingViewController.swift */; };
+		839DE06826529EAF00A65DD7 /* RevenuCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DE06726529EAF00A65DD7 /* RevenuCat.swift */; };
+		839DE06D26529ED000A65DD7 /* SubscriptionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839DE06B26529ED000A65DD7 /* SubscriptionViewController.storyboard */; };
+		839DE06E26529ED000A65DD7 /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DE06C26529ED000A65DD7 /* SubscriptionViewController.swift */; };
+		839DE07326529F1B00A65DD7 /* IndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DE07126529F1B00A65DD7 /* IndicatorShape.swift */; };
+		839DE07426529F1B00A65DD7 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DE07226529F1B00A65DD7 /* ActivityIndicatorView.swift */; };
+		839DE0772652A0B600A65DD7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DE0762652A0B600A65DD7 /* User.swift */; };
+		839F7AAF2681E16600B09EE6 /* SubtitleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F7AAE2681E16600B09EE6 /* SubtitleCollectionViewController.swift */; };
+		839F7AB12681E18200B09EE6 /* SubtitleCollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839F7AB02681E18200B09EE6 /* SubtitleCollectionViewController.storyboard */; };
+		839F7AB32681E5F700B09EE6 /* AlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F7AB22681E5F700B09EE6 /* AlignedCollectionViewFlowLayout.swift */; };
+		839FAC20264EE383004910D9 /* SubtitleSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839FAC1F264EE383004910D9 /* SubtitleSettingsViewController.swift */; };
+		839FAC24264EE87D004910D9 /* SubtitleSettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839FAC23264EE87D004910D9 /* SubtitleSettingsViewController.storyboard */; };
+		83A0456A2653C5C400713ED0 /* AppRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A045692653C5C400713ED0 /* AppRating.swift */; };
+		83A045DE2653DBC900713ED0 /* AlternateIconsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A045802653DBC900713ED0 /* AlternateIconsViewController.storyboard */; };
+		83A045E02653DBC900713ED0 /* Red-Icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045832653DBC900713ED0 /* Red-Icon-180.png */; };
+		83A045E12653DBC900713ED0 /* Red-Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045842653DBC900713ED0 /* Red-Icon-29.png */; };
+		83A045E22653DBC900713ED0 /* Red-Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045852653DBC900713ED0 /* Red-Icon-152.png */; };
+		83A045E32653DBC900713ED0 /* Red-Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045862653DBC900713ED0 /* Red-Icon-120.png */; };
+		83A045E42653DBC900713ED0 /* Red-Icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045872653DBC900713ED0 /* Red-Icon-58.png */; };
+		83A045E52653DBC900713ED0 /* Red-Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045882653DBC900713ED0 /* Red-Icon-60.png */; };
+		83A045E62653DBC900713ED0 /* Red-Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045892653DBC900713ED0 /* Red-Icon-76.png */; };
+		83A045E72653DBC900713ED0 /* Red-Icon-87.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A0458A2653DBC900713ED0 /* Red-Icon-87.png */; };
+		83A045E82653DBC900713ED0 /* Red-Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A0458B2653DBC900713ED0 /* Red-Icon-40.png */; };
+		83A045E92653DBC900713ED0 /* Red-Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A0458C2653DBC900713ED0 /* Red-Icon-80.png */; };
+		83A045EA2653DBC900713ED0 /* Red-Icon-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A0458D2653DBC900713ED0 /* Red-Icon-20.png */; };
+		83A045EB2653DBC900713ED0 /* Red-Icon-167.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A0458E2653DBC900713ED0 /* Red-Icon-167.png */; };
+		83A045EC2653DBC900713ED0 /* Orange-Icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045902653DBC900713ED0 /* Orange-Icon-180.png */; };
+		83A045ED2653DBC900713ED0 /* Orange-Icon-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045912653DBC900713ED0 /* Orange-Icon-20.png */; };
+		83A045EE2653DBC900713ED0 /* Orange-Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045922653DBC900713ED0 /* Orange-Icon-152.png */; };
+		83A045EF2653DBC900713ED0 /* Orange-Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045932653DBC900713ED0 /* Orange-Icon-120.png */; };
+		83A045F02653DBC900713ED0 /* Orange-Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045942653DBC900713ED0 /* Orange-Icon-80.png */; };
+		83A045F12653DBC900713ED0 /* Orange-Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045952653DBC900713ED0 /* Orange-Icon-40.png */; };
+		83A045F22653DBC900713ED0 /* Orange-Icon-87.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045962653DBC900713ED0 /* Orange-Icon-87.png */; };
+		83A045F32653DBC900713ED0 /* Orange-Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045972653DBC900713ED0 /* Orange-Icon-76.png */; };
+		83A045F42653DBC900713ED0 /* Orange-Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045982653DBC900713ED0 /* Orange-Icon-60.png */; };
+		83A045F52653DBC900713ED0 /* Orange-Icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045992653DBC900713ED0 /* Orange-Icon-58.png */; };
+		83A045F62653DBC900713ED0 /* Orange-Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A0459A2653DBC900713ED0 /* Orange-Icon-29.png */; };
+		83A045F72653DBC900713ED0 /* Orange-Icon-167.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A0459B2653DBC900713ED0 /* Orange-Icon-167.png */; };
+		83A0461C2653DBCA00713ED0 /* Blue-Icon-87.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045C42653DBC900713ED0 /* Blue-Icon-87.png */; };
+		83A0461D2653DBCA00713ED0 /* Blue-Icon-167.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045C52653DBC900713ED0 /* Blue-Icon-167.png */; };
+		83A0461E2653DBCA00713ED0 /* Blue-Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045C62653DBC900713ED0 /* Blue-Icon-80.png */; };
+		83A0461F2653DBCA00713ED0 /* Blue-Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045C72653DBC900713ED0 /* Blue-Icon-40.png */; };
+		83A046202653DBCA00713ED0 /* Blue-Icon-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045C82653DBC900713ED0 /* Blue-Icon-20.png */; };
+		83A046212653DBCA00713ED0 /* Blue-Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045C92653DBC900713ED0 /* Blue-Icon-29.png */; };
+		83A046222653DBCA00713ED0 /* Blue-Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045CA2653DBC900713ED0 /* Blue-Icon-120.png */; };
+		83A046232653DBCA00713ED0 /* Blue-Icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045CB2653DBC900713ED0 /* Blue-Icon-58.png */; };
+		83A046242653DBCA00713ED0 /* Blue-Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045CC2653DBC900713ED0 /* Blue-Icon-152.png */; };
+		83A046252653DBCA00713ED0 /* Blue-Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045CD2653DBC900713ED0 /* Blue-Icon-76.png */; };
+		83A046262653DBCA00713ED0 /* Blue-Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045CE2653DBC900713ED0 /* Blue-Icon-60.png */; };
+		83A046272653DBCA00713ED0 /* Blue-Icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A045CF2653DBC900713ED0 /* Blue-Icon-180.png */; };
+		83A046282653DBCA00713ED0 /* AlternateIconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A045D02653DBC900713ED0 /* AlternateIconsViewController.swift */; };
+		83A0463B2653E13700713ED0 /* Purpule-Icon-87.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A0462F2653E13600713ED0 /* Purpule-Icon-87.png */; };
+		83A0463C2653E13700713ED0 /* Purpule-Icon-167.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A046302653E13600713ED0 /* Purpule-Icon-167.png */; };
+		83A0463D2653E13700713ED0 /* Purpule-Icon-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A046312653E13600713ED0 /* Purpule-Icon-20.png */; };
+		83A0463E2653E13700713ED0 /* Purpule-Icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A046322653E13600713ED0 /* Purpule-Icon-180.png */; };
+		83A0463F2653E13700713ED0 /* Purpule-Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A046332653E13600713ED0 /* Purpule-Icon-29.png */; };
+		83A046402653E13700713ED0 /* Purpule-Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A046342653E13600713ED0 /* Purpule-Icon-60.png */; };
+		83A046412653E13700713ED0 /* Purpule-Icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A046352653E13600713ED0 /* Purpule-Icon-58.png */; };
+		83A046422653E13700713ED0 /* Purpule-Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A046362653E13600713ED0 /* Purpule-Icon-40.png */; };
+		83A046432653E13700713ED0 /* Purpule-Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A046372653E13600713ED0 /* Purpule-Icon-76.png */; };
+		83A046442653E13700713ED0 /* Purpule-Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A046382653E13600713ED0 /* Purpule-Icon-120.png */; };
+		83A046452653E13700713ED0 /* Purpule-Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A046392653E13700713ED0 /* Purpule-Icon-80.png */; };
+		83A046462653E13700713ED0 /* Purpule-Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A0463A2653E13700713ED0 /* Purpule-Icon-152.png */; };
+		83A852D826808DE5002E338A /* BBMetalColorMatrixFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8522026808DE4002E338A /* BBMetalColorMatrixFilter.metal */; };
+		83A852D926808DE5002E338A /* BBMetalSobelEdgeDetectionFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8522126808DE4002E338A /* BBMetalSobelEdgeDetectionFilter.metal */; };
+		83A852DA26808DE5002E338A /* BBMetalColorBurnBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8522226808DE4002E338A /* BBMetalColorBurnBlendFilter.metal */; };
+		83A852DB26808DE5002E338A /* BBMetalSourceOverBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8522326808DE4002E338A /* BBMetalSourceOverBlendFilter.swift */; };
+		83A852DC26808DE5002E338A /* BBMetalLuminosityBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8522426808DE4002E338A /* BBMetalLuminosityBlendFilter.swift */; };
+		83A852DD26808DE5002E338A /* BBMetalKuwaharaFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8522526808DE4002E338A /* BBMetalKuwaharaFilter.metal */; };
+		83A852DE26808DE5002E338A /* BBMetalErosionFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8522626808DE4002E338A /* BBMetalErosionFilter.metal */; };
+		83A852DF26808DE5002E338A /* BBMetalFalseColorFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8522726808DE4002E338A /* BBMetalFalseColorFilter.swift */; };
+		83A852E026808DE5002E338A /* BBMetalToonFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8522826808DE4002E338A /* BBMetalToonFilter.metal */; };
+		83A852E126808DE5002E338A /* BBMetalUnsharpMaskFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8522926808DE4002E338A /* BBMetalUnsharpMaskFilter.swift */; };
+		83A852E226808DE5002E338A /* BBMetalScreenBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8522A26808DE4002E338A /* BBMetalScreenBlendFilter.metal */; };
+		83A852E326808DE5002E338A /* BBMetalChromaKeyBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8522B26808DE4002E338A /* BBMetalChromaKeyBlendFilter.metal */; };
+		83A852E426808DE5002E338A /* BBMetalZoomBlurFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8522C26808DE4002E338A /* BBMetalZoomBlurFilter.metal */; };
+		83A852E526808DE5002E338A /* BBMetalDivideBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8522D26808DE4002E338A /* BBMetalDivideBlendFilter.swift */; };
+		83A852E626808DE5002E338A /* BBMetalHueBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8522E26808DE4002E338A /* BBMetalHueBlendFilter.swift */; };
+		83A852E726808DE5002E338A /* BBMetalPinchFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8522F26808DE4002E338A /* BBMetalPinchFilter.swift */; };
+		83A852E826808DE5002E338A /* BBMetalRGBAFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8523026808DE4002E338A /* BBMetalRGBAFilter.swift */; };
+		83A852E926808DE5002E338A /* BBMetalHazeFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8523126808DE4002E338A /* BBMetalHazeFilter.metal */; };
+		83A852EA26808DE5002E338A /* BBMetalDissolveBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8523226808DE4002E338A /* BBMetalDissolveBlendFilter.swift */; };
+		83A852EB26808DE5002E338A /* BBMetalColorInversionFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8523326808DE4002E338A /* BBMetalColorInversionFilter.metal */; };
+		83A852EC26808DE5002E338A /* BBMetalThresholdSketchFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8523426808DE4002E338A /* BBMetalThresholdSketchFilter.swift */; };
+		83A852ED26808DE5002E338A /* BBMetalSharpenFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8523526808DE4002E338A /* BBMetalSharpenFilter.metal */; };
+		83A852EE26808DE5002E338A /* BBMetalVignetteFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8523626808DE4002E338A /* BBMetalVignetteFilter.metal */; };
+		83A852EF26808DE5002E338A /* BBMetalVideoWriter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8523726808DE4002E338A /* BBMetalVideoWriter.metal */; };
+		83A852F026808DE5002E338A /* BBMetalColorBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8523826808DE4002E338A /* BBMetalColorBlendFilter.metal */; };
+		83A852F126808DE5002E338A /* BBMetalDifferenceBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8523926808DE4002E338A /* BBMetalDifferenceBlendFilter.metal */; };
+		83A852F226808DE5002E338A /* BBMetalPixellateFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8523A26808DE4002E338A /* BBMetalPixellateFilter.metal */; };
+		83A852F326808DE5002E338A /* BBMetalSwirlFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8523B26808DE4002E338A /* BBMetalSwirlFilter.swift */; };
+		83A852F426808DE5002E338A /* BBMetalChromaKeyFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8523C26808DE4002E338A /* BBMetalChromaKeyFilter.swift */; };
+		83A852F526808DE5002E338A /* BBMetalLookupFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8523D26808DE4002E338A /* BBMetalLookupFilter.swift */; };
+		83A852F626808DE5002E338A /* BBMetalPolarPixellateFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8523E26808DE4002E338A /* BBMetalPolarPixellateFilter.metal */; };
+		83A852F726808DE5002E338A /* BBMetalBeautyFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8523F26808DE4002E338A /* BBMetalBeautyFilter.swift */; };
+		83A852F826808DE5002E338A /* BBMetalMonochromeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8524026808DE4002E338A /* BBMetalMonochromeFilter.swift */; };
+		83A852F926808DE5002E338A /* BBMetalRotateFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8524126808DE4002E338A /* BBMetalRotateFilter.metal */; };
+		83A852FA26808DE5002E338A /* BBMetalLuminanceThresholdFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8524226808DE4002E338A /* BBMetalLuminanceThresholdFilter.metal */; };
+		83A852FB26808DE5002E338A /* BBMetalSaturationFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8524326808DE4002E338A /* BBMetalSaturationFilter.metal */; };
+		83A852FC26808DE5002E338A /* BBMetalRGBAErosionFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8524426808DE4002E338A /* BBMetalRGBAErosionFilter.metal */; };
+		83A852FD26808DE5002E338A /* BBMetalCrosshatchFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8524526808DE4002E338A /* BBMetalCrosshatchFilter.swift */; };
+		83A852FE26808DE5002E338A /* BBMetalSubtractBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8524626808DE4002E338A /* BBMetalSubtractBlendFilter.swift */; };
+		83A852FF26808DE5002E338A /* BBMetalShaderTypes.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8524726808DE4002E338A /* BBMetalShaderTypes.metal */; };
+		83A8530026808DE5002E338A /* BBMetalCropFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8524826808DE4002E338A /* BBMetalCropFilter.swift */; };
+		83A8530126808DE5002E338A /* BBMetalUISource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8524926808DE4002E338A /* BBMetalUISource.swift */; };
+		83A8530226808DE5002E338A /* BBMetalBilateralBlurFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8524A26808DE4002E338A /* BBMetalBilateralBlurFilter.swift */; };
+		83A8530326808DE5002E338A /* BBMetalPosterizeFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8524B26808DE4002E338A /* BBMetalPosterizeFilter.metal */; };
+		83A8530426808DE5002E338A /* BBMetalLuminanceFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8524C26808DE4002E338A /* BBMetalLuminanceFilter.swift */; };
+		83A8530526808DE5002E338A /* BBMetalVibranceFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8524D26808DE4002E338A /* BBMetalVibranceFilter.metal */; };
+		83A8530626808DE5002E338A /* BBMetalGammaFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8524E26808DE4002E338A /* BBMetalGammaFilter.swift */; };
+		83A8530726808DE5002E338A /* BBMetalResizeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8524F26808DE4002E338A /* BBMetalResizeFilter.swift */; };
+		83A8530826808DE5002E338A /* BBMetalDilationFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8525026808DE4002E338A /* BBMetalDilationFilter.metal */; };
+		83A8530926808DE5002E338A /* BBMetalLightenBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8525126808DE4002E338A /* BBMetalLightenBlendFilter.metal */; };
+		83A8530A26808DE5002E338A /* BBMetalWhiteBalanceFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8525226808DE4002E338A /* BBMetalWhiteBalanceFilter.metal */; };
+		83A8530B26808DE5002E338A /* BBMetalHighlightShadowTintFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8525326808DE4002E338A /* BBMetalHighlightShadowTintFilter.swift */; };
+		83A8530C26808DE5002E338A /* BBMetalView.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8525426808DE4002E338A /* BBMetalView.metal */; };
+		83A8530D26808DE5002E338A /* BBMetalMultiplyBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8525526808DE4002E338A /* BBMetalMultiplyBlendFilter.swift */; };
+		83A8530E26808DE5002E338A /* BBMetalLinearBurnBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8525626808DE4002E338A /* BBMetalLinearBurnBlendFilter.metal */; };
+		83A8530F26808DE5002E338A /* BBMetalTransformFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8525726808DE4002E338A /* BBMetalTransformFilter.swift */; };
+		83A8531026808DE5002E338A /* BBMetalMotionBlurFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8525826808DE4002E338A /* BBMetalMotionBlurFilter.metal */; };
+		83A8531126808DE5002E338A /* BBMetalAlphaBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8525926808DE4002E338A /* BBMetalAlphaBlendFilter.metal */; };
+		83A8531226808DE5002E338A /* BBMetalOverlayBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8525A26808DE4002E338A /* BBMetalOverlayBlendFilter.swift */; };
+		83A8531326808DE5002E338A /* BBMetalRGBADilationFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8525B26808DE4002E338A /* BBMetalRGBADilationFilter.swift */; };
+		83A8531426808DE5002E338A /* BBMetalConvolution3x3Filter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8525C26808DE4002E338A /* BBMetalConvolution3x3Filter.metal */; };
+		83A8531526808DE5002E338A /* BBMetalSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8525D26808DE4002E338A /* BBMetalSize.swift */; };
+		83A8531626808DE5002E338A /* BBMetalEmbossFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8525E26808DE4002E338A /* BBMetalEmbossFilter.swift */; };
+		83A8531726808DE5002E338A /* BBMetalPolkaDotFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8525F26808DE4002E338A /* BBMetalPolkaDotFilter.metal */; };
+		83A8531826808DE5002E338A /* BBMetalNormalBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8526026808DE4002E338A /* BBMetalNormalBlendFilter.metal */; };
+		83A8531926808DE5002E338A /* BBMetalBulgeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8526126808DE4002E338A /* BBMetalBulgeFilter.swift */; };
+		83A8531A26808DE5002E338A /* BBMetalContrastFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8526226808DE4002E338A /* BBMetalContrastFilter.metal */; };
+		83A8531B26808DE5002E338A /* BBMetalVideoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8526326808DE4002E338A /* BBMetalVideoSource.swift */; };
+		83A8531C26808DE5002E338A /* BBMetalHalftoneFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8526426808DE4002E338A /* BBMetalHalftoneFilter.metal */; };
+		83A8531D26808DE5002E338A /* BBMetalFlipFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8526526808DE4002E338A /* BBMetalFlipFilter.metal */; };
+		83A8531E26808DE5002E338A /* BBMetalHardLightBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8526626808DE4002E338A /* BBMetalHardLightBlendFilter.metal */; };
+		83A8531F26808DE5002E338A /* BBMetalBoxBlurFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8526726808DE4002E338A /* BBMetalBoxBlurFilter.swift */; };
+		83A8532026808DE5002E338A /* BBMetalExposureFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8526826808DE4002E338A /* BBMetalExposureFilter.swift */; };
+		83A8532126808DE5002E338A /* BBMetalLevelsFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8526926808DE4002E338A /* BBMetalLevelsFilter.swift */; };
+		83A8532226808DE5002E338A /* BBMetalDarkenBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8526A26808DE4002E338A /* BBMetalDarkenBlendFilter.swift */; };
+		83A8532326808DE5002E338A /* BBMetalStaticImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8526B26808DE4002E338A /* BBMetalStaticImageSource.swift */; };
+		83A8532426808DE5002E338A /* BBMetalMaskBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8526C26808DE4002E338A /* BBMetalMaskBlendFilter.swift */; };
+		83A8532526808DE5002E338A /* BBMetalGaussianBlurFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8526D26808DE4002E338A /* BBMetalGaussianBlurFilter.swift */; };
+		83A8532626808DE5002E338A /* BBMetalSaturationBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8526E26808DE4002E338A /* BBMetalSaturationBlendFilter.swift */; };
+		83A8532726808DE5002E338A /* BBMetalTiltShiftFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8526F26808DE4002E338A /* BBMetalTiltShiftFilter.metal */; };
+		83A8532826808DE5002E338A /* BBMetalSoftLightBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8527026808DE4002E338A /* BBMetalSoftLightBlendFilter.metal */; };
+		83A8532926808DE5002E338A /* BBMetalBaseFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8527126808DE4002E338A /* BBMetalBaseFilter.swift */; };
+		83A8532A26808DE5002E338A /* BBMetalSketchFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8527326808DE4002E338A /* BBMetalSketchFilter.metal */; };
+		83A8532B26808DE5002E338A /* BBMetalHueFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8527426808DE4002E338A /* BBMetalHueFilter.swift */; };
+		83A8532C26808DE5002E338A /* BBMetalAddBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8527526808DE4002E338A /* BBMetalAddBlendFilter.swift */; };
+		83A8532D26808DE5002E338A /* BBMetalColorDodgeBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8527626808DE4002E338A /* BBMetalColorDodgeBlendFilter.metal */; };
+		83A8532E26808DE5002E338A /* BBMetalBrightnessFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8527726808DE4002E338A /* BBMetalBrightnessFilter.metal */; };
+		83A8532F26808DE5002E338A /* BBMetalExclusionBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8527826808DE4002E338A /* BBMetalExclusionBlendFilter.metal */; };
+		83A8533026808DE5002E338A /* BBMetalHighlightShadowFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8527926808DE4002E338A /* BBMetalHighlightShadowFilter.swift */; };
+		83A8533126808DE5002E338A /* BBMetalMultipleImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8527A26808DE4002E338A /* BBMetalMultipleImageSource.swift */; };
+		83A8533226808DE5002E338A /* BBMetalZoomBlurFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8527B26808DE4002E338A /* BBMetalZoomBlurFilter.swift */; };
+		83A8533326808DE5002E338A /* BBMetalDivideBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8527C26808DE4002E338A /* BBMetalDivideBlendFilter.metal */; };
+		83A8533426808DE5002E338A /* BBMetalHueBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8527D26808DE4002E338A /* BBMetalHueBlendFilter.metal */; };
+		83A8533526808DE5002E338A /* BBMetalPinchFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8527E26808DE4002E338A /* BBMetalPinchFilter.metal */; };
+		83A8533626808DE5002E338A /* BBMetalErosionFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8527F26808DE4002E338A /* BBMetalErosionFilter.swift */; };
+		83A8533726808DE5002E338A /* BBMetalFalseColorFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8528026808DE4002E338A /* BBMetalFalseColorFilter.metal */; };
+		83A8533826808DE5002E338A /* BBMetalToonFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8528126808DE4002E338A /* BBMetalToonFilter.swift */; };
+		83A8533926808DE5002E338A /* BBMetalMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8528226808DE4002E338A /* BBMetalMatrix.swift */; };
+		83A8533A26808DE5002E338A /* BBMetalUnsharpMaskFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8528326808DE4002E338A /* BBMetalUnsharpMaskFilter.metal */; };
+		83A8533B26808DE5002E338A /* BBMetalScreenBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8528426808DE4002E338A /* BBMetalScreenBlendFilter.swift */; };
+		83A8533C26808DE5002E338A /* BBMetalPassThroughFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8528526808DE4002E338A /* BBMetalPassThroughFilter.swift */; };
+		83A8533D26808DE5002E338A /* BBMetalImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8528626808DE4002E338A /* BBMetalImageSource.swift */; };
+		83A8533E26808DE5002E338A /* BBMetalChromaKeyBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8528726808DE4002E338A /* BBMetalChromaKeyBlendFilter.swift */; };
+		83A8533F26808DE5002E338A /* BBMetalColorBurnBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8528826808DE4002E338A /* BBMetalColorBurnBlendFilter.swift */; };
+		83A8534026808DE5002E338A /* BBMetalSourceOverBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8528926808DE4002E338A /* BBMetalSourceOverBlendFilter.metal */; };
+		83A8534126808DE5002E338A /* BBMetalLuminosityBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8528A26808DE4002E338A /* BBMetalLuminosityBlendFilter.metal */; };
+		83A8534226808DE5002E338A /* BBMetalKuwaharaFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8528B26808DE4002E338A /* BBMetalKuwaharaFilter.swift */; };
+		83A8534326808DE5002E338A /* BBMetalColorMatrixFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8528C26808DE4002E338A /* BBMetalColorMatrixFilter.swift */; };
+		83A8534426808DE5002E338A /* BBMetalSobelEdgeDetectionFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8528D26808DE4002E338A /* BBMetalSobelEdgeDetectionFilter.swift */; };
+		83A8534526808DE5002E338A /* BBMetalCrosshatchFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8528E26808DE4002E338A /* BBMetalCrosshatchFilter.metal */; };
+		83A8534626808DE5002E338A /* BBMetalSubtractBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8528F26808DE4002E338A /* BBMetalSubtractBlendFilter.metal */; };
+		83A8534726808DE5002E338A /* BBMetalCropFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8529026808DE4002E338A /* BBMetalCropFilter.metal */; };
+		83A8534826808DE5002E338A /* BBMetalBeautyFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8529126808DE4002E338A /* BBMetalBeautyFilter.metal */; };
+		83A8534926808DE5002E338A /* BBMetalMonochromeFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8529226808DE4002E338A /* BBMetalMonochromeFilter.metal */; };
+		83A8534A26808DE5002E338A /* BBMetalRotateFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8529326808DE4002E338A /* BBMetalRotateFilter.swift */; };
+		83A8534B26808DE5002E338A /* BBMetalLuminanceThresholdFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8529426808DE4002E338A /* BBMetalLuminanceThresholdFilter.swift */; };
+		83A8534C26808DE5002E338A /* MultipleVideoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8529526808DE4002E338A /* MultipleVideoSource.swift */; };
+		83A8534D26808DE5002E338A /* BBMetalSaturationFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8529626808DE4002E338A /* BBMetalSaturationFilter.swift */; };
+		83A8534E26808DE5002E338A /* BBMetalRGBAErosionFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8529726808DE4002E338A /* BBMetalRGBAErosionFilter.swift */; };
+		83A8534F26808DE5002E338A /* BBMetalVignetteFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8529826808DE4002E338A /* BBMetalVignetteFilter.swift */; };
+		83A8535026808DE5002E338A /* BBMetalVideoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8529926808DE4002E338A /* BBMetalVideoWriter.swift */; };
+		83A8535126808DE5002E338A /* BBMetalColorBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8529A26808DE4002E338A /* BBMetalColorBlendFilter.swift */; };
+		83A8535226808DE5002E338A /* BBMetalDifferenceBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8529B26808DE4002E338A /* BBMetalDifferenceBlendFilter.swift */; };
+		83A8535326808DE5002E338A /* BBMetalPixellateFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8529C26808DE4002E338A /* BBMetalPixellateFilter.swift */; };
+		83A8535426808DE5002E338A /* BBMetalSwirlFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8529D26808DE4002E338A /* BBMetalSwirlFilter.metal */; };
+		83A8535526808DE5002E338A /* BBMetalChromaKeyFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A8529E26808DE4002E338A /* BBMetalChromaKeyFilter.metal */; };
+		83A8535626808DE5002E338A /* BBMetalImageConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8529F26808DE4002E338A /* BBMetalImageConsumer.swift */; };
+		83A8535726808DE5002E338A /* BBMetalLookupFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852A026808DE4002E338A /* BBMetalLookupFilter.metal */; };
+		83A8535826808DE5002E338A /* BBMetalPolarPixellateFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852A126808DE4002E338A /* BBMetalPolarPixellateFilter.swift */; };
+		83A8535926808DE5002E338A /* BBMetalRGBAFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852A226808DE4002E338A /* BBMetalRGBAFilter.metal */; };
+		83A8535A26808DE5002E338A /* BBMetalHazeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852A326808DE4002E338A /* BBMetalHazeFilter.swift */; };
+		83A8535B26808DE5002E338A /* BBMetalDissolveBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852A426808DE4002E338A /* BBMetalDissolveBlendFilter.metal */; };
+		83A8535C26808DE5002E338A /* BBMetalColorInversionFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852A526808DE4002E338A /* BBMetalColorInversionFilter.swift */; };
+		83A8535D26808DE5002E338A /* BBMetalPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852A626808DE4002E338A /* BBMetalPosition.swift */; };
+		83A8535E26808DE5002E338A /* BBMetalThresholdSketchFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852A726808DE4002E338A /* BBMetalThresholdSketchFilter.metal */; };
+		83A8535F26808DE5002E338A /* BBMetalSharpenFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852A826808DE4002E338A /* BBMetalSharpenFilter.swift */; };
+		83A8536026808DE5002E338A /* BBMetalRGBADilationFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852A926808DE4002E338A /* BBMetalRGBADilationFilter.metal */; };
+		83A8536126808DE5002E338A /* BBMetalColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852AA26808DE4002E338A /* BBMetalColor.swift */; };
+		83A8536226808DE5002E338A /* BBMetalConvolution3x3Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852AB26808DE5002E338A /* BBMetalConvolution3x3Filter.swift */; };
+		83A8536326808DE5002E338A /* BBMetalPolkaDotFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852AC26808DE5002E338A /* BBMetalPolkaDotFilter.swift */; };
+		83A8536426808DE5002E338A /* BBMetalNormalBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852AD26808DE5002E338A /* BBMetalNormalBlendFilter.swift */; };
+		83A8536526808DE5002E338A /* BBMetalBulgeFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852AE26808DE5002E338A /* BBMetalBulgeFilter.metal */; };
+		83A8536626808DE5002E338A /* BBMetalContrastFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852AF26808DE5002E338A /* BBMetalContrastFilter.swift */; };
+		83A8536726808DE5002E338A /* BBMetalLinearBurnBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852B026808DE5002E338A /* BBMetalLinearBurnBlendFilter.swift */; };
+		83A8536826808DE5002E338A /* BBMetalTransformFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852B126808DE5002E338A /* BBMetalTransformFilter.metal */; };
+		83A8536926808DE5002E338A /* BBMetalMotionBlurFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852B226808DE5002E338A /* BBMetalMotionBlurFilter.swift */; };
+		83A8536A26808DE5002E338A /* BBMetalAlphaBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852B326808DE5002E338A /* BBMetalAlphaBlendFilter.swift */; };
+		83A8536B26808DE5002E338A /* BBMetalOverlayBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852B426808DE5002E338A /* BBMetalOverlayBlendFilter.metal */; };
+		83A8536C26808DE5002E338A /* BBMetalDilationFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852B526808DE5002E338A /* BBMetalDilationFilter.swift */; };
+		83A8536D26808DE5002E338A /* BBMetalLightenBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852B626808DE5002E338A /* BBMetalLightenBlendFilter.swift */; };
+		83A8536E26808DE5002E338A /* BBMetalWhiteBalanceFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852B726808DE5002E338A /* BBMetalWhiteBalanceFilter.swift */; };
+		83A8536F26808DE5002E338A /* BBMetalHighlightShadowTintFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852B826808DE5002E338A /* BBMetalHighlightShadowTintFilter.metal */; };
+		83A8537026808DE5002E338A /* BBMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852BA26808DE5002E338A /* BBMetalView.swift */; };
+		83A8537126808DE5002E338A /* BBMetalMultiplyBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852BB26808DE5002E338A /* BBMetalMultiplyBlendFilter.metal */; };
+		83A8537226808DE5002E338A /* BBMetalBilateralBlurFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852BC26808DE5002E338A /* BBMetalBilateralBlurFilter.metal */; };
+		83A8537326808DE5002E338A /* BBMetalPosterizeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852BD26808DE5002E338A /* BBMetalPosterizeFilter.swift */; };
+		83A8537426808DE5002E338A /* BBMetalLuminanceFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852BE26808DE5002E338A /* BBMetalLuminanceFilter.metal */; };
+		83A8537526808DE5002E338A /* BBMetalVibranceFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852BF26808DE5002E338A /* BBMetalVibranceFilter.swift */; };
+		83A8537626808DE5002E338A /* BBMetalGammaFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852C026808DE5002E338A /* BBMetalGammaFilter.metal */; };
+		83A8537726808DE5002E338A /* BBMetalResizeFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852C126808DE5002E338A /* BBMetalResizeFilter.metal */; };
+		83A8537826808DE5002E338A /* BBMetalAddBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852C226808DE5002E338A /* BBMetalAddBlendFilter.metal */; };
+		83A8537926808DE5002E338A /* BBMetalColorDodgeBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852C326808DE5002E338A /* BBMetalColorDodgeBlendFilter.swift */; };
+		83A8537A26808DE5002E338A /* BBMetalBrightnessFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852C426808DE5002E338A /* BBMetalBrightnessFilter.swift */; };
+		83A8537B26808DE5002E338A /* BBMetalBaseFilterGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852C526808DE5002E338A /* BBMetalBaseFilterGroup.swift */; };
+		83A8537C26808DE5002E338A /* BBMetalExclusionBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852C626808DE5002E338A /* BBMetalExclusionBlendFilter.swift */; };
+		83A8537D26808DE5002E338A /* BBMetalHighlightShadowFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852C726808DE5002E338A /* BBMetalHighlightShadowFilter.metal */; };
+		83A8537E26808DE5002E338A /* BBMetalTiltShiftFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852C826808DE5002E338A /* BBMetalTiltShiftFilter.swift */; };
+		83A8537F26808DE5002E338A /* BBMetalSoftLightBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852C926808DE5002E338A /* BBMetalSoftLightBlendFilter.swift */; };
+		83A8538026808DE5002E338A /* BBMetalDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852CA26808DE5002E338A /* BBMetalDevice.swift */; };
+		83A8538126808DE5002E338A /* BBMetalSketchFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852CB26808DE5002E338A /* BBMetalSketchFilter.swift */; };
+		83A8538326808DE5002E338A /* BBMetalHueFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852CD26808DE5002E338A /* BBMetalHueFilter.metal */; };
+		83A8538426808DE5002E338A /* BBMetalExposureFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852CE26808DE5002E338A /* BBMetalExposureFilter.metal */; };
+		83A8538526808DE5002E338A /* BBMetalLevelsFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852CF26808DE5002E338A /* BBMetalLevelsFilter.metal */; };
+		83A8538626808DE5002E338A /* BBMetalDarkenBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852D026808DE5002E338A /* BBMetalDarkenBlendFilter.metal */; };
+		83A8538726808DE5002E338A /* BBMetalCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852D126808DE5002E338A /* BBMetalCamera.swift */; };
+		83A8538826808DE5002E338A /* BBMetalMaskBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852D226808DE5002E338A /* BBMetalMaskBlendFilter.metal */; };
+		83A8538926808DE5002E338A /* BBMetalSaturationBlendFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83A852D326808DE5002E338A /* BBMetalSaturationBlendFilter.metal */; };
+		83A8538A26808DE5002E338A /* BBMetalRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852D426808DE5002E338A /* BBMetalRect.swift */; };
+		83A8538B26808DE5002E338A /* BBMetalHalftoneFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852D526808DE5002E338A /* BBMetalHalftoneFilter.swift */; };
+		83A8538C26808DE5002E338A /* BBMetalFlipFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852D626808DE5002E338A /* BBMetalFlipFilter.swift */; };
+		83A8538D26808DE5002E338A /* BBMetalHardLightBlendFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A852D726808DE5002E338A /* BBMetalHardLightBlendFilter.swift */; };
+		83A8538F26808FA3002E338A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8538E26808FA3002E338A /* CameraViewController.swift */; };
+		83A8539126809183002E338A /* FilterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8539026809183002E338A /* FilterType.swift */; };
+		83A85393268091BF002E338A /* CameraFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A85392268091BF002E338A /* CameraFilterViewController.swift */; };
+		83A853952680A8D1002E338A /* SubtitlesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A853942680A8D1002E338A /* SubtitlesViewController.storyboard */; };
+		83A853982680A900002E338A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A853972680A900002E338A /* MainViewController.swift */; };
+		83A853A02680B6C3002E338A /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8539F2680B6C3002E338A /* VideoPlayerViewController.swift */; };
+		83A8E89F2645898A0080AEE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E89E2645898A0080AEE5 /* AppDelegate.swift */; };
+		83A8E8A12645898A0080AEE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8A02645898A0080AEE5 /* SceneDelegate.swift */; };
+		83A8E8A82645898B0080AEE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A8E8A72645898B0080AEE5 /* Assets.xcassets */; };
+		83A8E8AB2645898B0080AEE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A8E8A92645898B0080AEE5 /* LaunchScreen.storyboard */; };
+		83A8E8B726458AE50080AEE5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A8E8B626458AE50080AEE5 /* StoreKit.framework */; };
+		83A8E8BC2645A71D0080AEE5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8BB2645A71D0080AEE5 /* BaseViewController.swift */; };
+		83A8E8BF2645A76D0080AEE5 /* Gradientable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8BE2645A76D0080AEE5 /* Gradientable.swift */; };
+		83A8E8D92645A7FD0080AEE5 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8C22645A7FD0080AEE5 /* DesignableImageView.swift */; };
+		83A8E8DA2645A7FD0080AEE5 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8C32645A7FD0080AEE5 /* KeyboardLayoutConstraint.swift */; };
+		83A8E8DB2645A7FD0080AEE5 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8C42645A7FD0080AEE5 /* TransitionManager.swift */; };
+		83A8E8DC2645A7FD0080AEE5 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8C52645A7FD0080AEE5 /* TransitionZoom.swift */; };
+		83A8E8DD2645A7FD0080AEE5 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8C62645A7FD0080AEE5 /* Spring.swift */; };
+		83A8E8DE2645A7FD0080AEE5 /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8C72645A7FD0080AEE5 /* SpringImageView.swift */; };
+		83A8E8DF2645A7FD0080AEE5 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8C82645A7FD0080AEE5 /* DesignableLabel.swift */; };
+		83A8E8E02645A7FD0080AEE5 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8C92645A7FD0080AEE5 /* BlurView.swift */; };
+		83A8E8E12645A7FD0080AEE5 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8CA2645A7FD0080AEE5 /* DesignableTextField.swift */; };
+		83A8E8E22645A7FD0080AEE5 /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8CB2645A7FD0080AEE5 /* SpringButton.swift */; };
+		83A8E8E32645A7FD0080AEE5 /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8CC2645A7FD0080AEE5 /* SpringTextView.swift */; };
+		83A8E8E42645A7FD0080AEE5 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8CD2645A7FD0080AEE5 /* Misc.swift */; };
+		83A8E8E52645A7FD0080AEE5 /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8CE2645A7FD0080AEE5 /* SpringView.swift */; };
+		83A8E8E62645A7FD0080AEE5 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8CF2645A7FD0080AEE5 /* DesignableButton.swift */; };
+		83A8E8E72645A7FD0080AEE5 /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8D02645A7FD0080AEE5 /* SpringTextField.swift */; };
+		83A8E8E82645A7FD0080AEE5 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8D12645A7FD0080AEE5 /* DesignableView.swift */; };
+		83A8E8E92645A7FD0080AEE5 /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8D22645A7FD0080AEE5 /* DesignableTabBarController.swift */; };
+		83A8E8EA2645A7FD0080AEE5 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83A8E8D32645A7FD0080AEE5 /* LoadingView.xib */; };
+		83A8E8EB2645A7FD0080AEE5 /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8D42645A7FD0080AEE5 /* SpringLabel.swift */; };
+		83A8E8EC2645A7FD0080AEE5 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8D62645A7FD0080AEE5 /* DesignableTextView.swift */; };
+		83A8E8ED2645A7FD0080AEE5 /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8D72645A7FD0080AEE5 /* AutoTextView.swift */; };
+		83A8E8EE2645A7FD0080AEE5 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8E8D82645A7FD0080AEE5 /* SpringAnimation.swift */; };
+		83AA6D8C267774BD00AFFB7F /* MLTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA6D8B267774BD00AFFB7F /* MLTranslator.swift */; };
+		83AA6D8E26777DD800AFFB7F /* TranslateToLanguageSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA6D8D26777DD800AFFB7F /* TranslateToLanguageSelectionController.swift */; };
+		83ABA251264BE340001784B8 /* SubtitlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ABA250264BE340001784B8 /* SubtitlesViewController.swift */; };
+		83ABA254264BE346001784B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83ABA253264BE346001784B8 /* Main.storyboard */; };
+		83ABAC2D265BB3C100A20D0E /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 83ABAC2C265BB3C100A20D0E /* FacebookCore */; };
+		83AF2C23264D660E00DB9909 /* SpeechRecognitionLocaleSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF2C22264D660E00DB9909 /* SpeechRecognitionLocaleSelectionViewController.swift */; };
+		83AF2C3F264D89E100DB9909 /* TapticEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF2C3E264D89E100DB9909 /* TapticEngine.swift */; };
+		83BCCDD7264C797100AAAF9B /* SpeechRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BCCDD6264C797100AAAF9B /* SpeechRecognition.swift */; };
+		83C81AA1264A86F300B3F8E2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C81AA0264A86F300B3F8E2 /* Extensions.swift */; };
+		83DF75CA265EE719002C6746 /* AdCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF75C9265EE719002C6746 /* AdCommon.swift */; };
+		83EAFE8C264C299A00FF9CAC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EAFE8B264C299A00FF9CAC /* Theme.swift */; };
+		83EAFE9A264C40BE00FF9CAC /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EAFE99264C40BE00FF9CAC /* ThemeViewController.swift */; };
+		83EAFE9E264C40DB00FF9CAC /* ThemeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EAFE9D264C40DB00FF9CAC /* ThemeViewController.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		333A0A247F3F66072ED401FC /* Pods-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.release.xcconfig"; path = "Target Support Files/Pods-Notes/Pods-Notes.release.xcconfig"; sourceTree = "<group>"; };
+		3CBA19D5EAACAA0C7E07F48B /* Pods-Dictation To Text.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dictation To Text.debug.xcconfig"; path = "Target Support Files/Pods-Dictation To Text/Pods-Dictation To Text.debug.xcconfig"; sourceTree = "<group>"; };
+		555E270E753D9B0BB1C3AB86 /* Pods-Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.debug.xcconfig"; path = "Target Support Files/Pods-Notes/Pods-Notes.debug.xcconfig"; sourceTree = "<group>"; };
+		7059F373A83F5EFC1E2CB63B /* Pods-Hearing Aid App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hearing Aid App.debug.xcconfig"; path = "Target Support Files/Pods-Hearing Aid App/Pods-Hearing Aid App.debug.xcconfig"; sourceTree = "<group>"; };
+		832FB96C267C9D3200DF4177 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		832FB96E267CD17500DF4177 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		832FB971267CF5E300DF4177 /* Implode.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Implode.ahap; sourceTree = "<group>"; };
+		832FB972267CF5E300DF4177 /* Implode.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Implode.wav; sourceTree = "<group>"; };
+		832FB973267CF5E300DF4177 /* Spawn.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Spawn.ahap; sourceTree = "<group>"; };
+		832FB974267CF5E300DF4177 /* Spawn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Spawn.wav; sourceTree = "<group>"; };
+		832FB979267CF5F000DF4177 /* CustomHaptic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHaptic.swift; sourceTree = "<group>"; };
+		834E51C3267F6FDE00BEC04D /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		834EB73326482F9600026F01 /* ParticleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleView.swift; sourceTree = "<group>"; };
+		834EB73826482FEC00026F01 /* Particle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Particle.sks; sourceTree = "<group>"; };
+		8398B7A12660E9D900E34DC8 /* OnboardingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingViewController.storyboard; sourceTree = "<group>"; };
+		8398B7A42660E9E000E34DC8 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		839DE06726529EAF00A65DD7 /* RevenuCat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevenuCat.swift; sourceTree = "<group>"; };
+		839DE06B26529ED000A65DD7 /* SubscriptionViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SubscriptionViewController.storyboard; sourceTree = "<group>"; };
+		839DE06C26529ED000A65DD7 /* SubscriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
+		839DE07126529F1B00A65DD7 /* IndicatorShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorShape.swift; sourceTree = "<group>"; };
+		839DE07226529F1B00A65DD7 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		839DE0762652A0B600A65DD7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		839F7AAE2681E16600B09EE6 /* SubtitleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleCollectionViewController.swift; sourceTree = "<group>"; };
+		839F7AB02681E18200B09EE6 /* SubtitleCollectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubtitleCollectionViewController.storyboard; sourceTree = "<group>"; };
+		839F7AB22681E5F700B09EE6 /* AlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		839FAC1F264EE383004910D9 /* SubtitleSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleSettingsViewController.swift; sourceTree = "<group>"; };
+		839FAC23264EE87D004910D9 /* SubtitleSettingsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubtitleSettingsViewController.storyboard; sourceTree = "<group>"; };
+		83A045692653C5C400713ED0 /* AppRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRating.swift; sourceTree = "<group>"; };
+		83A045802653DBC900713ED0 /* AlternateIconsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlternateIconsViewController.storyboard; sourceTree = "<group>"; };
+		83A045832653DBC900713ED0 /* Red-Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-Icon-180.png"; sourceTree = "<group>"; };
+		83A045842653DBC900713ED0 /* Red-Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-Icon-29.png"; sourceTree = "<group>"; };
+		83A045852653DBC900713ED0 /* Red-Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-Icon-152.png"; sourceTree = "<group>"; };
+		83A045862653DBC900713ED0 /* Red-Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-Icon-120.png"; sourceTree = "<group>"; };
+		83A045872653DBC900713ED0 /* Red-Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-Icon-58.png"; sourceTree = "<group>"; };
+		83A045882653DBC900713ED0 /* Red-Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-Icon-60.png"; sourceTree = "<group>"; };
+		83A045892653DBC900713ED0 /* Red-Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-Icon-76.png"; sourceTree = "<group>"; };
+		83A0458A2653DBC900713ED0 /* Red-Icon-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-Icon-87.png"; sourceTree = "<group>"; };
+		83A0458B2653DBC900713ED0 /* Red-Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-Icon-40.png"; sourceTree = "<group>"; };
+		83A0458C2653DBC900713ED0 /* Red-Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-Icon-80.png"; sourceTree = "<group>"; };
+		83A0458D2653DBC900713ED0 /* Red-Icon-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-Icon-20.png"; sourceTree = "<group>"; };
+		83A0458E2653DBC900713ED0 /* Red-Icon-167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-Icon-167.png"; sourceTree = "<group>"; };
+		83A045902653DBC900713ED0 /* Orange-Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange-Icon-180.png"; sourceTree = "<group>"; };
+		83A045912653DBC900713ED0 /* Orange-Icon-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange-Icon-20.png"; sourceTree = "<group>"; };
+		83A045922653DBC900713ED0 /* Orange-Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange-Icon-152.png"; sourceTree = "<group>"; };
+		83A045932653DBC900713ED0 /* Orange-Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange-Icon-120.png"; sourceTree = "<group>"; };
+		83A045942653DBC900713ED0 /* Orange-Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange-Icon-80.png"; sourceTree = "<group>"; };
+		83A045952653DBC900713ED0 /* Orange-Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange-Icon-40.png"; sourceTree = "<group>"; };
+		83A045962653DBC900713ED0 /* Orange-Icon-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange-Icon-87.png"; sourceTree = "<group>"; };
+		83A045972653DBC900713ED0 /* Orange-Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange-Icon-76.png"; sourceTree = "<group>"; };
+		83A045982653DBC900713ED0 /* Orange-Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange-Icon-60.png"; sourceTree = "<group>"; };
+		83A045992653DBC900713ED0 /* Orange-Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange-Icon-58.png"; sourceTree = "<group>"; };
+		83A0459A2653DBC900713ED0 /* Orange-Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange-Icon-29.png"; sourceTree = "<group>"; };
+		83A0459B2653DBC900713ED0 /* Orange-Icon-167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange-Icon-167.png"; sourceTree = "<group>"; };
+		83A045C42653DBC900713ED0 /* Blue-Icon-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-Icon-87.png"; sourceTree = "<group>"; };
+		83A045C52653DBC900713ED0 /* Blue-Icon-167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-Icon-167.png"; sourceTree = "<group>"; };
+		83A045C62653DBC900713ED0 /* Blue-Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-Icon-80.png"; sourceTree = "<group>"; };
+		83A045C72653DBC900713ED0 /* Blue-Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-Icon-40.png"; sourceTree = "<group>"; };
+		83A045C82653DBC900713ED0 /* Blue-Icon-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-Icon-20.png"; sourceTree = "<group>"; };
+		83A045C92653DBC900713ED0 /* Blue-Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-Icon-29.png"; sourceTree = "<group>"; };
+		83A045CA2653DBC900713ED0 /* Blue-Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-Icon-120.png"; sourceTree = "<group>"; };
+		83A045CB2653DBC900713ED0 /* Blue-Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-Icon-58.png"; sourceTree = "<group>"; };
+		83A045CC2653DBC900713ED0 /* Blue-Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-Icon-152.png"; sourceTree = "<group>"; };
+		83A045CD2653DBC900713ED0 /* Blue-Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-Icon-76.png"; sourceTree = "<group>"; };
+		83A045CE2653DBC900713ED0 /* Blue-Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-Icon-60.png"; sourceTree = "<group>"; };
+		83A045CF2653DBC900713ED0 /* Blue-Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-Icon-180.png"; sourceTree = "<group>"; };
+		83A045D02653DBC900713ED0 /* AlternateIconsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlternateIconsViewController.swift; sourceTree = "<group>"; };
+		83A0462F2653E13600713ED0 /* Purpule-Icon-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purpule-Icon-87.png"; sourceTree = "<group>"; };
+		83A046302653E13600713ED0 /* Purpule-Icon-167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purpule-Icon-167.png"; sourceTree = "<group>"; };
+		83A046312653E13600713ED0 /* Purpule-Icon-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purpule-Icon-20.png"; sourceTree = "<group>"; };
+		83A046322653E13600713ED0 /* Purpule-Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purpule-Icon-180.png"; sourceTree = "<group>"; };
+		83A046332653E13600713ED0 /* Purpule-Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purpule-Icon-29.png"; sourceTree = "<group>"; };
+		83A046342653E13600713ED0 /* Purpule-Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purpule-Icon-60.png"; sourceTree = "<group>"; };
+		83A046352653E13600713ED0 /* Purpule-Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purpule-Icon-58.png"; sourceTree = "<group>"; };
+		83A046362653E13600713ED0 /* Purpule-Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purpule-Icon-40.png"; sourceTree = "<group>"; };
+		83A046372653E13600713ED0 /* Purpule-Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purpule-Icon-76.png"; sourceTree = "<group>"; };
+		83A046382653E13600713ED0 /* Purpule-Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purpule-Icon-120.png"; sourceTree = "<group>"; };
+		83A046392653E13700713ED0 /* Purpule-Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purpule-Icon-80.png"; sourceTree = "<group>"; };
+		83A0463A2653E13700713ED0 /* Purpule-Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purpule-Icon-152.png"; sourceTree = "<group>"; };
+		83A8522026808DE4002E338A /* BBMetalColorMatrixFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalColorMatrixFilter.metal; sourceTree = "<group>"; };
+		83A8522126808DE4002E338A /* BBMetalSobelEdgeDetectionFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalSobelEdgeDetectionFilter.metal; sourceTree = "<group>"; };
+		83A8522226808DE4002E338A /* BBMetalColorBurnBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalColorBurnBlendFilter.metal; sourceTree = "<group>"; };
+		83A8522326808DE4002E338A /* BBMetalSourceOverBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalSourceOverBlendFilter.swift; sourceTree = "<group>"; };
+		83A8522426808DE4002E338A /* BBMetalLuminosityBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalLuminosityBlendFilter.swift; sourceTree = "<group>"; };
+		83A8522526808DE4002E338A /* BBMetalKuwaharaFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalKuwaharaFilter.metal; sourceTree = "<group>"; };
+		83A8522626808DE4002E338A /* BBMetalErosionFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalErosionFilter.metal; sourceTree = "<group>"; };
+		83A8522726808DE4002E338A /* BBMetalFalseColorFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalFalseColorFilter.swift; sourceTree = "<group>"; };
+		83A8522826808DE4002E338A /* BBMetalToonFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalToonFilter.metal; sourceTree = "<group>"; };
+		83A8522926808DE4002E338A /* BBMetalUnsharpMaskFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalUnsharpMaskFilter.swift; sourceTree = "<group>"; };
+		83A8522A26808DE4002E338A /* BBMetalScreenBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalScreenBlendFilter.metal; sourceTree = "<group>"; };
+		83A8522B26808DE4002E338A /* BBMetalChromaKeyBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalChromaKeyBlendFilter.metal; sourceTree = "<group>"; };
+		83A8522C26808DE4002E338A /* BBMetalZoomBlurFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalZoomBlurFilter.metal; sourceTree = "<group>"; };
+		83A8522D26808DE4002E338A /* BBMetalDivideBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalDivideBlendFilter.swift; sourceTree = "<group>"; };
+		83A8522E26808DE4002E338A /* BBMetalHueBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalHueBlendFilter.swift; sourceTree = "<group>"; };
+		83A8522F26808DE4002E338A /* BBMetalPinchFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalPinchFilter.swift; sourceTree = "<group>"; };
+		83A8523026808DE4002E338A /* BBMetalRGBAFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalRGBAFilter.swift; sourceTree = "<group>"; };
+		83A8523126808DE4002E338A /* BBMetalHazeFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalHazeFilter.metal; sourceTree = "<group>"; };
+		83A8523226808DE4002E338A /* BBMetalDissolveBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalDissolveBlendFilter.swift; sourceTree = "<group>"; };
+		83A8523326808DE4002E338A /* BBMetalColorInversionFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalColorInversionFilter.metal; sourceTree = "<group>"; };
+		83A8523426808DE4002E338A /* BBMetalThresholdSketchFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalThresholdSketchFilter.swift; sourceTree = "<group>"; };
+		83A8523526808DE4002E338A /* BBMetalSharpenFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalSharpenFilter.metal; sourceTree = "<group>"; };
+		83A8523626808DE4002E338A /* BBMetalVignetteFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalVignetteFilter.metal; sourceTree = "<group>"; };
+		83A8523726808DE4002E338A /* BBMetalVideoWriter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalVideoWriter.metal; sourceTree = "<group>"; };
+		83A8523826808DE4002E338A /* BBMetalColorBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalColorBlendFilter.metal; sourceTree = "<group>"; };
+		83A8523926808DE4002E338A /* BBMetalDifferenceBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalDifferenceBlendFilter.metal; sourceTree = "<group>"; };
+		83A8523A26808DE4002E338A /* BBMetalPixellateFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalPixellateFilter.metal; sourceTree = "<group>"; };
+		83A8523B26808DE4002E338A /* BBMetalSwirlFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalSwirlFilter.swift; sourceTree = "<group>"; };
+		83A8523C26808DE4002E338A /* BBMetalChromaKeyFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalChromaKeyFilter.swift; sourceTree = "<group>"; };
+		83A8523D26808DE4002E338A /* BBMetalLookupFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalLookupFilter.swift; sourceTree = "<group>"; };
+		83A8523E26808DE4002E338A /* BBMetalPolarPixellateFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalPolarPixellateFilter.metal; sourceTree = "<group>"; };
+		83A8523F26808DE4002E338A /* BBMetalBeautyFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalBeautyFilter.swift; sourceTree = "<group>"; };
+		83A8524026808DE4002E338A /* BBMetalMonochromeFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalMonochromeFilter.swift; sourceTree = "<group>"; };
+		83A8524126808DE4002E338A /* BBMetalRotateFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalRotateFilter.metal; sourceTree = "<group>"; };
+		83A8524226808DE4002E338A /* BBMetalLuminanceThresholdFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalLuminanceThresholdFilter.metal; sourceTree = "<group>"; };
+		83A8524326808DE4002E338A /* BBMetalSaturationFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalSaturationFilter.metal; sourceTree = "<group>"; };
+		83A8524426808DE4002E338A /* BBMetalRGBAErosionFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalRGBAErosionFilter.metal; sourceTree = "<group>"; };
+		83A8524526808DE4002E338A /* BBMetalCrosshatchFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalCrosshatchFilter.swift; sourceTree = "<group>"; };
+		83A8524626808DE4002E338A /* BBMetalSubtractBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalSubtractBlendFilter.swift; sourceTree = "<group>"; };
+		83A8524726808DE4002E338A /* BBMetalShaderTypes.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalShaderTypes.metal; sourceTree = "<group>"; };
+		83A8524826808DE4002E338A /* BBMetalCropFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalCropFilter.swift; sourceTree = "<group>"; };
+		83A8524926808DE4002E338A /* BBMetalUISource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalUISource.swift; sourceTree = "<group>"; };
+		83A8524A26808DE4002E338A /* BBMetalBilateralBlurFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalBilateralBlurFilter.swift; sourceTree = "<group>"; };
+		83A8524B26808DE4002E338A /* BBMetalPosterizeFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalPosterizeFilter.metal; sourceTree = "<group>"; };
+		83A8524C26808DE4002E338A /* BBMetalLuminanceFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalLuminanceFilter.swift; sourceTree = "<group>"; };
+		83A8524D26808DE4002E338A /* BBMetalVibranceFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalVibranceFilter.metal; sourceTree = "<group>"; };
+		83A8524E26808DE4002E338A /* BBMetalGammaFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalGammaFilter.swift; sourceTree = "<group>"; };
+		83A8524F26808DE4002E338A /* BBMetalResizeFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalResizeFilter.swift; sourceTree = "<group>"; };
+		83A8525026808DE4002E338A /* BBMetalDilationFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalDilationFilter.metal; sourceTree = "<group>"; };
+		83A8525126808DE4002E338A /* BBMetalLightenBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalLightenBlendFilter.metal; sourceTree = "<group>"; };
+		83A8525226808DE4002E338A /* BBMetalWhiteBalanceFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalWhiteBalanceFilter.metal; sourceTree = "<group>"; };
+		83A8525326808DE4002E338A /* BBMetalHighlightShadowTintFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalHighlightShadowTintFilter.swift; sourceTree = "<group>"; };
+		83A8525426808DE4002E338A /* BBMetalView.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalView.metal; sourceTree = "<group>"; };
+		83A8525526808DE4002E338A /* BBMetalMultiplyBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalMultiplyBlendFilter.swift; sourceTree = "<group>"; };
+		83A8525626808DE4002E338A /* BBMetalLinearBurnBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalLinearBurnBlendFilter.metal; sourceTree = "<group>"; };
+		83A8525726808DE4002E338A /* BBMetalTransformFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalTransformFilter.swift; sourceTree = "<group>"; };
+		83A8525826808DE4002E338A /* BBMetalMotionBlurFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalMotionBlurFilter.metal; sourceTree = "<group>"; };
+		83A8525926808DE4002E338A /* BBMetalAlphaBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalAlphaBlendFilter.metal; sourceTree = "<group>"; };
+		83A8525A26808DE4002E338A /* BBMetalOverlayBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalOverlayBlendFilter.swift; sourceTree = "<group>"; };
+		83A8525B26808DE4002E338A /* BBMetalRGBADilationFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalRGBADilationFilter.swift; sourceTree = "<group>"; };
+		83A8525C26808DE4002E338A /* BBMetalConvolution3x3Filter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalConvolution3x3Filter.metal; sourceTree = "<group>"; };
+		83A8525D26808DE4002E338A /* BBMetalSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalSize.swift; sourceTree = "<group>"; };
+		83A8525E26808DE4002E338A /* BBMetalEmbossFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalEmbossFilter.swift; sourceTree = "<group>"; };
+		83A8525F26808DE4002E338A /* BBMetalPolkaDotFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalPolkaDotFilter.metal; sourceTree = "<group>"; };
+		83A8526026808DE4002E338A /* BBMetalNormalBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalNormalBlendFilter.metal; sourceTree = "<group>"; };
+		83A8526126808DE4002E338A /* BBMetalBulgeFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalBulgeFilter.swift; sourceTree = "<group>"; };
+		83A8526226808DE4002E338A /* BBMetalContrastFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalContrastFilter.metal; sourceTree = "<group>"; };
+		83A8526326808DE4002E338A /* BBMetalVideoSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalVideoSource.swift; sourceTree = "<group>"; };
+		83A8526426808DE4002E338A /* BBMetalHalftoneFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalHalftoneFilter.metal; sourceTree = "<group>"; };
+		83A8526526808DE4002E338A /* BBMetalFlipFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalFlipFilter.metal; sourceTree = "<group>"; };
+		83A8526626808DE4002E338A /* BBMetalHardLightBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalHardLightBlendFilter.metal; sourceTree = "<group>"; };
+		83A8526726808DE4002E338A /* BBMetalBoxBlurFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalBoxBlurFilter.swift; sourceTree = "<group>"; };
+		83A8526826808DE4002E338A /* BBMetalExposureFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalExposureFilter.swift; sourceTree = "<group>"; };
+		83A8526926808DE4002E338A /* BBMetalLevelsFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalLevelsFilter.swift; sourceTree = "<group>"; };
+		83A8526A26808DE4002E338A /* BBMetalDarkenBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalDarkenBlendFilter.swift; sourceTree = "<group>"; };
+		83A8526B26808DE4002E338A /* BBMetalStaticImageSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalStaticImageSource.swift; sourceTree = "<group>"; };
+		83A8526C26808DE4002E338A /* BBMetalMaskBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalMaskBlendFilter.swift; sourceTree = "<group>"; };
+		83A8526D26808DE4002E338A /* BBMetalGaussianBlurFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalGaussianBlurFilter.swift; sourceTree = "<group>"; };
+		83A8526E26808DE4002E338A /* BBMetalSaturationBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalSaturationBlendFilter.swift; sourceTree = "<group>"; };
+		83A8526F26808DE4002E338A /* BBMetalTiltShiftFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalTiltShiftFilter.metal; sourceTree = "<group>"; };
+		83A8527026808DE4002E338A /* BBMetalSoftLightBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalSoftLightBlendFilter.metal; sourceTree = "<group>"; };
+		83A8527126808DE4002E338A /* BBMetalBaseFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalBaseFilter.swift; sourceTree = "<group>"; };
+		83A8527226808DE4002E338A /* BBMetalImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBMetalImage.h; sourceTree = "<group>"; };
+		83A8527326808DE4002E338A /* BBMetalSketchFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalSketchFilter.metal; sourceTree = "<group>"; };
+		83A8527426808DE4002E338A /* BBMetalHueFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalHueFilter.swift; sourceTree = "<group>"; };
+		83A8527526808DE4002E338A /* BBMetalAddBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalAddBlendFilter.swift; sourceTree = "<group>"; };
+		83A8527626808DE4002E338A /* BBMetalColorDodgeBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalColorDodgeBlendFilter.metal; sourceTree = "<group>"; };
+		83A8527726808DE4002E338A /* BBMetalBrightnessFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalBrightnessFilter.metal; sourceTree = "<group>"; };
+		83A8527826808DE4002E338A /* BBMetalExclusionBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalExclusionBlendFilter.metal; sourceTree = "<group>"; };
+		83A8527926808DE4002E338A /* BBMetalHighlightShadowFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalHighlightShadowFilter.swift; sourceTree = "<group>"; };
+		83A8527A26808DE4002E338A /* BBMetalMultipleImageSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalMultipleImageSource.swift; sourceTree = "<group>"; };
+		83A8527B26808DE4002E338A /* BBMetalZoomBlurFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalZoomBlurFilter.swift; sourceTree = "<group>"; };
+		83A8527C26808DE4002E338A /* BBMetalDivideBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalDivideBlendFilter.metal; sourceTree = "<group>"; };
+		83A8527D26808DE4002E338A /* BBMetalHueBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalHueBlendFilter.metal; sourceTree = "<group>"; };
+		83A8527E26808DE4002E338A /* BBMetalPinchFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalPinchFilter.metal; sourceTree = "<group>"; };
+		83A8527F26808DE4002E338A /* BBMetalErosionFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalErosionFilter.swift; sourceTree = "<group>"; };
+		83A8528026808DE4002E338A /* BBMetalFalseColorFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalFalseColorFilter.metal; sourceTree = "<group>"; };
+		83A8528126808DE4002E338A /* BBMetalToonFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalToonFilter.swift; sourceTree = "<group>"; };
+		83A8528226808DE4002E338A /* BBMetalMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalMatrix.swift; sourceTree = "<group>"; };
+		83A8528326808DE4002E338A /* BBMetalUnsharpMaskFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalUnsharpMaskFilter.metal; sourceTree = "<group>"; };
+		83A8528426808DE4002E338A /* BBMetalScreenBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalScreenBlendFilter.swift; sourceTree = "<group>"; };
+		83A8528526808DE4002E338A /* BBMetalPassThroughFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalPassThroughFilter.swift; sourceTree = "<group>"; };
+		83A8528626808DE4002E338A /* BBMetalImageSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalImageSource.swift; sourceTree = "<group>"; };
+		83A8528726808DE4002E338A /* BBMetalChromaKeyBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalChromaKeyBlendFilter.swift; sourceTree = "<group>"; };
+		83A8528826808DE4002E338A /* BBMetalColorBurnBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalColorBurnBlendFilter.swift; sourceTree = "<group>"; };
+		83A8528926808DE4002E338A /* BBMetalSourceOverBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalSourceOverBlendFilter.metal; sourceTree = "<group>"; };
+		83A8528A26808DE4002E338A /* BBMetalLuminosityBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalLuminosityBlendFilter.metal; sourceTree = "<group>"; };
+		83A8528B26808DE4002E338A /* BBMetalKuwaharaFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalKuwaharaFilter.swift; sourceTree = "<group>"; };
+		83A8528C26808DE4002E338A /* BBMetalColorMatrixFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalColorMatrixFilter.swift; sourceTree = "<group>"; };
+		83A8528D26808DE4002E338A /* BBMetalSobelEdgeDetectionFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalSobelEdgeDetectionFilter.swift; sourceTree = "<group>"; };
+		83A8528E26808DE4002E338A /* BBMetalCrosshatchFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalCrosshatchFilter.metal; sourceTree = "<group>"; };
+		83A8528F26808DE4002E338A /* BBMetalSubtractBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalSubtractBlendFilter.metal; sourceTree = "<group>"; };
+		83A8529026808DE4002E338A /* BBMetalCropFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalCropFilter.metal; sourceTree = "<group>"; };
+		83A8529126808DE4002E338A /* BBMetalBeautyFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalBeautyFilter.metal; sourceTree = "<group>"; };
+		83A8529226808DE4002E338A /* BBMetalMonochromeFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalMonochromeFilter.metal; sourceTree = "<group>"; };
+		83A8529326808DE4002E338A /* BBMetalRotateFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalRotateFilter.swift; sourceTree = "<group>"; };
+		83A8529426808DE4002E338A /* BBMetalLuminanceThresholdFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalLuminanceThresholdFilter.swift; sourceTree = "<group>"; };
+		83A8529526808DE4002E338A /* MultipleVideoSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleVideoSource.swift; sourceTree = "<group>"; };
+		83A8529626808DE4002E338A /* BBMetalSaturationFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalSaturationFilter.swift; sourceTree = "<group>"; };
+		83A8529726808DE4002E338A /* BBMetalRGBAErosionFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalRGBAErosionFilter.swift; sourceTree = "<group>"; };
+		83A8529826808DE4002E338A /* BBMetalVignetteFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalVignetteFilter.swift; sourceTree = "<group>"; };
+		83A8529926808DE4002E338A /* BBMetalVideoWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalVideoWriter.swift; sourceTree = "<group>"; };
+		83A8529A26808DE4002E338A /* BBMetalColorBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalColorBlendFilter.swift; sourceTree = "<group>"; };
+		83A8529B26808DE4002E338A /* BBMetalDifferenceBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalDifferenceBlendFilter.swift; sourceTree = "<group>"; };
+		83A8529C26808DE4002E338A /* BBMetalPixellateFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalPixellateFilter.swift; sourceTree = "<group>"; };
+		83A8529D26808DE4002E338A /* BBMetalSwirlFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalSwirlFilter.metal; sourceTree = "<group>"; };
+		83A8529E26808DE4002E338A /* BBMetalChromaKeyFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalChromaKeyFilter.metal; sourceTree = "<group>"; };
+		83A8529F26808DE4002E338A /* BBMetalImageConsumer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalImageConsumer.swift; sourceTree = "<group>"; };
+		83A852A026808DE4002E338A /* BBMetalLookupFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalLookupFilter.metal; sourceTree = "<group>"; };
+		83A852A126808DE4002E338A /* BBMetalPolarPixellateFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalPolarPixellateFilter.swift; sourceTree = "<group>"; };
+		83A852A226808DE4002E338A /* BBMetalRGBAFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalRGBAFilter.metal; sourceTree = "<group>"; };
+		83A852A326808DE4002E338A /* BBMetalHazeFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalHazeFilter.swift; sourceTree = "<group>"; };
+		83A852A426808DE4002E338A /* BBMetalDissolveBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalDissolveBlendFilter.metal; sourceTree = "<group>"; };
+		83A852A526808DE4002E338A /* BBMetalColorInversionFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalColorInversionFilter.swift; sourceTree = "<group>"; };
+		83A852A626808DE4002E338A /* BBMetalPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalPosition.swift; sourceTree = "<group>"; };
+		83A852A726808DE4002E338A /* BBMetalThresholdSketchFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalThresholdSketchFilter.metal; sourceTree = "<group>"; };
+		83A852A826808DE4002E338A /* BBMetalSharpenFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalSharpenFilter.swift; sourceTree = "<group>"; };
+		83A852A926808DE4002E338A /* BBMetalRGBADilationFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalRGBADilationFilter.metal; sourceTree = "<group>"; };
+		83A852AA26808DE4002E338A /* BBMetalColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalColor.swift; sourceTree = "<group>"; };
+		83A852AB26808DE5002E338A /* BBMetalConvolution3x3Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalConvolution3x3Filter.swift; sourceTree = "<group>"; };
+		83A852AC26808DE5002E338A /* BBMetalPolkaDotFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalPolkaDotFilter.swift; sourceTree = "<group>"; };
+		83A852AD26808DE5002E338A /* BBMetalNormalBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalNormalBlendFilter.swift; sourceTree = "<group>"; };
+		83A852AE26808DE5002E338A /* BBMetalBulgeFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalBulgeFilter.metal; sourceTree = "<group>"; };
+		83A852AF26808DE5002E338A /* BBMetalContrastFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalContrastFilter.swift; sourceTree = "<group>"; };
+		83A852B026808DE5002E338A /* BBMetalLinearBurnBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalLinearBurnBlendFilter.swift; sourceTree = "<group>"; };
+		83A852B126808DE5002E338A /* BBMetalTransformFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalTransformFilter.metal; sourceTree = "<group>"; };
+		83A852B226808DE5002E338A /* BBMetalMotionBlurFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalMotionBlurFilter.swift; sourceTree = "<group>"; };
+		83A852B326808DE5002E338A /* BBMetalAlphaBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalAlphaBlendFilter.swift; sourceTree = "<group>"; };
+		83A852B426808DE5002E338A /* BBMetalOverlayBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalOverlayBlendFilter.metal; sourceTree = "<group>"; };
+		83A852B526808DE5002E338A /* BBMetalDilationFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalDilationFilter.swift; sourceTree = "<group>"; };
+		83A852B626808DE5002E338A /* BBMetalLightenBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalLightenBlendFilter.swift; sourceTree = "<group>"; };
+		83A852B726808DE5002E338A /* BBMetalWhiteBalanceFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalWhiteBalanceFilter.swift; sourceTree = "<group>"; };
+		83A852B826808DE5002E338A /* BBMetalHighlightShadowTintFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalHighlightShadowTintFilter.metal; sourceTree = "<group>"; };
+		83A852B926808DE5002E338A /* BBMetalShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBMetalShaderTypes.h; sourceTree = "<group>"; };
+		83A852BA26808DE5002E338A /* BBMetalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalView.swift; sourceTree = "<group>"; };
+		83A852BB26808DE5002E338A /* BBMetalMultiplyBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalMultiplyBlendFilter.metal; sourceTree = "<group>"; };
+		83A852BC26808DE5002E338A /* BBMetalBilateralBlurFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalBilateralBlurFilter.metal; sourceTree = "<group>"; };
+		83A852BD26808DE5002E338A /* BBMetalPosterizeFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalPosterizeFilter.swift; sourceTree = "<group>"; };
+		83A852BE26808DE5002E338A /* BBMetalLuminanceFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalLuminanceFilter.metal; sourceTree = "<group>"; };
+		83A852BF26808DE5002E338A /* BBMetalVibranceFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalVibranceFilter.swift; sourceTree = "<group>"; };
+		83A852C026808DE5002E338A /* BBMetalGammaFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalGammaFilter.metal; sourceTree = "<group>"; };
+		83A852C126808DE5002E338A /* BBMetalResizeFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalResizeFilter.metal; sourceTree = "<group>"; };
+		83A852C226808DE5002E338A /* BBMetalAddBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalAddBlendFilter.metal; sourceTree = "<group>"; };
+		83A852C326808DE5002E338A /* BBMetalColorDodgeBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalColorDodgeBlendFilter.swift; sourceTree = "<group>"; };
+		83A852C426808DE5002E338A /* BBMetalBrightnessFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalBrightnessFilter.swift; sourceTree = "<group>"; };
+		83A852C526808DE5002E338A /* BBMetalBaseFilterGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalBaseFilterGroup.swift; sourceTree = "<group>"; };
+		83A852C626808DE5002E338A /* BBMetalExclusionBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalExclusionBlendFilter.swift; sourceTree = "<group>"; };
+		83A852C726808DE5002E338A /* BBMetalHighlightShadowFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalHighlightShadowFilter.metal; sourceTree = "<group>"; };
+		83A852C826808DE5002E338A /* BBMetalTiltShiftFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalTiltShiftFilter.swift; sourceTree = "<group>"; };
+		83A852C926808DE5002E338A /* BBMetalSoftLightBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalSoftLightBlendFilter.swift; sourceTree = "<group>"; };
+		83A852CA26808DE5002E338A /* BBMetalDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalDevice.swift; sourceTree = "<group>"; };
+		83A852CB26808DE5002E338A /* BBMetalSketchFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalSketchFilter.swift; sourceTree = "<group>"; };
+		83A852CD26808DE5002E338A /* BBMetalHueFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalHueFilter.metal; sourceTree = "<group>"; };
+		83A852CE26808DE5002E338A /* BBMetalExposureFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalExposureFilter.metal; sourceTree = "<group>"; };
+		83A852CF26808DE5002E338A /* BBMetalLevelsFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalLevelsFilter.metal; sourceTree = "<group>"; };
+		83A852D026808DE5002E338A /* BBMetalDarkenBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalDarkenBlendFilter.metal; sourceTree = "<group>"; };
+		83A852D126808DE5002E338A /* BBMetalCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalCamera.swift; sourceTree = "<group>"; };
+		83A852D226808DE5002E338A /* BBMetalMaskBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalMaskBlendFilter.metal; sourceTree = "<group>"; };
+		83A852D326808DE5002E338A /* BBMetalSaturationBlendFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BBMetalSaturationBlendFilter.metal; sourceTree = "<group>"; };
+		83A852D426808DE5002E338A /* BBMetalRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalRect.swift; sourceTree = "<group>"; };
+		83A852D526808DE5002E338A /* BBMetalHalftoneFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalHalftoneFilter.swift; sourceTree = "<group>"; };
+		83A852D626808DE5002E338A /* BBMetalFlipFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalFlipFilter.swift; sourceTree = "<group>"; };
+		83A852D726808DE5002E338A /* BBMetalHardLightBlendFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMetalHardLightBlendFilter.swift; sourceTree = "<group>"; };
+		83A8538E26808FA3002E338A /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		83A8539026809183002E338A /* FilterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterType.swift; sourceTree = "<group>"; };
+		83A85392268091BF002E338A /* CameraFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraFilterViewController.swift; sourceTree = "<group>"; };
+		83A853942680A8D1002E338A /* SubtitlesViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SubtitlesViewController.storyboard; sourceTree = "<group>"; };
+		83A853972680A900002E338A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		83A8539F2680B6C3002E338A /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		83A8E89B2645898A0080AEE5 /* Dictation To Text.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dictation To Text.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A8E89E2645898A0080AEE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83A8E8A02645898A0080AEE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		83A8E8A72645898B0080AEE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83A8E8AA2645898B0080AEE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83A8E8AC2645898B0080AEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83A8E8B626458AE50080AEE5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		83A8E8BB2645A71D0080AEE5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		83A8E8BE2645A76D0080AEE5 /* Gradientable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradientable.swift; sourceTree = "<group>"; };
+		83A8E8C22645A7FD0080AEE5 /* DesignableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
+		83A8E8C32645A7FD0080AEE5 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		83A8E8C42645A7FD0080AEE5 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		83A8E8C52645A7FD0080AEE5 /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
+		83A8E8C62645A7FD0080AEE5 /* Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
+		83A8E8C72645A7FD0080AEE5 /* SpringImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringImageView.swift; sourceTree = "<group>"; };
+		83A8E8C82645A7FD0080AEE5 /* DesignableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
+		83A8E8C92645A7FD0080AEE5 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		83A8E8CA2645A7FD0080AEE5 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		83A8E8CB2645A7FD0080AEE5 /* SpringButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringButton.swift; sourceTree = "<group>"; };
+		83A8E8CC2645A7FD0080AEE5 /* SpringTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextView.swift; sourceTree = "<group>"; };
+		83A8E8CD2645A7FD0080AEE5 /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		83A8E8CE2645A7FD0080AEE5 /* SpringView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringView.swift; sourceTree = "<group>"; };
+		83A8E8CF2645A7FD0080AEE5 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		83A8E8D02645A7FD0080AEE5 /* SpringTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextField.swift; sourceTree = "<group>"; };
+		83A8E8D12645A7FD0080AEE5 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		83A8E8D22645A7FD0080AEE5 /* DesignableTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTabBarController.swift; sourceTree = "<group>"; };
+		83A8E8D32645A7FD0080AEE5 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		83A8E8D42645A7FD0080AEE5 /* SpringLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringLabel.swift; sourceTree = "<group>"; };
+		83A8E8D52645A7FD0080AEE5 /* Spring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spring.h; sourceTree = "<group>"; };
+		83A8E8D62645A7FD0080AEE5 /* DesignableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
+		83A8E8D72645A7FD0080AEE5 /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
+		83A8E8D82645A7FD0080AEE5 /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
+		83AA6D8B267774BD00AFFB7F /* MLTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLTranslator.swift; sourceTree = "<group>"; };
+		83AA6D8D26777DD800AFFB7F /* TranslateToLanguageSelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateToLanguageSelectionController.swift; sourceTree = "<group>"; };
+		83ABA250264BE340001784B8 /* SubtitlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitlesViewController.swift; sourceTree = "<group>"; };
+		83ABA253264BE346001784B8 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		83AF2C22264D660E00DB9909 /* SpeechRecognitionLocaleSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionLocaleSelectionViewController.swift; sourceTree = "<group>"; };
+		83AF2C3E264D89E100DB9909 /* TapticEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapticEngine.swift; sourceTree = "<group>"; };
+		83BCCDD6264C797100AAAF9B /* SpeechRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognition.swift; sourceTree = "<group>"; };
+		83C81AA0264A86F300B3F8E2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		83DF75C9265EE719002C6746 /* AdCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdCommon.swift; sourceTree = "<group>"; };
+		83EAFE8B264C299A00FF9CAC /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		83EAFE99264C40BE00FF9CAC /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
+		83EAFE9D264C40DB00FF9CAC /* ThemeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThemeViewController.storyboard; sourceTree = "<group>"; };
+		99B8F2B47BB4C146D5715C90 /* Pods-Hearing Aid App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hearing Aid App.release.xcconfig"; path = "Target Support Files/Pods-Hearing Aid App/Pods-Hearing Aid App.release.xcconfig"; sourceTree = "<group>"; };
+		A53A19CEEC0407829843597C /* Pods_Dictation_To_Text.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dictation_To_Text.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3725E7BF26C28850BE525AC /* Pods-Dictation To Text.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dictation To Text.release.xcconfig"; path = "Target Support Files/Pods-Dictation To Text/Pods-Dictation To Text.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83A8E8982645898A0080AEE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A8E8B726458AE50080AEE5 /* StoreKit.framework in Frameworks */,
+				83ABAC2D265BB3C100A20D0E /* FacebookCore in Frameworks */,
+				71EB27DED1F78A3BF2169608 /* Pods_Dictation_To_Text.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		832FB970267CF5D300DF4177 /* Haptic */ = {
+			isa = PBXGroup;
+			children = (
+				832FB971267CF5E300DF4177 /* Implode.ahap */,
+				832FB972267CF5E300DF4177 /* Implode.wav */,
+				832FB973267CF5E300DF4177 /* Spawn.ahap */,
+				832FB974267CF5E300DF4177 /* Spawn.wav */,
+				83AF2C3E264D89E100DB9909 /* TapticEngine.swift */,
+				832FB979267CF5F000DF4177 /* CustomHaptic.swift */,
+			);
+			path = Haptic;
+			sourceTree = "<group>";
+		};
+		834EB73126482F9600026F01 /* Particle View */ = {
+			isa = PBXGroup;
+			children = (
+				834EB73826482FEC00026F01 /* Particle.sks */,
+				834EB73326482F9600026F01 /* ParticleView.swift */,
+			);
+			path = "Particle View";
+			sourceTree = "<group>";
+		};
+		8398B7A02660E9BF00E34DC8 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8398B7A12660E9D900E34DC8 /* OnboardingViewController.storyboard */,
+				8398B7A42660E9E000E34DC8 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		839DE06A26529ED000A65DD7 /* SubscriptionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				839DE06726529EAF00A65DD7 /* RevenuCat.swift */,
+				839DE06B26529ED000A65DD7 /* SubscriptionViewController.storyboard */,
+				839DE06C26529ED000A65DD7 /* SubscriptionViewController.swift */,
+			);
+			path = SubscriptionViewController;
+			sourceTree = "<group>";
+		};
+		839DE07026529F1B00A65DD7 /* Progress view */ = {
+			isa = PBXGroup;
+			children = (
+				839DE07126529F1B00A65DD7 /* IndicatorShape.swift */,
+				839DE07226529F1B00A65DD7 /* ActivityIndicatorView.swift */,
+			);
+			path = "Progress view";
+			sourceTree = "<group>";
+		};
+		839F7AAD2681E15200B09EE6 /* Subtitle Edit */ = {
+			isa = PBXGroup;
+			children = (
+				839F7AB22681E5F700B09EE6 /* AlignedCollectionViewFlowLayout.swift */,
+				839F7AAE2681E16600B09EE6 /* SubtitleCollectionViewController.swift */,
+				839F7AB02681E18200B09EE6 /* SubtitleCollectionViewController.storyboard */,
+			);
+			path = "Subtitle Edit";
+			sourceTree = "<group>";
+		};
+		839FAC22264EE846004910D9 /* Subtitle Settings */ = {
+			isa = PBXGroup;
+			children = (
+				839FAC1F264EE383004910D9 /* SubtitleSettingsViewController.swift */,
+				839FAC23264EE87D004910D9 /* SubtitleSettingsViewController.storyboard */,
+			);
+			path = "Subtitle Settings";
+			sourceTree = "<group>";
+		};
+		83A045712653DBC900713ED0 /* AlternateIcons */ = {
+			isa = PBXGroup;
+			children = (
+				83A045802653DBC900713ED0 /* AlternateIconsViewController.storyboard */,
+				83A045822653DBC900713ED0 /* AppIconRed */,
+				83A0458F2653DBC900713ED0 /* AppIconOrange */,
+				83A0459C2653DBC900713ED0 /* AppIconPurpule */,
+				83A045C32653DBC900713ED0 /* AppIconBlue */,
+				83A045D02653DBC900713ED0 /* AlternateIconsViewController.swift */,
+			);
+			path = AlternateIcons;
+			sourceTree = "<group>";
+		};
+		83A045822653DBC900713ED0 /* AppIconRed */ = {
+			isa = PBXGroup;
+			children = (
+				83A045832653DBC900713ED0 /* Red-Icon-180.png */,
+				83A045842653DBC900713ED0 /* Red-Icon-29.png */,
+				83A045852653DBC900713ED0 /* Red-Icon-152.png */,
+				83A045862653DBC900713ED0 /* Red-Icon-120.png */,
+				83A045872653DBC900713ED0 /* Red-Icon-58.png */,
+				83A045882653DBC900713ED0 /* Red-Icon-60.png */,
+				83A045892653DBC900713ED0 /* Red-Icon-76.png */,
+				83A0458A2653DBC900713ED0 /* Red-Icon-87.png */,
+				83A0458B2653DBC900713ED0 /* Red-Icon-40.png */,
+				83A0458C2653DBC900713ED0 /* Red-Icon-80.png */,
+				83A0458D2653DBC900713ED0 /* Red-Icon-20.png */,
+				83A0458E2653DBC900713ED0 /* Red-Icon-167.png */,
+			);
+			path = AppIconRed;
+			sourceTree = "<group>";
+		};
+		83A0458F2653DBC900713ED0 /* AppIconOrange */ = {
+			isa = PBXGroup;
+			children = (
+				83A045902653DBC900713ED0 /* Orange-Icon-180.png */,
+				83A045912653DBC900713ED0 /* Orange-Icon-20.png */,
+				83A045922653DBC900713ED0 /* Orange-Icon-152.png */,
+				83A045932653DBC900713ED0 /* Orange-Icon-120.png */,
+				83A045942653DBC900713ED0 /* Orange-Icon-80.png */,
+				83A045952653DBC900713ED0 /* Orange-Icon-40.png */,
+				83A045962653DBC900713ED0 /* Orange-Icon-87.png */,
+				83A045972653DBC900713ED0 /* Orange-Icon-76.png */,
+				83A045982653DBC900713ED0 /* Orange-Icon-60.png */,
+				83A045992653DBC900713ED0 /* Orange-Icon-58.png */,
+				83A0459A2653DBC900713ED0 /* Orange-Icon-29.png */,
+				83A0459B2653DBC900713ED0 /* Orange-Icon-167.png */,
+			);
+			path = AppIconOrange;
+			sourceTree = "<group>";
+		};
+		83A0459C2653DBC900713ED0 /* AppIconPurpule */ = {
+			isa = PBXGroup;
+			children = (
+				83A046312653E13600713ED0 /* Purpule-Icon-20.png */,
+				83A046332653E13600713ED0 /* Purpule-Icon-29.png */,
+				83A046362653E13600713ED0 /* Purpule-Icon-40.png */,
+				83A046352653E13600713ED0 /* Purpule-Icon-58.png */,
+				83A046342653E13600713ED0 /* Purpule-Icon-60.png */,
+				83A046372653E13600713ED0 /* Purpule-Icon-76.png */,
+				83A046392653E13700713ED0 /* Purpule-Icon-80.png */,
+				83A0462F2653E13600713ED0 /* Purpule-Icon-87.png */,
+				83A046382653E13600713ED0 /* Purpule-Icon-120.png */,
+				83A0463A2653E13700713ED0 /* Purpule-Icon-152.png */,
+				83A046302653E13600713ED0 /* Purpule-Icon-167.png */,
+				83A046322653E13600713ED0 /* Purpule-Icon-180.png */,
+			);
+			path = AppIconPurpule;
+			sourceTree = "<group>";
+		};
+		83A045C32653DBC900713ED0 /* AppIconBlue */ = {
+			isa = PBXGroup;
+			children = (
+				83A045C42653DBC900713ED0 /* Blue-Icon-87.png */,
+				83A045C52653DBC900713ED0 /* Blue-Icon-167.png */,
+				83A045C62653DBC900713ED0 /* Blue-Icon-80.png */,
+				83A045C72653DBC900713ED0 /* Blue-Icon-40.png */,
+				83A045C82653DBC900713ED0 /* Blue-Icon-20.png */,
+				83A045C92653DBC900713ED0 /* Blue-Icon-29.png */,
+				83A045CA2653DBC900713ED0 /* Blue-Icon-120.png */,
+				83A045CB2653DBC900713ED0 /* Blue-Icon-58.png */,
+				83A045CC2653DBC900713ED0 /* Blue-Icon-152.png */,
+				83A045CD2653DBC900713ED0 /* Blue-Icon-76.png */,
+				83A045CE2653DBC900713ED0 /* Blue-Icon-60.png */,
+				83A045CF2653DBC900713ED0 /* Blue-Icon-180.png */,
+			);
+			path = AppIconBlue;
+			sourceTree = "<group>";
+		};
+		83A8521F26808DE4002E338A /* BBMetalImage */ = {
+			isa = PBXGroup;
+			children = (
+				83A8539026809183002E338A /* FilterType.swift */,
+				83A8522026808DE4002E338A /* BBMetalColorMatrixFilter.metal */,
+				83A8522126808DE4002E338A /* BBMetalSobelEdgeDetectionFilter.metal */,
+				83A8522226808DE4002E338A /* BBMetalColorBurnBlendFilter.metal */,
+				83A8522326808DE4002E338A /* BBMetalSourceOverBlendFilter.swift */,
+				83A8522426808DE4002E338A /* BBMetalLuminosityBlendFilter.swift */,
+				83A8522526808DE4002E338A /* BBMetalKuwaharaFilter.metal */,
+				83A8522626808DE4002E338A /* BBMetalErosionFilter.metal */,
+				83A8522726808DE4002E338A /* BBMetalFalseColorFilter.swift */,
+				83A8522826808DE4002E338A /* BBMetalToonFilter.metal */,
+				83A8522926808DE4002E338A /* BBMetalUnsharpMaskFilter.swift */,
+				83A8522A26808DE4002E338A /* BBMetalScreenBlendFilter.metal */,
+				83A8522B26808DE4002E338A /* BBMetalChromaKeyBlendFilter.metal */,
+				83A8522C26808DE4002E338A /* BBMetalZoomBlurFilter.metal */,
+				83A8522D26808DE4002E338A /* BBMetalDivideBlendFilter.swift */,
+				83A8522E26808DE4002E338A /* BBMetalHueBlendFilter.swift */,
+				83A8522F26808DE4002E338A /* BBMetalPinchFilter.swift */,
+				83A8523026808DE4002E338A /* BBMetalRGBAFilter.swift */,
+				83A8523126808DE4002E338A /* BBMetalHazeFilter.metal */,
+				83A8523226808DE4002E338A /* BBMetalDissolveBlendFilter.swift */,
+				83A8523326808DE4002E338A /* BBMetalColorInversionFilter.metal */,
+				83A8523426808DE4002E338A /* BBMetalThresholdSketchFilter.swift */,
+				83A8523526808DE4002E338A /* BBMetalSharpenFilter.metal */,
+				83A8523626808DE4002E338A /* BBMetalVignetteFilter.metal */,
+				83A8523726808DE4002E338A /* BBMetalVideoWriter.metal */,
+				83A8523826808DE4002E338A /* BBMetalColorBlendFilter.metal */,
+				83A8523926808DE4002E338A /* BBMetalDifferenceBlendFilter.metal */,
+				83A8523A26808DE4002E338A /* BBMetalPixellateFilter.metal */,
+				83A8523B26808DE4002E338A /* BBMetalSwirlFilter.swift */,
+				83A8523C26808DE4002E338A /* BBMetalChromaKeyFilter.swift */,
+				83A8523D26808DE4002E338A /* BBMetalLookupFilter.swift */,
+				83A8523E26808DE4002E338A /* BBMetalPolarPixellateFilter.metal */,
+				83A8523F26808DE4002E338A /* BBMetalBeautyFilter.swift */,
+				83A8524026808DE4002E338A /* BBMetalMonochromeFilter.swift */,
+				83A8524126808DE4002E338A /* BBMetalRotateFilter.metal */,
+				83A8524226808DE4002E338A /* BBMetalLuminanceThresholdFilter.metal */,
+				83A8524326808DE4002E338A /* BBMetalSaturationFilter.metal */,
+				83A8524426808DE4002E338A /* BBMetalRGBAErosionFilter.metal */,
+				83A8524526808DE4002E338A /* BBMetalCrosshatchFilter.swift */,
+				83A8524626808DE4002E338A /* BBMetalSubtractBlendFilter.swift */,
+				83A8524726808DE4002E338A /* BBMetalShaderTypes.metal */,
+				83A8524826808DE4002E338A /* BBMetalCropFilter.swift */,
+				83A8524926808DE4002E338A /* BBMetalUISource.swift */,
+				83A8524A26808DE4002E338A /* BBMetalBilateralBlurFilter.swift */,
+				83A8524B26808DE4002E338A /* BBMetalPosterizeFilter.metal */,
+				83A8524C26808DE4002E338A /* BBMetalLuminanceFilter.swift */,
+				83A8524D26808DE4002E338A /* BBMetalVibranceFilter.metal */,
+				83A8524E26808DE4002E338A /* BBMetalGammaFilter.swift */,
+				83A8524F26808DE4002E338A /* BBMetalResizeFilter.swift */,
+				83A8525026808DE4002E338A /* BBMetalDilationFilter.metal */,
+				83A8525126808DE4002E338A /* BBMetalLightenBlendFilter.metal */,
+				83A8525226808DE4002E338A /* BBMetalWhiteBalanceFilter.metal */,
+				83A8525326808DE4002E338A /* BBMetalHighlightShadowTintFilter.swift */,
+				83A8525426808DE4002E338A /* BBMetalView.metal */,
+				83A8525526808DE4002E338A /* BBMetalMultiplyBlendFilter.swift */,
+				83A8525626808DE4002E338A /* BBMetalLinearBurnBlendFilter.metal */,
+				83A8525726808DE4002E338A /* BBMetalTransformFilter.swift */,
+				83A8525826808DE4002E338A /* BBMetalMotionBlurFilter.metal */,
+				83A8525926808DE4002E338A /* BBMetalAlphaBlendFilter.metal */,
+				83A8525A26808DE4002E338A /* BBMetalOverlayBlendFilter.swift */,
+				83A8525B26808DE4002E338A /* BBMetalRGBADilationFilter.swift */,
+				83A8525C26808DE4002E338A /* BBMetalConvolution3x3Filter.metal */,
+				83A8525D26808DE4002E338A /* BBMetalSize.swift */,
+				83A8525E26808DE4002E338A /* BBMetalEmbossFilter.swift */,
+				83A8525F26808DE4002E338A /* BBMetalPolkaDotFilter.metal */,
+				83A8526026808DE4002E338A /* BBMetalNormalBlendFilter.metal */,
+				83A8526126808DE4002E338A /* BBMetalBulgeFilter.swift */,
+				83A8526226808DE4002E338A /* BBMetalContrastFilter.metal */,
+				83A8526326808DE4002E338A /* BBMetalVideoSource.swift */,
+				83A8526426808DE4002E338A /* BBMetalHalftoneFilter.metal */,
+				83A8526526808DE4002E338A /* BBMetalFlipFilter.metal */,
+				83A8526626808DE4002E338A /* BBMetalHardLightBlendFilter.metal */,
+				83A8526726808DE4002E338A /* BBMetalBoxBlurFilter.swift */,
+				83A8526826808DE4002E338A /* BBMetalExposureFilter.swift */,
+				83A8526926808DE4002E338A /* BBMetalLevelsFilter.swift */,
+				83A8526A26808DE4002E338A /* BBMetalDarkenBlendFilter.swift */,
+				83A8526B26808DE4002E338A /* BBMetalStaticImageSource.swift */,
+				83A8526C26808DE4002E338A /* BBMetalMaskBlendFilter.swift */,
+				83A8526D26808DE4002E338A /* BBMetalGaussianBlurFilter.swift */,
+				83A8526E26808DE4002E338A /* BBMetalSaturationBlendFilter.swift */,
+				83A8526F26808DE4002E338A /* BBMetalTiltShiftFilter.metal */,
+				83A8527026808DE4002E338A /* BBMetalSoftLightBlendFilter.metal */,
+				83A8527126808DE4002E338A /* BBMetalBaseFilter.swift */,
+				83A8527226808DE4002E338A /* BBMetalImage.h */,
+				83A8527326808DE4002E338A /* BBMetalSketchFilter.metal */,
+				83A8527426808DE4002E338A /* BBMetalHueFilter.swift */,
+				83A8527526808DE4002E338A /* BBMetalAddBlendFilter.swift */,
+				83A8527626808DE4002E338A /* BBMetalColorDodgeBlendFilter.metal */,
+				83A8527726808DE4002E338A /* BBMetalBrightnessFilter.metal */,
+				83A8527826808DE4002E338A /* BBMetalExclusionBlendFilter.metal */,
+				83A8527926808DE4002E338A /* BBMetalHighlightShadowFilter.swift */,
+				83A8527A26808DE4002E338A /* BBMetalMultipleImageSource.swift */,
+				83A8527B26808DE4002E338A /* BBMetalZoomBlurFilter.swift */,
+				83A8527C26808DE4002E338A /* BBMetalDivideBlendFilter.metal */,
+				83A8527D26808DE4002E338A /* BBMetalHueBlendFilter.metal */,
+				83A8527E26808DE4002E338A /* BBMetalPinchFilter.metal */,
+				83A8527F26808DE4002E338A /* BBMetalErosionFilter.swift */,
+				83A8528026808DE4002E338A /* BBMetalFalseColorFilter.metal */,
+				83A8528126808DE4002E338A /* BBMetalToonFilter.swift */,
+				83A8528226808DE4002E338A /* BBMetalMatrix.swift */,
+				83A8528326808DE4002E338A /* BBMetalUnsharpMaskFilter.metal */,
+				83A8528426808DE4002E338A /* BBMetalScreenBlendFilter.swift */,
+				83A8528526808DE4002E338A /* BBMetalPassThroughFilter.swift */,
+				83A8528626808DE4002E338A /* BBMetalImageSource.swift */,
+				83A8528726808DE4002E338A /* BBMetalChromaKeyBlendFilter.swift */,
+				83A8528826808DE4002E338A /* BBMetalColorBurnBlendFilter.swift */,
+				83A8528926808DE4002E338A /* BBMetalSourceOverBlendFilter.metal */,
+				83A8528A26808DE4002E338A /* BBMetalLuminosityBlendFilter.metal */,
+				83A8528B26808DE4002E338A /* BBMetalKuwaharaFilter.swift */,
+				83A8528C26808DE4002E338A /* BBMetalColorMatrixFilter.swift */,
+				83A8528D26808DE4002E338A /* BBMetalSobelEdgeDetectionFilter.swift */,
+				83A8528E26808DE4002E338A /* BBMetalCrosshatchFilter.metal */,
+				83A8528F26808DE4002E338A /* BBMetalSubtractBlendFilter.metal */,
+				83A8529026808DE4002E338A /* BBMetalCropFilter.metal */,
+				83A8529126808DE4002E338A /* BBMetalBeautyFilter.metal */,
+				83A8529226808DE4002E338A /* BBMetalMonochromeFilter.metal */,
+				83A8529326808DE4002E338A /* BBMetalRotateFilter.swift */,
+				83A8529426808DE4002E338A /* BBMetalLuminanceThresholdFilter.swift */,
+				83A8529526808DE4002E338A /* MultipleVideoSource.swift */,
+				83A8529626808DE4002E338A /* BBMetalSaturationFilter.swift */,
+				83A8529726808DE4002E338A /* BBMetalRGBAErosionFilter.swift */,
+				83A8529826808DE4002E338A /* BBMetalVignetteFilter.swift */,
+				83A8529926808DE4002E338A /* BBMetalVideoWriter.swift */,
+				83A8529A26808DE4002E338A /* BBMetalColorBlendFilter.swift */,
+				83A8529B26808DE4002E338A /* BBMetalDifferenceBlendFilter.swift */,
+				83A8529C26808DE4002E338A /* BBMetalPixellateFilter.swift */,
+				83A8529D26808DE4002E338A /* BBMetalSwirlFilter.metal */,
+				83A8529E26808DE4002E338A /* BBMetalChromaKeyFilter.metal */,
+				83A8529F26808DE4002E338A /* BBMetalImageConsumer.swift */,
+				83A852A026808DE4002E338A /* BBMetalLookupFilter.metal */,
+				83A852A126808DE4002E338A /* BBMetalPolarPixellateFilter.swift */,
+				83A852A226808DE4002E338A /* BBMetalRGBAFilter.metal */,
+				83A852A326808DE4002E338A /* BBMetalHazeFilter.swift */,
+				83A852A426808DE4002E338A /* BBMetalDissolveBlendFilter.metal */,
+				83A852A526808DE4002E338A /* BBMetalColorInversionFilter.swift */,
+				83A852A626808DE4002E338A /* BBMetalPosition.swift */,
+				83A852A726808DE4002E338A /* BBMetalThresholdSketchFilter.metal */,
+				83A852A826808DE4002E338A /* BBMetalSharpenFilter.swift */,
+				83A852A926808DE4002E338A /* BBMetalRGBADilationFilter.metal */,
+				83A852AA26808DE4002E338A /* BBMetalColor.swift */,
+				83A852AB26808DE5002E338A /* BBMetalConvolution3x3Filter.swift */,
+				83A852AC26808DE5002E338A /* BBMetalPolkaDotFilter.swift */,
+				83A852AD26808DE5002E338A /* BBMetalNormalBlendFilter.swift */,
+				83A852AE26808DE5002E338A /* BBMetalBulgeFilter.metal */,
+				83A852AF26808DE5002E338A /* BBMetalContrastFilter.swift */,
+				83A852B026808DE5002E338A /* BBMetalLinearBurnBlendFilter.swift */,
+				83A852B126808DE5002E338A /* BBMetalTransformFilter.metal */,
+				83A852B226808DE5002E338A /* BBMetalMotionBlurFilter.swift */,
+				83A852B326808DE5002E338A /* BBMetalAlphaBlendFilter.swift */,
+				83A852B426808DE5002E338A /* BBMetalOverlayBlendFilter.metal */,
+				83A852B526808DE5002E338A /* BBMetalDilationFilter.swift */,
+				83A852B626808DE5002E338A /* BBMetalLightenBlendFilter.swift */,
+				83A852B726808DE5002E338A /* BBMetalWhiteBalanceFilter.swift */,
+				83A852B826808DE5002E338A /* BBMetalHighlightShadowTintFilter.metal */,
+				83A852B926808DE5002E338A /* BBMetalShaderTypes.h */,
+				83A852BA26808DE5002E338A /* BBMetalView.swift */,
+				83A852BB26808DE5002E338A /* BBMetalMultiplyBlendFilter.metal */,
+				83A852BC26808DE5002E338A /* BBMetalBilateralBlurFilter.metal */,
+				83A852BD26808DE5002E338A /* BBMetalPosterizeFilter.swift */,
+				83A852BE26808DE5002E338A /* BBMetalLuminanceFilter.metal */,
+				83A852BF26808DE5002E338A /* BBMetalVibranceFilter.swift */,
+				83A852C026808DE5002E338A /* BBMetalGammaFilter.metal */,
+				83A852C126808DE5002E338A /* BBMetalResizeFilter.metal */,
+				83A852C226808DE5002E338A /* BBMetalAddBlendFilter.metal */,
+				83A852C326808DE5002E338A /* BBMetalColorDodgeBlendFilter.swift */,
+				83A852C426808DE5002E338A /* BBMetalBrightnessFilter.swift */,
+				83A852C526808DE5002E338A /* BBMetalBaseFilterGroup.swift */,
+				83A852C626808DE5002E338A /* BBMetalExclusionBlendFilter.swift */,
+				83A852C726808DE5002E338A /* BBMetalHighlightShadowFilter.metal */,
+				83A852C826808DE5002E338A /* BBMetalTiltShiftFilter.swift */,
+				83A852C926808DE5002E338A /* BBMetalSoftLightBlendFilter.swift */,
+				83A852CA26808DE5002E338A /* BBMetalDevice.swift */,
+				83A852CB26808DE5002E338A /* BBMetalSketchFilter.swift */,
+				83A852CD26808DE5002E338A /* BBMetalHueFilter.metal */,
+				83A852CE26808DE5002E338A /* BBMetalExposureFilter.metal */,
+				83A852CF26808DE5002E338A /* BBMetalLevelsFilter.metal */,
+				83A852D026808DE5002E338A /* BBMetalDarkenBlendFilter.metal */,
+				83A852D126808DE5002E338A /* BBMetalCamera.swift */,
+				83A852D226808DE5002E338A /* BBMetalMaskBlendFilter.metal */,
+				83A852D326808DE5002E338A /* BBMetalSaturationBlendFilter.metal */,
+				83A852D426808DE5002E338A /* BBMetalRect.swift */,
+				83A852D526808DE5002E338A /* BBMetalHalftoneFilter.swift */,
+				83A852D626808DE5002E338A /* BBMetalFlipFilter.swift */,
+				83A852D726808DE5002E338A /* BBMetalHardLightBlendFilter.swift */,
+			);
+			path = BBMetalImage;
+			sourceTree = "<group>";
+		};
+		83A853962680A8EC002E338A /* Main Screen */ = {
+			isa = PBXGroup;
+			children = (
+				83ABA253264BE346001784B8 /* Main.storyboard */,
+				83A853972680A900002E338A /* MainViewController.swift */,
+			);
+			path = "Main Screen";
+			sourceTree = "<group>";
+		};
+		83A853992680B14D002E338A /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				83A8538E26808FA3002E338A /* CameraViewController.swift */,
+				83A85392268091BF002E338A /* CameraFilterViewController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		83A8539C2680B5BD002E338A /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				83A8539F2680B6C3002E338A /* VideoPlayerViewController.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		83A8E8922645898A0080AEE5 = {
+			isa = PBXGroup;
+			children = (
+				83A8E89D2645898A0080AEE5 /* Dictation To Text */,
+				83A8E89C2645898A0080AEE5 /* Products */,
+				83A8E8B526458AE50080AEE5 /* Frameworks */,
+				9094A7AF71082B3103E99273 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		83A8E89C2645898A0080AEE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83A8E89B2645898A0080AEE5 /* Dictation To Text.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83A8E89D2645898A0080AEE5 /* Dictation To Text */ = {
+			isa = PBXGroup;
+			children = (
+				83EAFE89264C263700FF9CAC /* Common */,
+				83A8521F26808DE4002E338A /* BBMetalImage */,
+				83A8E89E2645898A0080AEE5 /* AppDelegate.swift */,
+				832FB970267CF5D300DF4177 /* Haptic */,
+				83A8E8A02645898A0080AEE5 /* SceneDelegate.swift */,
+				839DE06A26529ED000A65DD7 /* SubscriptionViewController */,
+				83EAFE98264C409700FF9CAC /* Theme */,
+				8398B7A02660E9BF00E34DC8 /* Onboarding */,
+				83A8539C2680B5BD002E338A /* Video */,
+				83A853992680B14D002E338A /* Camera */,
+				83A853962680A8EC002E338A /* Main Screen */,
+				83ABA24F264BE316001784B8 /* Subtitles */,
+				83A8E8A72645898B0080AEE5 /* Assets.xcassets */,
+				83A8E8A92645898B0080AEE5 /* LaunchScreen.storyboard */,
+				83A045712653DBC900713ED0 /* AlternateIcons */,
+				83A8E8AC2645898B0080AEE5 /* Info.plist */,
+				832FB96E267CD17500DF4177 /* GoogleService-Info.plist */,
+			);
+			path = "Dictation To Text";
+			sourceTree = "<group>";
+		};
+		83A8E8B526458AE50080AEE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83A8E8B626458AE50080AEE5 /* StoreKit.framework */,
+				A53A19CEEC0407829843597C /* Pods_Dictation_To_Text.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83A8E8C12645A7FD0080AEE5 /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				83A8E8C22645A7FD0080AEE5 /* DesignableImageView.swift */,
+				83A8E8C32645A7FD0080AEE5 /* KeyboardLayoutConstraint.swift */,
+				83A8E8C42645A7FD0080AEE5 /* TransitionManager.swift */,
+				83A8E8C52645A7FD0080AEE5 /* TransitionZoom.swift */,
+				83A8E8C62645A7FD0080AEE5 /* Spring.swift */,
+				83A8E8C72645A7FD0080AEE5 /* SpringImageView.swift */,
+				83A8E8C82645A7FD0080AEE5 /* DesignableLabel.swift */,
+				83A8E8C92645A7FD0080AEE5 /* BlurView.swift */,
+				83A8E8CA2645A7FD0080AEE5 /* DesignableTextField.swift */,
+				83A8E8CB2645A7FD0080AEE5 /* SpringButton.swift */,
+				83A8E8CC2645A7FD0080AEE5 /* SpringTextView.swift */,
+				83A8E8CD2645A7FD0080AEE5 /* Misc.swift */,
+				83A8E8CE2645A7FD0080AEE5 /* SpringView.swift */,
+				83A8E8CF2645A7FD0080AEE5 /* DesignableButton.swift */,
+				83A8E8D02645A7FD0080AEE5 /* SpringTextField.swift */,
+				83A8E8D12645A7FD0080AEE5 /* DesignableView.swift */,
+				83A8E8D22645A7FD0080AEE5 /* DesignableTabBarController.swift */,
+				83A8E8D32645A7FD0080AEE5 /* LoadingView.xib */,
+				83A8E8D42645A7FD0080AEE5 /* SpringLabel.swift */,
+				83A8E8D52645A7FD0080AEE5 /* Spring.h */,
+				83A8E8D62645A7FD0080AEE5 /* DesignableTextView.swift */,
+				83A8E8D72645A7FD0080AEE5 /* AutoTextView.swift */,
+				83A8E8D82645A7FD0080AEE5 /* SpringAnimation.swift */,
+			);
+			path = Spring;
+			sourceTree = "<group>";
+		};
+		83AA6D892677747800AFFB7F /* Speech Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				83BCCDD6264C797100AAAF9B /* SpeechRecognition.swift */,
+				83AF2C22264D660E00DB9909 /* SpeechRecognitionLocaleSelectionViewController.swift */,
+			);
+			path = "Speech Recognition";
+			sourceTree = "<group>";
+		};
+		83AA6D8A2677749300AFFB7F /* Google Translator */ = {
+			isa = PBXGroup;
+			children = (
+				83AA6D8B267774BD00AFFB7F /* MLTranslator.swift */,
+				83AA6D8D26777DD800AFFB7F /* TranslateToLanguageSelectionController.swift */,
+			);
+			path = "Google Translator";
+			sourceTree = "<group>";
+		};
+		83ABA24F264BE316001784B8 /* Subtitles */ = {
+			isa = PBXGroup;
+			children = (
+				83ABA250264BE340001784B8 /* SubtitlesViewController.swift */,
+				834E51C3267F6FDE00BEC04D /* TextView.swift */,
+				83A853942680A8D1002E338A /* SubtitlesViewController.storyboard */,
+				839F7AAD2681E15200B09EE6 /* Subtitle Edit */,
+				83AA6D8A2677749300AFFB7F /* Google Translator */,
+				83AA6D892677747800AFFB7F /* Speech Recognition */,
+				839FAC22264EE846004910D9 /* Subtitle Settings */,
+			);
+			path = Subtitles;
+			sourceTree = "<group>";
+		};
+		83EAFE89264C263700FF9CAC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				83DF75C9265EE719002C6746 /* AdCommon.swift */,
+				832FB96C267C9D3200DF4177 /* ButtonView.swift */,
+				83A045692653C5C400713ED0 /* AppRating.swift */,
+				839DE07026529F1B00A65DD7 /* Progress view */,
+				839DE0762652A0B600A65DD7 /* User.swift */,
+				83A8E8BB2645A71D0080AEE5 /* BaseViewController.swift */,
+				834EB73126482F9600026F01 /* Particle View */,
+				83A8E8C12645A7FD0080AEE5 /* Spring */,
+				83C81AA0264A86F300B3F8E2 /* Extensions.swift */,
+				83A8E8BE2645A76D0080AEE5 /* Gradientable.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		83EAFE98264C409700FF9CAC /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				83EAFE8B264C299A00FF9CAC /* Theme.swift */,
+				83EAFE99264C40BE00FF9CAC /* ThemeViewController.swift */,
+				83EAFE9D264C40DB00FF9CAC /* ThemeViewController.storyboard */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		9094A7AF71082B3103E99273 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7059F373A83F5EFC1E2CB63B /* Pods-Hearing Aid App.debug.xcconfig */,
+				99B8F2B47BB4C146D5715C90 /* Pods-Hearing Aid App.release.xcconfig */,
+				555E270E753D9B0BB1C3AB86 /* Pods-Notes.debug.xcconfig */,
+				333A0A247F3F66072ED401FC /* Pods-Notes.release.xcconfig */,
+				3CBA19D5EAACAA0C7E07F48B /* Pods-Dictation To Text.debug.xcconfig */,
+				C3725E7BF26C28850BE525AC /* Pods-Dictation To Text.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83A8E89A2645898A0080AEE5 /* Dictation To Text */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83A8E8AF2645898B0080AEE5 /* Build configuration list for PBXNativeTarget "Dictation To Text" */;
+			buildPhases = (
+				60FA2AF92BDD102C759CF63C /* [CP] Check Pods Manifest.lock */,
+				83A8E8972645898A0080AEE5 /* Sources */,
+				83A8E8982645898A0080AEE5 /* Frameworks */,
+				83A8E8992645898A0080AEE5 /* Resources */,
+				4372B3A6FC79029510B34868 /* [CP] Embed Pods Frameworks */,
+				58E5628010543A0F95B4CC47 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dictation To Text";
+			packageProductDependencies = (
+				83ABAC2C265BB3C100A20D0E /* FacebookCore */,
+			);
+			productName = "Hearing Aid App";
+			productReference = 83A8E89B2645898A0080AEE5 /* Dictation To Text.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83A8E8932645898A0080AEE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					83A8E89A2645898A0080AEE5 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 83A8E8962645898A0080AEE5 /* Build configuration list for PBXProject "Dictation To Text" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83A8E8922645898A0080AEE5;
+			packageReferences = (
+				83ABAC2B265BB3C100A20D0E /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
+			productRefGroup = 83A8E89C2645898A0080AEE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83A8E89A2645898A0080AEE5 /* Dictation To Text */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83A8E8992645898A0080AEE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A046452653E13700713ED0 /* Purpule-Icon-80.png in Resources */,
+				83A045E82653DBC900713ED0 /* Red-Icon-40.png in Resources */,
+				839FAC24264EE87D004910D9 /* SubtitleSettingsViewController.storyboard in Resources */,
+				83A046422653E13700713ED0 /* Purpule-Icon-40.png in Resources */,
+				83A0461D2653DBCA00713ED0 /* Blue-Icon-167.png in Resources */,
+				83A046272653DBCA00713ED0 /* Blue-Icon-180.png in Resources */,
+				83A046242653DBCA00713ED0 /* Blue-Icon-152.png in Resources */,
+				83A045E32653DBC900713ED0 /* Red-Icon-120.png in Resources */,
+				83A045DE2653DBC900713ED0 /* AlternateIconsViewController.storyboard in Resources */,
+				83A045E92653DBC900713ED0 /* Red-Icon-80.png in Resources */,
+				83A045E12653DBC900713ED0 /* Red-Icon-29.png in Resources */,
+				83A045E52653DBC900713ED0 /* Red-Icon-60.png in Resources */,
+				83A046202653DBCA00713ED0 /* Blue-Icon-20.png in Resources */,
+				832FB978267CF5E300DF4177 /* Spawn.wav in Resources */,
+				83A045F42653DBC900713ED0 /* Orange-Icon-60.png in Resources */,
+				83A046442653E13700713ED0 /* Purpule-Icon-120.png in Resources */,
+				83A045EA2653DBC900713ED0 /* Red-Icon-20.png in Resources */,
+				832FB96F267CD17500DF4177 /* GoogleService-Info.plist in Resources */,
+				83A045EB2653DBC900713ED0 /* Red-Icon-167.png in Resources */,
+				83A8E8AB2645898B0080AEE5 /* LaunchScreen.storyboard in Resources */,
+				83A045F72653DBC900713ED0 /* Orange-Icon-167.png in Resources */,
+				83A0461C2653DBCA00713ED0 /* Blue-Icon-87.png in Resources */,
+				83A8E8EA2645A7FD0080AEE5 /* LoadingView.xib in Resources */,
+				83A046252653DBCA00713ED0 /* Blue-Icon-76.png in Resources */,
+				83A045E42653DBC900713ED0 /* Red-Icon-58.png in Resources */,
+				83A045F32653DBC900713ED0 /* Orange-Icon-76.png in Resources */,
+				83A045EF2653DBC900713ED0 /* Orange-Icon-120.png in Resources */,
+				832FB976267CF5E300DF4177 /* Implode.wav in Resources */,
+				83A045F52653DBC900713ED0 /* Orange-Icon-58.png in Resources */,
+				83A045ED2653DBC900713ED0 /* Orange-Icon-20.png in Resources */,
+				83A045F22653DBC900713ED0 /* Orange-Icon-87.png in Resources */,
+				8398B7A22660E9D900E34DC8 /* OnboardingViewController.storyboard in Resources */,
+				839F7AB12681E18200B09EE6 /* SubtitleCollectionViewController.storyboard in Resources */,
+				83EAFE9E264C40DB00FF9CAC /* ThemeViewController.storyboard in Resources */,
+				83A045F12653DBC900713ED0 /* Orange-Icon-40.png in Resources */,
+				83A0461E2653DBCA00713ED0 /* Blue-Icon-80.png in Resources */,
+				83A0463D2653E13700713ED0 /* Purpule-Icon-20.png in Resources */,
+				83A046262653DBCA00713ED0 /* Blue-Icon-60.png in Resources */,
+				83A045E72653DBC900713ED0 /* Red-Icon-87.png in Resources */,
+				834EB73926482FEC00026F01 /* Particle.sks in Resources */,
+				83A046432653E13700713ED0 /* Purpule-Icon-76.png in Resources */,
+				83A853952680A8D1002E338A /* SubtitlesViewController.storyboard in Resources */,
+				83A045F02653DBC900713ED0 /* Orange-Icon-80.png in Resources */,
+				832FB975267CF5E300DF4177 /* Implode.ahap in Resources */,
+				83ABA254264BE346001784B8 /* Main.storyboard in Resources */,
+				83A045EE2653DBC900713ED0 /* Orange-Icon-152.png in Resources */,
+				839DE06D26529ED000A65DD7 /* SubscriptionViewController.storyboard in Resources */,
+				83A0463B2653E13700713ED0 /* Purpule-Icon-87.png in Resources */,
+				83A8E8A82645898B0080AEE5 /* Assets.xcassets in Resources */,
+				83A045E22653DBC900713ED0 /* Red-Icon-152.png in Resources */,
+				83A046462653E13700713ED0 /* Purpule-Icon-152.png in Resources */,
+				83A045F62653DBC900713ED0 /* Orange-Icon-29.png in Resources */,
+				832FB977267CF5E300DF4177 /* Spawn.ahap in Resources */,
+				83A0463E2653E13700713ED0 /* Purpule-Icon-180.png in Resources */,
+				83A046412653E13700713ED0 /* Purpule-Icon-58.png in Resources */,
+				83A045E62653DBC900713ED0 /* Red-Icon-76.png in Resources */,
+				83A0461F2653DBCA00713ED0 /* Blue-Icon-40.png in Resources */,
+				83A0463C2653E13700713ED0 /* Purpule-Icon-167.png in Resources */,
+				83A045E02653DBC900713ED0 /* Red-Icon-180.png in Resources */,
+				83A046212653DBCA00713ED0 /* Blue-Icon-29.png in Resources */,
+				83A0463F2653E13700713ED0 /* Purpule-Icon-29.png in Resources */,
+				83A046402653E13700713ED0 /* Purpule-Icon-60.png in Resources */,
+				83A046232653DBCA00713ED0 /* Blue-Icon-58.png in Resources */,
+				83A045EC2653DBC900713ED0 /* Orange-Icon-180.png in Resources */,
+				83A046222653DBCA00713ED0 /* Blue-Icon-120.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4372B3A6FC79029510B34868 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dictation To Text/Pods-Dictation To Text-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dictation To Text/Pods-Dictation To Text-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dictation To Text/Pods-Dictation To Text-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58E5628010543A0F95B4CC47 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dictation To Text/Pods-Dictation To Text-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dictation To Text/Pods-Dictation To Text-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dictation To Text/Pods-Dictation To Text-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60FA2AF92BDD102C759CF63C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dictation To Text-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83A8E8972645898A0080AEE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A8533026808DE5002E338A /* BBMetalHighlightShadowFilter.swift in Sources */,
+				83A8531D26808DE5002E338A /* BBMetalFlipFilter.metal in Sources */,
+				83A8531026808DE5002E338A /* BBMetalMotionBlurFilter.metal in Sources */,
+				83A8530626808DE5002E338A /* BBMetalGammaFilter.swift in Sources */,
+				83A8E8EB2645A7FD0080AEE5 /* SpringLabel.swift in Sources */,
+				83A8532E26808DE5002E338A /* BBMetalBrightnessFilter.metal in Sources */,
+				83A8538C26808DE5002E338A /* BBMetalFlipFilter.swift in Sources */,
+				83A8534126808DE5002E338A /* BBMetalLuminosityBlendFilter.metal in Sources */,
+				83A8535C26808DE5002E338A /* BBMetalColorInversionFilter.swift in Sources */,
+				83AF2C3F264D89E100DB9909 /* TapticEngine.swift in Sources */,
+				83A8533726808DE5002E338A /* BBMetalFalseColorFilter.metal in Sources */,
+				832FB96D267C9D3200DF4177 /* ButtonView.swift in Sources */,
+				83A8534926808DE5002E338A /* BBMetalMonochromeFilter.metal in Sources */,
+				83A8E8DC2645A7FD0080AEE5 /* TransitionZoom.swift in Sources */,
+				83A8533926808DE5002E338A /* BBMetalMatrix.swift in Sources */,
+				83A852EE26808DE5002E338A /* BBMetalVignetteFilter.metal in Sources */,
+				83A8E8E42645A7FD0080AEE5 /* Misc.swift in Sources */,
+				83A853A02680B6C3002E338A /* VideoPlayerViewController.swift in Sources */,
+				83A8530026808DE5002E338A /* BBMetalCropFilter.swift in Sources */,
+				83A8536726808DE5002E338A /* BBMetalLinearBurnBlendFilter.swift in Sources */,
+				83A8531F26808DE5002E338A /* BBMetalBoxBlurFilter.swift in Sources */,
+				83A852EA26808DE5002E338A /* BBMetalDissolveBlendFilter.swift in Sources */,
+				83A8535B26808DE5002E338A /* BBMetalDissolveBlendFilter.metal in Sources */,
+				83A8531626808DE5002E338A /* BBMetalEmbossFilter.swift in Sources */,
+				83A852E826808DE5002E338A /* BBMetalRGBAFilter.swift in Sources */,
+				83A8535326808DE5002E338A /* BBMetalPixellateFilter.swift in Sources */,
+				83A8538926808DE5002E338A /* BBMetalSaturationBlendFilter.metal in Sources */,
+				83A8532B26808DE5002E338A /* BBMetalHueFilter.swift in Sources */,
+				83A8532426808DE5002E338A /* BBMetalMaskBlendFilter.swift in Sources */,
+				83A8536326808DE5002E338A /* BBMetalPolkaDotFilter.swift in Sources */,
+				839DE07426529F1B00A65DD7 /* ActivityIndicatorView.swift in Sources */,
+				83A8531A26808DE5002E338A /* BBMetalContrastFilter.metal in Sources */,
+				83A8537926808DE5002E338A /* BBMetalColorDodgeBlendFilter.swift in Sources */,
+				83A8532126808DE5002E338A /* BBMetalLevelsFilter.swift in Sources */,
+				83A8532A26808DE5002E338A /* BBMetalSketchFilter.metal in Sources */,
+				83AA6D8E26777DD800AFFB7F /* TranslateToLanguageSelectionController.swift in Sources */,
+				83A8533B26808DE5002E338A /* BBMetalScreenBlendFilter.swift in Sources */,
+				83A852ED26808DE5002E338A /* BBMetalSharpenFilter.metal in Sources */,
+				83A8533C26808DE5002E338A /* BBMetalPassThroughFilter.swift in Sources */,
+				83A8537626808DE5002E338A /* BBMetalGammaFilter.metal in Sources */,
+				83A8531526808DE5002E338A /* BBMetalSize.swift in Sources */,
+				83A852E326808DE5002E338A /* BBMetalChromaKeyBlendFilter.metal in Sources */,
+				83A8532C26808DE5002E338A /* BBMetalAddBlendFilter.swift in Sources */,
+				83A8536526808DE5002E338A /* BBMetalBulgeFilter.metal in Sources */,
+				83A8531B26808DE5002E338A /* BBMetalVideoSource.swift in Sources */,
+				83A8E8DB2645A7FD0080AEE5 /* TransitionManager.swift in Sources */,
+				83A8538A26808DE5002E338A /* BBMetalRect.swift in Sources */,
+				83A8533626808DE5002E338A /* BBMetalErosionFilter.swift in Sources */,
+				83A852DE26808DE5002E338A /* BBMetalErosionFilter.metal in Sources */,
+				83A8530926808DE5002E338A /* BBMetalLightenBlendFilter.metal in Sources */,
+				83A8538526808DE5002E338A /* BBMetalLevelsFilter.metal in Sources */,
+				83A852D826808DE5002E338A /* BBMetalColorMatrixFilter.metal in Sources */,
+				83A8537126808DE5002E338A /* BBMetalMultiplyBlendFilter.metal in Sources */,
+				83A8E8E32645A7FD0080AEE5 /* SpringTextView.swift in Sources */,
+				83A8532626808DE5002E338A /* BBMetalSaturationBlendFilter.swift in Sources */,
+				83A8532926808DE5002E338A /* BBMetalBaseFilter.swift in Sources */,
+				83A8E8E92645A7FD0080AEE5 /* DesignableTabBarController.swift in Sources */,
+				83A8534B26808DE5002E338A /* BBMetalLuminanceThresholdFilter.swift in Sources */,
+				83A8535826808DE5002E338A /* BBMetalPolarPixellateFilter.swift in Sources */,
+				83A852FE26808DE5002E338A /* BBMetalSubtractBlendFilter.swift in Sources */,
+				83A8536F26808DE5002E338A /* BBMetalHighlightShadowTintFilter.metal in Sources */,
+				83A8534826808DE5002E338A /* BBMetalBeautyFilter.metal in Sources */,
+				83A8536226808DE5002E338A /* BBMetalConvolution3x3Filter.swift in Sources */,
+				83A8531726808DE5002E338A /* BBMetalPolkaDotFilter.metal in Sources */,
+				83A8538826808DE5002E338A /* BBMetalMaskBlendFilter.metal in Sources */,
+				83A8533226808DE5002E338A /* BBMetalZoomBlurFilter.swift in Sources */,
+				834EB73526482F9600026F01 /* ParticleView.swift in Sources */,
+				83A852FC26808DE5002E338A /* BBMetalRGBAErosionFilter.metal in Sources */,
+				83A852DC26808DE5002E338A /* BBMetalLuminosityBlendFilter.swift in Sources */,
+				83A852E526808DE5002E338A /* BBMetalDivideBlendFilter.swift in Sources */,
+				83A8537A26808DE5002E338A /* BBMetalBrightnessFilter.swift in Sources */,
+				83A8531426808DE5002E338A /* BBMetalConvolution3x3Filter.metal in Sources */,
+				839DE07326529F1B00A65DD7 /* IndicatorShape.swift in Sources */,
+				83A8530B26808DE5002E338A /* BBMetalHighlightShadowTintFilter.swift in Sources */,
+				83A8535D26808DE5002E338A /* BBMetalPosition.swift in Sources */,
+				83A8532526808DE5002E338A /* BBMetalGaussianBlurFilter.swift in Sources */,
+				83A8E8E12645A7FD0080AEE5 /* DesignableTextField.swift in Sources */,
+				83A8537C26808DE5002E338A /* BBMetalExclusionBlendFilter.swift in Sources */,
+				83A8534626808DE5002E338A /* BBMetalSubtractBlendFilter.metal in Sources */,
+				83A8E8DE2645A7FD0080AEE5 /* SpringImageView.swift in Sources */,
+				83A852F126808DE5002E338A /* BBMetalDifferenceBlendFilter.metal in Sources */,
+				83A8535226808DE5002E338A /* BBMetalDifferenceBlendFilter.swift in Sources */,
+				83A8537326808DE5002E338A /* BBMetalPosterizeFilter.swift in Sources */,
+				83A8E8EC2645A7FD0080AEE5 /* DesignableTextView.swift in Sources */,
+				83A8538D26808DE5002E338A /* BBMetalHardLightBlendFilter.swift in Sources */,
+				83A8538426808DE5002E338A /* BBMetalExposureFilter.metal in Sources */,
+				83A8536826808DE5002E338A /* BBMetalTransformFilter.metal in Sources */,
+				83A8537526808DE5002E338A /* BBMetalVibranceFilter.swift in Sources */,
+				83A852FB26808DE5002E338A /* BBMetalSaturationFilter.metal in Sources */,
+				83A8538726808DE5002E338A /* BBMetalCamera.swift in Sources */,
+				83A8530D26808DE5002E338A /* BBMetalMultiplyBlendFilter.swift in Sources */,
+				83A8538026808DE5002E338A /* BBMetalDevice.swift in Sources */,
+				83A8530426808DE5002E338A /* BBMetalLuminanceFilter.swift in Sources */,
+				83A8535E26808DE5002E338A /* BBMetalThresholdSketchFilter.metal in Sources */,
+				83A852DA26808DE5002E338A /* BBMetalColorBurnBlendFilter.metal in Sources */,
+				839F7AAF2681E16600B09EE6 /* SubtitleCollectionViewController.swift in Sources */,
+				83A8533E26808DE5002E338A /* BBMetalChromaKeyBlendFilter.swift in Sources */,
+				83A8534A26808DE5002E338A /* BBMetalRotateFilter.swift in Sources */,
+				83AA6D8C267774BD00AFFB7F /* MLTranslator.swift in Sources */,
+				83A852FD26808DE5002E338A /* BBMetalCrosshatchFilter.swift in Sources */,
+				83A8536C26808DE5002E338A /* BBMetalDilationFilter.swift in Sources */,
+				83A8537426808DE5002E338A /* BBMetalLuminanceFilter.metal in Sources */,
+				83A852DD26808DE5002E338A /* BBMetalKuwaharaFilter.metal in Sources */,
+				83A8530326808DE5002E338A /* BBMetalPosterizeFilter.metal in Sources */,
+				839DE06826529EAF00A65DD7 /* RevenuCat.swift in Sources */,
+				83A852FA26808DE5002E338A /* BBMetalLuminanceThresholdFilter.metal in Sources */,
+				83A853982680A900002E338A /* MainViewController.swift in Sources */,
+				83A8E8BF2645A76D0080AEE5 /* Gradientable.swift in Sources */,
+				83A852DB26808DE5002E338A /* BBMetalSourceOverBlendFilter.swift in Sources */,
+				83A8E8BC2645A71D0080AEE5 /* BaseViewController.swift in Sources */,
+				83A8531E26808DE5002E338A /* BBMetalHardLightBlendFilter.metal in Sources */,
+				83A8532826808DE5002E338A /* BBMetalSoftLightBlendFilter.metal in Sources */,
+				83A852E026808DE5002E338A /* BBMetalToonFilter.metal in Sources */,
+				83EAFE8C264C299A00FF9CAC /* Theme.swift in Sources */,
+				83A8533A26808DE5002E338A /* BBMetalUnsharpMaskFilter.metal in Sources */,
+				83A8535A26808DE5002E338A /* BBMetalHazeFilter.swift in Sources */,
+				83A852F226808DE5002E338A /* BBMetalPixellateFilter.metal in Sources */,
+				83A8532226808DE5002E338A /* BBMetalDarkenBlendFilter.swift in Sources */,
+				83A8E89F2645898A0080AEE5 /* AppDelegate.swift in Sources */,
+				83DF75CA265EE719002C6746 /* AdCommon.swift in Sources */,
+				83A8536026808DE5002E338A /* BBMetalRGBADilationFilter.metal in Sources */,
+				83A8E8E22645A7FD0080AEE5 /* SpringButton.swift in Sources */,
+				83A8E8E82645A7FD0080AEE5 /* DesignableView.swift in Sources */,
+				83A8E8EE2645A7FD0080AEE5 /* SpringAnimation.swift in Sources */,
+				83A852DF26808DE5002E338A /* BBMetalFalseColorFilter.swift in Sources */,
+				83A8537026808DE5002E338A /* BBMetalView.swift in Sources */,
+				83A8532D26808DE5002E338A /* BBMetalColorDodgeBlendFilter.metal in Sources */,
+				83A8537B26808DE5002E338A /* BBMetalBaseFilterGroup.swift in Sources */,
+				83A852FF26808DE5002E338A /* BBMetalShaderTypes.metal in Sources */,
+				83A8533326808DE5002E338A /* BBMetalDivideBlendFilter.metal in Sources */,
+				83A8534026808DE5002E338A /* BBMetalSourceOverBlendFilter.metal in Sources */,
+				83A8537226808DE5002E338A /* BBMetalBilateralBlurFilter.metal in Sources */,
+				83A8534F26808DE5002E338A /* BBMetalVignetteFilter.swift in Sources */,
+				83A8530C26808DE5002E338A /* BBMetalView.metal in Sources */,
+				83A8530226808DE5002E338A /* BBMetalBilateralBlurFilter.swift in Sources */,
+				83C81AA1264A86F300B3F8E2 /* Extensions.swift in Sources */,
+				83A8538F26808FA3002E338A /* CameraViewController.swift in Sources */,
+				83A852E226808DE5002E338A /* BBMetalScreenBlendFilter.metal in Sources */,
+				83ABA251264BE340001784B8 /* SubtitlesViewController.swift in Sources */,
+				83A8534226808DE5002E338A /* BBMetalKuwaharaFilter.swift in Sources */,
+				839F7AB32681E5F700B09EE6 /* AlignedCollectionViewFlowLayout.swift in Sources */,
+				83A852F826808DE5002E338A /* BBMetalMonochromeFilter.swift in Sources */,
+				83A8E8E52645A7FD0080AEE5 /* SpringView.swift in Sources */,
+				83A852F026808DE5002E338A /* BBMetalColorBlendFilter.metal in Sources */,
+				83A8534E26808DE5002E338A /* BBMetalRGBAErosionFilter.swift in Sources */,
+				83A8530A26808DE5002E338A /* BBMetalWhiteBalanceFilter.metal in Sources */,
+				83A8533126808DE5002E338A /* BBMetalMultipleImageSource.swift in Sources */,
+				832FB97A267CF5F000DF4177 /* CustomHaptic.swift in Sources */,
+				83A8532026808DE5002E338A /* BBMetalExposureFilter.swift in Sources */,
+				83A8E8E72645A7FD0080AEE5 /* SpringTextField.swift in Sources */,
+				83A8E8DD2645A7FD0080AEE5 /* Spring.swift in Sources */,
+				83A852EF26808DE5002E338A /* BBMetalVideoWriter.metal in Sources */,
+				83A8535126808DE5002E338A /* BBMetalColorBlendFilter.swift in Sources */,
+				83A8535926808DE5002E338A /* BBMetalRGBAFilter.metal in Sources */,
+				83A8531126808DE5002E338A /* BBMetalAlphaBlendFilter.metal in Sources */,
+				83A8E8DA2645A7FD0080AEE5 /* KeyboardLayoutConstraint.swift in Sources */,
+				839DE0772652A0B600A65DD7 /* User.swift in Sources */,
+				83A8E8ED2645A7FD0080AEE5 /* AutoTextView.swift in Sources */,
+				83EAFE9A264C40BE00FF9CAC /* ThemeViewController.swift in Sources */,
+				83A8536D26808DE5002E338A /* BBMetalLightenBlendFilter.swift in Sources */,
+				83A8536B26808DE5002E338A /* BBMetalOverlayBlendFilter.metal in Sources */,
+				83A8531926808DE5002E338A /* BBMetalBulgeFilter.swift in Sources */,
+				83A8531C26808DE5002E338A /* BBMetalHalftoneFilter.metal in Sources */,
+				83A8530526808DE5002E338A /* BBMetalVibranceFilter.metal in Sources */,
+				83A8533526808DE5002E338A /* BBMetalPinchFilter.metal in Sources */,
+				83A8537E26808DE5002E338A /* BBMetalTiltShiftFilter.swift in Sources */,
+				83A8530F26808DE5002E338A /* BBMetalTransformFilter.swift in Sources */,
+				83A8531326808DE5002E338A /* BBMetalRGBADilationFilter.swift in Sources */,
+				83A8E8E02645A7FD0080AEE5 /* BlurView.swift in Sources */,
+				83A852F926808DE5002E338A /* BBMetalRotateFilter.metal in Sources */,
+				83A8530126808DE5002E338A /* BBMetalUISource.swift in Sources */,
+				83A8E8D92645A7FD0080AEE5 /* DesignableImageView.swift in Sources */,
+				83A852E126808DE5002E338A /* BBMetalUnsharpMaskFilter.swift in Sources */,
+				83A8534726808DE5002E338A /* BBMetalCropFilter.metal in Sources */,
+				83A8533D26808DE5002E338A /* BBMetalImageSource.swift in Sources */,
+				83A8536426808DE5002E338A /* BBMetalNormalBlendFilter.swift in Sources */,
+				83A852F626808DE5002E338A /* BBMetalPolarPixellateFilter.metal in Sources */,
+				83A852F426808DE5002E338A /* BBMetalChromaKeyFilter.swift in Sources */,
+				83A8536626808DE5002E338A /* BBMetalContrastFilter.swift in Sources */,
+				834E51C4267F6FDE00BEC04D /* TextView.swift in Sources */,
+				83A8533426808DE5002E338A /* BBMetalHueBlendFilter.metal in Sources */,
+				83A852E726808DE5002E338A /* BBMetalPinchFilter.swift in Sources */,
+				83A852F326808DE5002E338A /* BBMetalSwirlFilter.swift in Sources */,
+				83A8532F26808DE5002E338A /* BBMetalExclusionBlendFilter.metal in Sources */,
+				83A8537826808DE5002E338A /* BBMetalAddBlendFilter.metal in Sources */,
+				83A8530E26808DE5002E338A /* BBMetalLinearBurnBlendFilter.metal in Sources */,
+				83A852EB26808DE5002E338A /* BBMetalColorInversionFilter.metal in Sources */,
+				83A8537D26808DE5002E338A /* BBMetalHighlightShadowFilter.metal in Sources */,
+				8398B7A52660E9E000E34DC8 /* OnboardingViewController.swift in Sources */,
+				839DE06E26529ED000A65DD7 /* SubscriptionViewController.swift in Sources */,
+				83A8E8E62645A7FD0080AEE5 /* DesignableButton.swift in Sources */,
+				83A8538626808DE5002E338A /* BBMetalDarkenBlendFilter.metal in Sources */,
+				83A852D926808DE5002E338A /* BBMetalSobelEdgeDetectionFilter.metal in Sources */,
+				83A852EC26808DE5002E338A /* BBMetalThresholdSketchFilter.swift in Sources */,
+				83A85393268091BF002E338A /* CameraFilterViewController.swift in Sources */,
+				83A8534D26808DE5002E338A /* BBMetalSaturationFilter.swift in Sources */,
+				83A8536926808DE5002E338A /* BBMetalMotionBlurFilter.swift in Sources */,
+				83A8531826808DE5002E338A /* BBMetalNormalBlendFilter.metal in Sources */,
+				839FAC20264EE383004910D9 /* SubtitleSettingsViewController.swift in Sources */,
+				83A852F726808DE5002E338A /* BBMetalBeautyFilter.swift in Sources */,
+				83A852E626808DE5002E338A /* BBMetalHueBlendFilter.swift in Sources */,
+				83A8534526808DE5002E338A /* BBMetalCrosshatchFilter.metal in Sources */,
+				83A8E8DF2645A7FD0080AEE5 /* DesignableLabel.swift in Sources */,
+				83A8534326808DE5002E338A /* BBMetalColorMatrixFilter.swift in Sources */,
+				83A8537F26808DE5002E338A /* BBMetalSoftLightBlendFilter.swift in Sources */,
+				83A8537726808DE5002E338A /* BBMetalResizeFilter.metal in Sources */,
+				83A852E926808DE5002E338A /* BBMetalHazeFilter.metal in Sources */,
+				83A8535526808DE5002E338A /* BBMetalChromaKeyFilter.metal in Sources */,
+				83A8531226808DE5002E338A /* BBMetalOverlayBlendFilter.swift in Sources */,
+				83A8532726808DE5002E338A /* BBMetalTiltShiftFilter.metal in Sources */,
+				83A8535F26808DE5002E338A /* BBMetalSharpenFilter.swift in Sources */,
+				83A8533826808DE5002E338A /* BBMetalToonFilter.swift in Sources */,
+				83A8532326808DE5002E338A /* BBMetalStaticImageSource.swift in Sources */,
+				83A0456A2653C5C400713ED0 /* AppRating.swift in Sources */,
+				83A8536E26808DE5002E338A /* BBMetalWhiteBalanceFilter.swift in Sources */,
+				83AF2C23264D660E00DB9909 /* SpeechRecognitionLocaleSelectionViewController.swift in Sources */,
+				83A852F526808DE5002E338A /* BBMetalLookupFilter.swift in Sources */,
+				83A8530826808DE5002E338A /* BBMetalDilationFilter.metal in Sources */,
+				83BCCDD7264C797100AAAF9B /* SpeechRecognition.swift in Sources */,
+				83A852E426808DE5002E338A /* BBMetalZoomBlurFilter.metal in Sources */,
+				83A8534C26808DE5002E338A /* MultipleVideoSource.swift in Sources */,
+				83A8E8A12645898A0080AEE5 /* SceneDelegate.swift in Sources */,
+				83A8536126808DE5002E338A /* BBMetalColor.swift in Sources */,
+				83A8536A26808DE5002E338A /* BBMetalAlphaBlendFilter.swift in Sources */,
+				83A8539126809183002E338A /* FilterType.swift in Sources */,
+				83A046282653DBCA00713ED0 /* AlternateIconsViewController.swift in Sources */,
+				83A8538326808DE5002E338A /* BBMetalHueFilter.metal in Sources */,
+				83A8533F26808DE5002E338A /* BBMetalColorBurnBlendFilter.swift in Sources */,
+				83A8535026808DE5002E338A /* BBMetalVideoWriter.swift in Sources */,
+				83A8535426808DE5002E338A /* BBMetalSwirlFilter.metal in Sources */,
+				83A8538126808DE5002E338A /* BBMetalSketchFilter.swift in Sources */,
+				83A8534426808DE5002E338A /* BBMetalSobelEdgeDetectionFilter.swift in Sources */,
+				83A8530726808DE5002E338A /* BBMetalResizeFilter.swift in Sources */,
+				83A8538B26808DE5002E338A /* BBMetalHalftoneFilter.swift in Sources */,
+				83A8535626808DE5002E338A /* BBMetalImageConsumer.swift in Sources */,
+				83A8535726808DE5002E338A /* BBMetalLookupFilter.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		83A8E8A92645898B0080AEE5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83A8E8AA2645898B0080AEE5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83A8E8AD2645898B0080AEE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83A8E8AE2645898B0080AEE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83A8E8B02645898B0080AEE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CBA19D5EAACAA0C7E07F48B /* Pods-Dictation To Text.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F239PGHZ78;
+				INFOPLIST_FILE = "$(SRCROOT)/Dictation To Text/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dictation.to.text;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83A8E8B12645898B0080AEE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3725E7BF26C28850BE525AC /* Pods-Dictation To Text.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F239PGHZ78;
+				INFOPLIST_FILE = "$(SRCROOT)/Dictation To Text/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dictation.to.text;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83A8E8962645898A0080AEE5 /* Build configuration list for PBXProject "Dictation To Text" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83A8E8AD2645898B0080AEE5 /* Debug */,
+				83A8E8AE2645898B0080AEE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83A8E8AF2645898B0080AEE5 /* Build configuration list for PBXNativeTarget "Dictation To Text" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83A8E8B02645898B0080AEE5 /* Debug */,
+				83A8E8B12645898B0080AEE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		83ABAC2B265BB3C100A20D0E /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83ABAC2C265BB3C100A20D0E /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83ABAC2B265BB3C100A20D0E /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 83A8E8932645898A0080AEE5 /* Project object */;
+}

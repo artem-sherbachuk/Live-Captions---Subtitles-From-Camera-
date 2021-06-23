@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W14-xn-beU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hearing Aid-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Hearing_Aid_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nVE-Z9-3pW">
+                                <rect key="frame" x="82" y="278.5" width="250" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="5d6-7L-CET"/>
+                                    <constraint firstAttribute="height" constant="300" id="bM1-2j-hvA"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="msD-ka-mIt" kind="embed" id="TPd-j0-j8h"/>
+                                </connections>
+                            </containerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ad-pk-5an" userLabel="Balance" customClass="BalanceView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                <rect key="frame" x="8" y="684" width="398" height="30"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ear.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1Bz-8o-TI1">
+                                        <rect key="frame" x="0.0" y="-1" width="30" height="30"/>
+                                        <color key="tintColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="v3r-qH-L7J"/>
+                                        </constraints>
+                                    </imageView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-10" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="gR3-bD-FLa">
+                                        <rect key="frame" x="28" y="0.0" width="342" height="31"/>
+                                        <color key="minimumTrackTintColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="thumbTintColor" red="0.49019607843137253" green="0.24705882352941178" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="balanceActionWithSender:" destination="3ad-pk-5an" eventType="valueChanged" id="3DP-aM-MlH"/>
+                                        </connections>
+                                    </slider>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ear.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6pE-MO-nTd">
+                                        <rect key="frame" x="368" y="-1" width="30" height="30"/>
+                                        <color key="tintColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="YQg-W5-uay"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <connections>
+                                    <outlet property="leftIcon" destination="1Bz-8o-TI1" id="gUC-UI-tGy"/>
+                                    <outlet property="rightIcon" destination="6pE-MO-nTd" id="VSt-e1-uyO"/>
+                                    <outlet property="slider" destination="gR3-bD-FLa" id="J60-Ui-Aza"/>
+                                </connections>
+                            </stackView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="muA-Cn-7nv" userLabel="Mic Selection" customClass="MicSelectionView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                <rect key="frame" x="8" y="537" width="45" height="199"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSp-0g-X8l" userLabel="Front" customClass="MicButtonView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omc-jn-bne" userLabel="Front" customClass="SpringButton" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.5" width="45" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="45" id="8m9-Nc-Qcg"/>
+                                                    <constraint firstAttribute="height" constant="45" id="zFy-XO-9ys"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.49019607843137253" green="0.24705882352941178" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" backgroundImage="mic.circle" catalog="system">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="frontMicActionWithSender:" destination="muA-Cn-7nv" eventType="touchUpInside" id="cHp-v2-PhI"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Front" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLY-Sb-bGq">
+                                                <rect key="frame" x="4.5" y="43" width="36" height="18"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <color key="textColor" red="0.49019607843137253" green="0.24705882352941178" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="zLY-Sb-bGq" secondAttribute="bottom" constant="-16" id="3PP-J0-wRy"/>
+                                            <constraint firstAttribute="width" constant="45" id="K5i-GI-G5O"/>
+                                            <constraint firstItem="zLY-Sb-bGq" firstAttribute="centerX" secondItem="YSp-0g-X8l" secondAttribute="centerX" id="Mmb-92-eDb"/>
+                                            <constraint firstItem="omc-jn-bne" firstAttribute="centerY" secondItem="YSp-0g-X8l" secondAttribute="centerY" id="QxV-QO-ftg"/>
+                                            <constraint firstAttribute="height" constant="45" id="kaV-52-2xV"/>
+                                            <constraint firstItem="omc-jn-bne" firstAttribute="centerX" secondItem="YSp-0g-X8l" secondAttribute="centerX" id="pRU-0K-BKG"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="button" destination="omc-jn-bne" id="ixS-Yo-4q2"/>
+                                            <outlet property="title" destination="zLY-Sb-bGq" id="Adz-ii-l49"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Khq-AN-5Mu" userLabel="Rear" customClass="MicButtonView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="77" width="45" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqh-0L-56x" userLabel="Front" customClass="SpringButton" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.5" width="45" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="lKH-jT-8og"/>
+                                                    <constraint firstAttribute="width" constant="45" id="xLe-ox-HnJ"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.49019607843137253" green="0.24705882352941178" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" backgroundImage="mic.circle" catalog="system">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="rearMicActionWithSender:" destination="muA-Cn-7nv" eventType="touchUpInside" id="HLf-KX-aGv"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCb-oj-gdh">
+                                                <rect key="frame" x="7" y="43" width="31.5" height="18"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <color key="textColor" red="0.49019607843137253" green="0.24705882352941178" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="25l-hX-E3Q"/>
+                                            <constraint firstItem="QCb-oj-gdh" firstAttribute="centerX" secondItem="Khq-AN-5Mu" secondAttribute="centerX" id="2Mo-tq-WUh"/>
+                                            <constraint firstItem="Rqh-0L-56x" firstAttribute="centerY" secondItem="Khq-AN-5Mu" secondAttribute="centerY" id="Mj8-5o-39u"/>
+                                            <constraint firstItem="Rqh-0L-56x" firstAttribute="centerX" secondItem="Khq-AN-5Mu" secondAttribute="centerX" id="RsN-cC-R53"/>
+                                            <constraint firstAttribute="bottom" secondItem="QCb-oj-gdh" secondAttribute="bottom" constant="-16" id="j6M-tg-9AU"/>
+                                            <constraint firstAttribute="height" constant="45" id="leJ-4L-PgG"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="button" destination="Rqh-0L-56x" id="K8f-9e-RmQ"/>
+                                            <outlet property="title" destination="QCb-oj-gdh" id="pdw-6r-418"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLg-th-B94" userLabel="Bottom" customClass="MicButtonView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="154" width="45" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUP-Do-FIa" userLabel="Front" customClass="SpringButton" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.5" width="45" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="45" id="UoI-3q-xtu"/>
+                                                    <constraint firstAttribute="height" constant="45" id="sWJ-Ox-k4Y"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.49019607843137253" green="0.24705882352941178" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" backgroundImage="mic.circle" catalog="system">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="bottomMicActionWithSender:" destination="muA-Cn-7nv" eventType="touchUpInside" id="XeS-RG-YNa"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bottom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sO3-QT-alY">
+                                                <rect key="frame" x="-2.5" y="43" width="50.5" height="18"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <color key="textColor" red="0.49019607843137253" green="0.24705882352941178" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="5Hd-Lk-spV"/>
+                                            <constraint firstItem="tUP-Do-FIa" firstAttribute="centerY" secondItem="yLg-th-B94" secondAttribute="centerY" id="btT-Ds-F6n"/>
+                                            <constraint firstItem="sO3-QT-alY" firstAttribute="centerX" secondItem="yLg-th-B94" secondAttribute="centerX" id="ebn-9e-wmG"/>
+                                            <constraint firstAttribute="width" constant="45" id="g6E-e5-d7r"/>
+                                            <constraint firstAttribute="bottom" secondItem="sO3-QT-alY" secondAttribute="bottom" constant="-16" id="iJU-Nd-9D8"/>
+                                            <constraint firstItem="tUP-Do-FIa" firstAttribute="centerX" secondItem="yLg-th-B94" secondAttribute="centerX" id="qCv-Fv-wQv"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="button" destination="tUP-Do-FIa" id="RNc-6D-t8E"/>
+                                            <outlet property="title" destination="sO3-QT-alY" id="mJp-Vj-fRc"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <connections>
+                                    <outlet property="bottomMicButton" destination="yLg-th-B94" id="Bya-ZO-R4h"/>
+                                    <outlet property="frontMicButton" destination="YSp-0g-X8l" id="DCB-Oy-I0S"/>
+                                    <outlet property="rearMicButton" destination="Khq-AN-5Mu" id="cly-Ik-nKO"/>
+                                </connections>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="HxM-0w-Tb6" userLabel="Controls">
+                                <rect key="frame" x="8" y="752" width="398" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztp-mj-yc3" userLabel="mic direction" customClass="MicButtonView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T36-Mj-P7W" userLabel="Front" customClass="SpringButton" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="IXL-Pr-oKk"/>
+                                                    <constraint firstAttribute="width" constant="45" id="sZv-23-23A"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.57511164869999998" green="0.34868388579999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" image="mic" catalog="system">
+                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="micActionWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VAj-Dr-Nj9"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3d3-oj-lDf">
+                                                <rect key="frame" x="10.5" y="43" width="24.5" height="18"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="T36-Mj-P7W" firstAttribute="centerY" secondItem="ztp-mj-yc3" secondAttribute="centerY" id="A5f-cW-WNT"/>
+                                            <constraint firstAttribute="height" constant="45" id="JzK-23-6bW"/>
+                                            <constraint firstItem="T36-Mj-P7W" firstAttribute="centerX" secondItem="ztp-mj-yc3" secondAttribute="centerX" id="JzV-We-oCt"/>
+                                            <constraint firstAttribute="width" constant="45" id="ZFa-l3-tUK"/>
+                                            <constraint firstItem="3d3-oj-lDf" firstAttribute="centerX" secondItem="ztp-mj-yc3" secondAttribute="centerX" id="jtu-Dp-Q86"/>
+                                            <constraint firstAttribute="bottom" secondItem="3d3-oj-lDf" secondAttribute="bottom" constant="-16" id="vNj-Eh-uwx"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="button" destination="T36-Mj-P7W" id="wv5-33-yKh"/>
+                                            <outlet property="title" destination="3d3-oj-lDf" id="4Rl-0d-sc8"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MWQ-ip-7ee" userLabel="Line Brake" customClass="MicButtonView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                        <rect key="frame" x="88.5" y="0.0" width="45" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAj-k5-8cc" userLabel="Front" customClass="SpringButton" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="45" id="9O9-8V-u0H"/>
+                                                    <constraint firstAttribute="height" constant="45" id="aaD-lf-3m0"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.57511164869999998" green="0.34868388579999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" image="ear">
+                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="balanceActionWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cnZ-tt-KCC"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etm-ZR-hbT">
+                                                <rect key="frame" x="-5" y="43" width="54.5" height="18"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="GAj-k5-8cc" firstAttribute="centerX" secondItem="MWQ-ip-7ee" secondAttribute="centerX" id="7RJ-nX-e9g"/>
+                                            <constraint firstAttribute="height" constant="45" id="IeP-zg-Fcn"/>
+                                            <constraint firstItem="GAj-k5-8cc" firstAttribute="centerY" secondItem="MWQ-ip-7ee" secondAttribute="centerY" id="YlJ-lc-FYa"/>
+                                            <constraint firstAttribute="width" constant="45" id="cgq-SF-uJp"/>
+                                            <constraint firstAttribute="bottom" secondItem="Etm-ZR-hbT" secondAttribute="bottom" constant="-16" id="jSd-d4-pRF"/>
+                                            <constraint firstItem="Etm-ZR-hbT" firstAttribute="centerX" secondItem="MWQ-ip-7ee" secondAttribute="centerX" id="zLA-kV-jqY"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="button" destination="GAj-k5-8cc" id="17W-Ir-6Cd"/>
+                                            <outlet property="title" destination="Etm-ZR-hbT" id="OIf-tk-XVO"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="euc-Ap-7Cc" userLabel="On OFF" customClass="MicButtonView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                        <rect key="frame" x="176.5" y="0.0" width="45" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AR8-UJ-muU" userLabel="Front" customClass="SpringButton" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                <rect key="frame" x="-15" y="-31" width="75" height="74.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="AEJ-C4-x9U"/>
+                                                    <constraint firstAttribute="width" constant="75" id="ZWn-7r-K5C"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.49019607840000001" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" backgroundImage="power" catalog="system">
+                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bP-VH-KAm">
+                                                <rect key="frame" x="-0.5" y="43" width="46.5" height="18"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="AR8-UJ-muU" firstAttribute="centerY" secondItem="euc-Ap-7Cc" secondAttribute="centerY" constant="-16" id="CwS-pX-jBz"/>
+                                            <constraint firstAttribute="height" constant="45" id="Kmi-8S-eys"/>
+                                            <constraint firstAttribute="bottom" secondItem="0bP-VH-KAm" secondAttribute="bottom" constant="-16" id="azJ-If-u7T"/>
+                                            <constraint firstItem="AR8-UJ-muU" firstAttribute="centerX" secondItem="euc-Ap-7Cc" secondAttribute="centerX" id="izC-YE-1wQ"/>
+                                            <constraint firstItem="0bP-VH-KAm" firstAttribute="centerX" secondItem="euc-Ap-7Cc" secondAttribute="centerX" id="wYh-ce-Oya"/>
+                                            <constraint firstAttribute="width" constant="45" id="y42-8a-xQJ"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="button" destination="AR8-UJ-muU" id="F56-qs-AoN"/>
+                                            <outlet property="title" destination="0bP-VH-KAm" id="9T9-PO-uba"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSl-7p-QmL" userLabel="Keyboard" customClass="MicButtonView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                        <rect key="frame" x="265" y="0.0" width="45" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyj-ov-O8x" userLabel="Front" customClass="SpringButton" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="KrV-1D-gee"/>
+                                                    <constraint firstAttribute="width" constant="45" id="mhd-VR-R80"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.57511164869999998" green="0.34868388579999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" image="waveform.path.ecg" catalog="system">
+                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Noise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KXZ-hG-YC4">
+                                                <rect key="frame" x="0.0" y="43" width="45" height="18"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Iyj-ov-O8x" firstAttribute="centerY" secondItem="qSl-7p-QmL" secondAttribute="centerY" id="TUJ-fw-rvO"/>
+                                            <constraint firstAttribute="width" constant="45" id="b1Q-PH-KV8"/>
+                                            <constraint firstItem="KXZ-hG-YC4" firstAttribute="leading" secondItem="qSl-7p-QmL" secondAttribute="leading" id="bHu-SC-Fjw"/>
+                                            <constraint firstAttribute="bottom" secondItem="KXZ-hG-YC4" secondAttribute="bottom" constant="-16" id="dAf-dg-oVE"/>
+                                            <constraint firstAttribute="height" constant="45" id="jgY-Oi-6ea"/>
+                                            <constraint firstAttribute="trailing" secondItem="KXZ-hG-YC4" secondAttribute="trailing" id="p0N-BL-tKJ"/>
+                                            <constraint firstItem="Iyj-ov-O8x" firstAttribute="centerX" secondItem="qSl-7p-QmL" secondAttribute="centerX" id="uDW-YZ-1bW"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="button" destination="Iyj-ov-O8x" id="Plv-kB-8R6"/>
+                                            <outlet property="title" destination="KXZ-hG-YC4" id="MYI-bp-vfA"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Umf-kn-eVP" userLabel="Flip" customClass="MicButtonView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                        <rect key="frame" x="353" y="0.0" width="45" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njz-hF-aQB" userLabel="Front" customClass="SpringButton" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="45" id="0yX-Da-llP"/>
+                                                    <constraint firstAttribute="height" constant="45" id="KmR-3W-kiQ"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.57511164869999998" green="0.34868388579999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" image="arrow.up.arrow.down" catalog="system">
+                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNh-QF-gCr">
+                                                <rect key="frame" x="10.5" y="43" width="24.5" height="18"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="njz-hF-aQB" firstAttribute="centerY" secondItem="Umf-kn-eVP" secondAttribute="centerY" id="N1o-1S-gnb"/>
+                                            <constraint firstItem="njz-hF-aQB" firstAttribute="centerX" secondItem="Umf-kn-eVP" secondAttribute="centerX" id="QcY-uo-zRy"/>
+                                            <constraint firstAttribute="width" constant="45" id="iS1-hj-H80"/>
+                                            <constraint firstAttribute="bottom" secondItem="RNh-QF-gCr" secondAttribute="bottom" constant="-16" id="oUv-I0-ecd"/>
+                                            <constraint firstAttribute="height" constant="45" id="udX-NN-WeA"/>
+                                            <constraint firstItem="RNh-QF-gCr" firstAttribute="centerX" secondItem="Umf-kn-eVP" secondAttribute="centerX" id="vnq-fc-dSQ"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="button" destination="njz-hF-aQB" id="qnH-Ut-wwM"/>
+                                            <outlet property="title" destination="RNh-QF-gCr" id="Zwc-Ss-Lfe"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uek-PE-bGz" userLabel="Share" customClass="SpringButton" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                <rect key="frame" x="8" y="44" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="LAK-pt-mLf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="Rcn-Gy-sKF"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="pfk-ev-WPw"/>
+                                    <constraint firstAttribute="height" constant="45" id="sox-oc-B13"/>
+                                </constraints>
+                                <color key="tintColor" red="0.49019607840000001" green="0.2470588235" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" image="square.and.arrow.up" catalog="system">
+                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsO-j3-I3g" customClass="SpringButton" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                <rect key="frame" x="353" y="44" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="ROs-aY-AUQ"/>
+                                    <constraint firstAttribute="width" constant="45" id="gnT-iu-B00"/>
+                                </constraints>
+                                <color key="tintColor" red="0.49019607843137253" green="0.24705882352941178" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" image="gearshape" catalog="system"/>
+                                <connections>
+                                    <action selector="settingsActionWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dzz-eB-2KJ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jIO-Eg-xRX" userLabel="Wave View">
+                                <rect key="frame" x="0.0" y="89" width="414" height="189.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nVE-Z9-3pW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="0fd-0k-UpG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MsO-j3-I3g" secondAttribute="trailing" constant="16" id="0fh-la-gL0"/>
+                            <constraint firstItem="MsO-j3-I3g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6LB-8e-Aew"/>
+                            <constraint firstItem="nVE-Z9-3pW" firstAttribute="top" secondItem="jIO-Eg-xRX" secondAttribute="bottom" id="6RC-BW-0nQ"/>
+                            <constraint firstItem="Uek-PE-bGz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7Lt-Bl-4GQ"/>
+                            <constraint firstItem="jIO-Eg-xRX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9wH-B5-jpX"/>
+                            <constraint firstItem="Uek-PE-bGz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="BX5-eT-eMe"/>
+                            <constraint firstItem="HxM-0w-Tb6" firstAttribute="top" secondItem="muA-Cn-7nv" secondAttribute="bottom" constant="16" id="CD6-hA-2nE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jIO-Eg-xRX" secondAttribute="trailing" id="Gp0-6n-Lhh"/>
+                            <constraint firstItem="3ad-pk-5an" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="HFH-8C-cwc"/>
+                            <constraint firstItem="nVE-Z9-3pW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OcX-P6-pL9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HxM-0w-Tb6" secondAttribute="trailing" constant="8" id="Ote-zo-anb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HxM-0w-Tb6" secondAttribute="bottom" constant="16" id="PIY-kR-aCZ"/>
+                            <constraint firstAttribute="trailing" secondItem="3ad-pk-5an" secondAttribute="trailing" constant="8" id="Tch-yX-R6Y"/>
+                            <constraint firstItem="HxM-0w-Tb6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="UyG-i1-fYv"/>
+                            <constraint firstItem="muA-Cn-7nv" firstAttribute="centerX" secondItem="ztp-mj-yc3" secondAttribute="centerX" id="Yjh-Yd-JQw"/>
+                            <constraint firstItem="jIO-Eg-xRX" firstAttribute="top" secondItem="Uek-PE-bGz" secondAttribute="bottom" id="mmz-20-5dL"/>
+                            <constraint firstItem="HxM-0w-Tb6" firstAttribute="top" secondItem="3ad-pk-5an" secondAttribute="bottom" constant="38" id="qIT-b4-bQh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hearing Aid" image="ear" id="lK8-AE-9lh"/>
+                    <navigationItem key="navigationItem" id="bpb-KP-aJH"/>
+                    <connections>
+                        <outlet property="balanceView" destination="3ad-pk-5an" id="dD9-Hk-XkC"/>
+                        <outlet property="micSelectionView" destination="muA-Cn-7nv" id="8Lc-am-X0v"/>
+                        <outlet property="settingsButton" destination="MsO-j3-I3g" id="0YQ-gt-gMI"/>
+                        <outlet property="waveView" destination="jIO-Eg-xRX" id="7zS-Ta-O0i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1952.1739130434785" y="83.705357142857139"/>
+        </scene>
+        <!--SpeechRecognitionViewController-->
+        <scene sceneID="ghj-Pr-zoE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SpeechRecognitionViewController" id="pBU-hn-CWs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="D2w-fd-mkg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S5A-Nd-ECl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2133" y="508"/>
+        </scene>
+        <!--VolumeViewController-->
+        <scene sceneID="dDD-oc-9w8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="VolumeViewController" id="msD-ka-mIt" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vCL-5f-PCy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2526.811594202899" y="84.375"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hne-yw-yOf">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="W14-xn-beU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Nuj-e1-Zlh">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ASb-Ld-giG"/>
+                        <segue destination="pBU-hn-CWs" kind="relationship" relationship="viewControllers" id="c5T-rn-QVa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="enf-R3-Vu6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044.9275362318842" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.up.arrow.down" catalog="system" width="128" height="98"/>
+        <image name="ear" width="10" height="14"/>
+        <image name="ear.fill" catalog="system" width="105" height="128"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="mic" catalog="system" width="108" height="128"/>
+        <image name="mic.circle" catalog="system" width="128" height="121"/>
+        <image name="power" catalog="system" width="128" height="124"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="waveform.path.ecg" catalog="system" width="128" height="124"/>
+    </resources>
+</document>

@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oQ5-dH-z7U">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Subscription View Controller-->
+        <scene sceneID="Pg0-2s-h8G">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="oQ5-dH-z7U" customClass="SubscriptionViewController" customModule="Hearing_Aid_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YpP-mB-nU2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_subscription" translatesAutoresizingMaskIntoConstraints="NO" id="iuc-ep-rPd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCJ-Qy-Ekr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WgE-xE-Chs">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DOO-b7-ACC">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K5y-9R-r8j">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1008"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NY3-xF-pUA">
+                                                <rect key="frame" x="16" y="0.0" width="343" height="928"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Uj-lA-24Y" userLabel="Benefits Stack View" customClass="SubscriptionBenefitsStackView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="257"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Free 7 Day Trial Has Ended" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIg-X3-evE" customClass="SpringLabel" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="95.666666666666671"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iNb-Ec-GG0" customClass="SubscriptionBenefit" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="103.66666666666666" width="343" height="21.666666666666671"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.seal.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="74b-V5-Zs0">
+                                                                        <rect key="frame" x="0.0" y="-0.66666666666666785" width="20" height="23"/>
+                                                                        <color key="tintColor" red="0.7439994877744357" green="0.99705451726913452" blue="0.27552264418266348" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="eaH-Mw-HPd"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlimited Hearing Aid Usage" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55U-0O-XfN">
+                                                                        <rect key="frame" x="28" y="0.0" width="315" height="21.666666666666668"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                                        <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <connections>
+                                                                    <outlet property="titleLabel" destination="55U-0O-XfN" id="qF3-Sg-UO1"/>
+                                                                </connections>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PJc-UV-KtZ" customClass="SubscriptionBenefit" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="133.33333333333334" width="343" height="43"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.seal.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qeW-35-LPK">
+                                                                        <rect key="frame" x="0.0" y="-0.66666666666666785" width="20" height="44.333333333333343"/>
+                                                                        <color key="tintColor" red="0.7439994877744357" green="0.99705451726913452" blue="0.27552264418266348" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="1YQ-Ou-lBu"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlimited Speech Recognition Usage And Offline Translations" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfI-Op-zuv">
+                                                                        <rect key="frame" x="28" y="0.0" width="315" height="43"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                                        <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <connections>
+                                                                    <outlet property="titleLabel" destination="bfI-Op-zuv" id="1T3-HH-3ZI"/>
+                                                                </connections>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="axf-XJ-KSa" customClass="SubscriptionBenefit" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="184.33333333333334" width="343" height="43"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.seal.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="loJ-Ja-XIz">
+                                                                        <rect key="frame" x="0.0" y="-0.66666666666666785" width="20" height="44.333333333333343"/>
+                                                                        <color key="tintColor" red="0.7439994877744357" green="0.99705451726913452" blue="0.27552264418266348" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="v3g-h7-J5c"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Future Premium Updates &amp; Features For Free" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYB-jb-MDZ">
+                                                                        <rect key="frame" x="28" y="0.0" width="315" height="43"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                                        <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <connections>
+                                                                    <outlet property="titleLabel" destination="OYB-jb-MDZ" id="Foa-NI-jcM"/>
+                                                                </connections>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4vV-ST-W8R" customClass="SubscriptionBenefit" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="235.33333333333331" width="343" height="21.666666666666686"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.seal.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JFi-fS-Pgb">
+                                                                        <rect key="frame" x="0.0" y="-0.66666666666666785" width="20" height="23"/>
+                                                                        <color key="tintColor" red="0.7439994877744357" green="0.99705451726913452" blue="0.27552264418266348" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="uhP-TF-ckA"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fast And Friendly Support" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9d-a7-LTb">
+                                                                        <rect key="frame" x="28" y="0.0" width="315" height="21.666666666666668"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                                        <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <connections>
+                                                                    <outlet property="titleLabel" destination="t9d-a7-LTb" id="TFF-Ql-6GP"/>
+                                                                </connections>
+                                                            </stackView>
+                                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bcw-ue-1zg" customClass="SubscriptionBenefit" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="257" width="343" height="0.0"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.seal.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rAU-7A-9lb">
+                                                                        <rect key="frame" x="0.0" y="-0.66666666666666785" width="20" height="1.3333333333333339"/>
+                                                                        <color key="tintColor" red="0.7439994877744357" green="0.99705451726913452" blue="0.27552264418266348" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="tlG-Os-Ctv"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live Life to the Fullest" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wfe-WY-m2P">
+                                                                        <rect key="frame" x="28" y="0.0" width="315" height="0.0"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                                        <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <connections>
+                                                                    <outlet property="titleLabel" destination="Wfe-WY-m2P" id="5RD-1j-cN5"/>
+                                                                </connections>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <connections>
+                                                            <outlet property="benefit1" destination="iNb-Ec-GG0" id="1Te-sG-N2q"/>
+                                                            <outlet property="benefit2" destination="PJc-UV-KtZ" id="Hq3-Lw-6No"/>
+                                                            <outlet property="benefit3" destination="axf-XJ-KSa" id="nMD-xh-5O3"/>
+                                                            <outlet property="benefit4" destination="4vV-ST-W8R" id="2Cq-7Y-yCR"/>
+                                                            <outlet property="benefit5" destination="bcw-ue-1zg" id="E3y-sk-yb4"/>
+                                                            <outlet property="titleLabel" destination="tIg-X3-evE" id="UNm-KH-6JO"/>
+                                                        </connections>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="18I-PA-hdh">
+                                                        <rect key="frame" x="0.0" y="265" width="343" height="108.66666666666669"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1Yx-qH-ZOO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="0.0"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you would like to keep using Hearing Aid App please choose a plan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="T5l-OV-0ok">
+                                                                <rect key="frame" x="0.0" y="8" width="343" height="40.666666666666664"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NsZ-hW-pJM">
+                                                                <rect key="frame" x="0.0" y="56.666666666666686" width="343" height="52"/>
+                                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Tm5-JL-m1A">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="52"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-50% Ends in: 00:00:09" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6dZ-sq-ecl" userLabel="Timer" customClass="SpringLabel" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                            <rect key="frame" x="8" y="8" width="327" height="36"/>
+                                                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                                                            <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="6dZ-sq-ecl" firstAttribute="leading" secondItem="Tm5-JL-m1A" secondAttribute="leading" constant="8" id="4hI-kT-ExF"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="6dZ-sq-ecl" secondAttribute="bottom" constant="8" id="D3z-Ck-zYe"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="6dZ-sq-ecl" secondAttribute="trailing" constant="8" id="Vaf-zs-aCd"/>
+                                                                        <constraint firstItem="6dZ-sq-ecl" firstAttribute="top" secondItem="Tm5-JL-m1A" secondAttribute="top" constant="8" id="dEg-kW-M1r"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <blurEffect style="systemUltraThinMaterialDark"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <integer key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </visualEffectView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="UQW-hC-n73" customClass="SubscriptionsOptionsStackView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="381.66666666666669" width="343" height="128.33333333333331"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="MaR-nM-fmJ" customClass="SubscriptionOptionView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="103.66666666666667" height="128.33333333333334"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BCQ-W5-8Ly" customClass="SpringImageView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.99999999999999822" width="103.66666666666667" height="18.666666666666664"/>
+                                                                        <color key="tintColor" red="0.74399948780000003" green="0.99705451730000005" blue="0.2755226442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="20" id="6tI-3Q-B4p"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Rta-84-2XP">
+                                                                        <rect key="frame" x="0.0" y="23.999999999999993" width="103.66666666666667" height="104.33333333333331"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONTHLY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fRF-kb-giN" userLabel="Title" customClass="SpringLabel" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="103.66666666666667" height="24"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                                                                <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3,49$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="L2d-LY-TxD" userLabel="Old Price" customClass="SpringLabel" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="28" width="103.66666666666667" height="24"/>
+                                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3,49$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xPK-XO-hix" userLabel="Cost" customClass="SpringLabel" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="56" width="103.66666666666667" height="24"/>
+                                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                                                <color key="textColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qjk-BI-Tia" userLabel="desc" customClass="SpringLabel" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="83.999999999999943" width="103.66666666666667" height="20.333333333333329"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <color key="textColor" red="0.74399948780000003" green="0.99705451730000005" blue="0.2755226442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <gestureRecognizers/>
+                                                                <connections>
+                                                                    <outlet property="checkmarkImageView" destination="BCQ-W5-8Ly" id="QvB-sl-43u"/>
+                                                                    <outlet property="costLabel" destination="xPK-XO-hix" id="di4-yM-esI"/>
+                                                                    <outlet property="discountLabel" destination="qjk-BI-Tia" id="7Ee-Am-kXJ"/>
+                                                                    <outlet property="oldPriceLabel" destination="L2d-LY-TxD" id="arS-wA-aWF"/>
+                                                                    <outlet property="titleLabel" destination="fRF-kb-giN" id="iBJ-2M-w6M"/>
+                                                                </connections>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dc5-5Y-zCd" customClass="SubscriptionOptionView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                <rect key="frame" x="119.66666666666666" y="0.0" width="103.66666666666666" height="128.33333333333334"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="P0K-KD-vQO" customClass="SpringImageView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.99999999999999822" width="103.66666666666667" height="18.666666666666664"/>
+                                                                        <color key="tintColor" red="0.74399948780000003" green="0.99705451730000005" blue="0.2755226442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="20" id="xNq-WQ-zl7"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="FkI-4O-Brl">
+                                                                        <rect key="frame" x="0.0" y="23.999999999999993" width="103.66666666666667" height="104.33333333333331"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIFETIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9Ha-Od-r91" userLabel="Title" customClass="SpringLabel" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="103.66666666666667" height="24"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                                                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="57,99$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qok-er-LTk" userLabel="Old Price" customClass="SpringLabel" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="28" width="103.66666666666667" height="24"/>
+                                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="57,99$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5Lm-0z-ZgY" userLabel="Cost" customClass="SpringLabel" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="56" width="103.66666666666667" height="24"/>
+                                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                                                <color key="textColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tLQ-C8-hbu" userLabel="desc" customClass="SpringLabel" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="83.999999999999943" width="103.66666666666667" height="20.333333333333329"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <color key="textColor" red="0.74399948780000003" green="0.99705451730000005" blue="0.2755226442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <connections>
+                                                                    <outlet property="checkmarkImageView" destination="P0K-KD-vQO" id="Ee4-Vs-DC3"/>
+                                                                    <outlet property="costLabel" destination="5Lm-0z-ZgY" id="YPr-f5-zlY"/>
+                                                                    <outlet property="discountLabel" destination="tLQ-C8-hbu" id="3F1-vd-f6T"/>
+                                                                    <outlet property="oldPriceLabel" destination="qok-er-LTk" id="ylc-sg-gOV"/>
+                                                                    <outlet property="titleLabel" destination="9Ha-Od-r91" id="jTq-zr-det"/>
+                                                                </connections>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="qfG-Xo-VVI" userLabel="Option3" customClass="SubscriptionOptionView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                <rect key="frame" x="239.33333333333334" y="0.0" width="103.66666666666666" height="128.33333333333334"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oBG-HD-Zs1" customClass="SpringImageView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.99999999999999822" width="103.66666666666667" height="18.666666666666664"/>
+                                                                        <color key="tintColor" red="0.74399948780000003" green="0.99705451730000005" blue="0.2755226442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="20" id="bf8-mN-qBe"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="NRO-m6-OxH">
+                                                                        <rect key="frame" x="0.0" y="23.999999999999993" width="103.66666666666667" height="104.33333333333331"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANNUAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="juU-0d-j21" userLabel="Title" customClass="SpringLabel" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="103.66666666666667" height="24"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                                                                <color key="textColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11,49$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bmC-Si-sS5" userLabel="Old Price" customClass="SpringLabel" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="28" width="103.66666666666667" height="24"/>
+                                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11,49$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5HL-9Y-OCr" userLabel="Cost" customClass="SpringLabel" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="56" width="103.66666666666667" height="24"/>
+                                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                                                <color key="textColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CWx-nb-4Y2" userLabel="desc" customClass="SpringLabel" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="83.999999999999943" width="103.66666666666667" height="20.333333333333329"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <color key="textColor" red="0.74399948780000003" green="0.99705451730000005" blue="0.2755226442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <connections>
+                                                                    <outlet property="checkmarkImageView" destination="oBG-HD-Zs1" id="b5c-Ru-0J5"/>
+                                                                    <outlet property="costLabel" destination="5HL-9Y-OCr" id="AQD-es-dfR"/>
+                                                                    <outlet property="discountLabel" destination="CWx-nb-4Y2" id="6GB-hp-nB6"/>
+                                                                    <outlet property="oldPriceLabel" destination="bmC-Si-sS5" id="2jp-Fl-0Ho"/>
+                                                                    <outlet property="titleLabel" destination="juU-0d-j21" id="coe-QG-eQK"/>
+                                                                </connections>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <connections>
+                                                            <outlet property="option1" destination="MaR-nM-fmJ" id="UsO-jl-XNv"/>
+                                                            <outlet property="option2" destination="dc5-5Y-zCd" id="lIu-Ht-0S7"/>
+                                                            <outlet property="option3" destination="qfG-Xo-VVI" id="Oc8-wg-sUD"/>
+                                                        </connections>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hz9-9M-re2">
+                                                        <rect key="frame" x="0.0" y="518" width="343" height="346"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="aRc-iY-V7X">
+                                                                <rect key="frame" x="-16" y="32" width="375" height="282"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rating" translatesAutoresizingMaskIntoConstraints="NO" id="60Q-7N-sSE">
+                                                                        <rect key="frame" x="112.66666666666669" y="0.0" width="150" height="150"/>
+                                                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="150" id="L2p-Qv-sut"/>
+                                                                            <constraint firstAttribute="height" constant="150" id="ff0-BQ-ns5"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hHB-tb-QmH">
+                                                                        <rect key="frame" x="0.0" y="182" width="375" height="100"/>
+                                                                        <subviews>
+                                                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xj-mI-c7G">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                                                                <subviews>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="kRt-HE-jp0">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="2196" height="100"/>
+                                                                                        <subviews>
+                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reviews7" translatesAutoresizingMaskIntoConstraints="NO" id="RcC-u8-DlL">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+                                                                                            </imageView>
+                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reviews6" translatesAutoresizingMaskIntoConstraints="NO" id="eRT-yA-HKp">
+                                                                                                <rect key="frame" x="316" y="0.0" width="300" height="100"/>
+                                                                                            </imageView>
+                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reviews5" translatesAutoresizingMaskIntoConstraints="NO" id="cYs-g7-EmT">
+                                                                                                <rect key="frame" x="632" y="0.0" width="300" height="100"/>
+                                                                                            </imageView>
+                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reviews4" translatesAutoresizingMaskIntoConstraints="NO" id="pRz-Jc-Uaj">
+                                                                                                <rect key="frame" x="948" y="0.0" width="300" height="100"/>
+                                                                                            </imageView>
+                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reviews3" translatesAutoresizingMaskIntoConstraints="NO" id="nRl-cL-jhY">
+                                                                                                <rect key="frame" x="1264" y="0.0" width="300" height="100"/>
+                                                                                            </imageView>
+                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reviews2" translatesAutoresizingMaskIntoConstraints="NO" id="IEh-H0-H04">
+                                                                                                <rect key="frame" x="1580" y="0.0" width="300" height="100"/>
+                                                                                            </imageView>
+                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reviews1" translatesAutoresizingMaskIntoConstraints="NO" id="Owh-nC-aeY">
+                                                                                                <rect key="frame" x="1896" y="0.0" width="300" height="100"/>
+                                                                                            </imageView>
+                                                                                        </subviews>
+                                                                                    </stackView>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="kRt-HE-jp0" firstAttribute="trailing" secondItem="lOv-sc-qUg" secondAttribute="trailing" id="3bH-fK-2GE"/>
+                                                                                    <constraint firstItem="kRt-HE-jp0" firstAttribute="bottom" secondItem="lOv-sc-qUg" secondAttribute="bottom" id="bxN-ZV-o0c"/>
+                                                                                    <constraint firstItem="kRt-HE-jp0" firstAttribute="leading" secondItem="lOv-sc-qUg" secondAttribute="leading" id="cSU-TN-Edc"/>
+                                                                                    <constraint firstItem="lOv-sc-qUg" firstAttribute="top" secondItem="kRt-HE-jp0" secondAttribute="top" id="wgR-vh-Tzt"/>
+                                                                                </constraints>
+                                                                                <viewLayoutGuide key="contentLayoutGuide" id="lOv-sc-qUg"/>
+                                                                                <viewLayoutGuide key="frameLayoutGuide" id="zwZ-pA-jW8"/>
+                                                                            </scrollView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="RcC-u8-DlL" firstAttribute="height" secondItem="hHB-tb-QmH" secondAttribute="height" id="6vt-s8-ed6"/>
+                                                                            <constraint firstAttribute="height" constant="100" id="7DT-Q3-QQu"/>
+                                                                            <constraint firstItem="2xj-mI-c7G" firstAttribute="leading" secondItem="hHB-tb-QmH" secondAttribute="leading" id="7S3-Pk-bQS"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="2xj-mI-c7G" secondAttribute="trailing" id="ACR-nz-0He"/>
+                                                                            <constraint firstItem="RcC-u8-DlL" firstAttribute="width" secondItem="hHB-tb-QmH" secondAttribute="width" multiplier="0.8" id="Aek-3u-NzN"/>
+                                                                            <constraint firstItem="2xj-mI-c7G" firstAttribute="top" secondItem="hHB-tb-QmH" secondAttribute="top" id="QL3-ni-sYl"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="2xj-mI-c7G" secondAttribute="bottom" id="wmq-Hf-DRe"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="aRc-iY-V7X" secondAttribute="trailing" constant="-16" id="0yF-la-ZSZ"/>
+                                                            <constraint firstItem="aRc-iY-V7X" firstAttribute="leading" secondItem="Hz9-9M-re2" secondAttribute="leading" constant="-16" id="AR5-1t-Y3D"/>
+                                                            <constraint firstItem="aRc-iY-V7X" firstAttribute="top" secondItem="Hz9-9M-re2" secondAttribute="top" constant="32" id="Zth-Ag-iMM"/>
+                                                            <constraint firstAttribute="bottom" secondItem="aRc-iY-V7X" secondAttribute="bottom" constant="32" id="m2x-Gc-k1c"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sni-NG-AxZ">
+                                                        <rect key="frame" x="0.0" y="872" width="343" height="56"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YQL-6p-Cpv" userLabel="Terms">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="16"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8q-cb-21B">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="16"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="16" id="DCC-O9-Jzk"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        <state key="normal" title="Privacy Policy">
+                                                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="privacyPolicityActionWithSender:" destination="oQ5-dH-z7U" eventType="touchUpInside" id="BS6-8r-nVE"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBd-97-517">
+                                                                        <rect key="frame" x="171.66666666666663" y="0.0" width="171.33333333333337" height="16"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="16" id="U2N-iu-u21"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        <state key="normal" title="Terms of service">
+                                                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="termOfUseActionWithSender:" destination="oQ5-dH-z7U" eventType="touchUpInside" id="jgs-jj-b7T"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZeO-bV-CA3">
+                                                                <rect key="frame" x="0.0" y="16" width="343" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="cLK-Mf-TCw"/>
+                                                                </constraints>
+                                                                <string key="text">A [purchase amount and period] purchase will be applied to your iTunes account [at the end of the trial or intro] on confirmation]. Subscriptions will automatically renew unless canceled within 24-hours before the end of the current period. You can cancel anytime with your iTunes account settings. Any unused portion of a free trial will be forfeited if you purchase a subscription.</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="NY3-xF-pUA" firstAttribute="leading" secondItem="K5y-9R-r8j" secondAttribute="leading" constant="16" id="HYQ-e2-8v5"/>
+                                            <constraint firstAttribute="bottom" secondItem="NY3-xF-pUA" secondAttribute="bottom" constant="80" id="Up3-pH-fHx"/>
+                                            <constraint firstItem="NY3-xF-pUA" firstAttribute="top" secondItem="K5y-9R-r8j" secondAttribute="top" id="bLd-g0-djf"/>
+                                            <constraint firstAttribute="trailing" secondItem="NY3-xF-pUA" secondAttribute="trailing" constant="16" id="t0C-fc-aMc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="K5y-9R-r8j" firstAttribute="top" secondItem="h9g-XY-F5o" secondAttribute="top" id="Wxz-WY-30D"/>
+                                    <constraint firstItem="K5y-9R-r8j" firstAttribute="bottom" secondItem="h9g-XY-F5o" secondAttribute="bottom" id="XCK-ki-LsU"/>
+                                    <constraint firstItem="K5y-9R-r8j" firstAttribute="trailing" secondItem="h9g-XY-F5o" secondAttribute="trailing" id="bNZ-lF-NDp"/>
+                                    <constraint firstItem="K5y-9R-r8j" firstAttribute="leading" secondItem="h9g-XY-F5o" secondAttribute="leading" id="swF-Ng-6E6"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="h9g-XY-F5o"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="EqD-Z0-Aid"/>
+                            </scrollView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LzX-BZ-juT" customClass="SubscriptionButtonView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                <rect key="frame" x="16" y="702" width="343" height="60"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rUT-hC-2mg">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StI-qY-CyF">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="60"/>
+                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                            <state key="normal" title="Start Trial">
+                                                <color key="titleColor" red="0.74399948780000003" green="0.99705451730000005" blue="0.2755226442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="buttonActionWithSender:" destination="LzX-BZ-juT" eventType="touchUpInside" id="LzV-C3-Mpc"/>
+                                                <action selector="subscribeButtonWithSender:" destination="oQ5-dH-z7U" eventType="touchUpInside" id="wUD-fa-yTL"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="StI-qY-CyF" firstAttribute="leading" secondItem="rUT-hC-2mg" secondAttribute="leading" id="eNM-Uk-GcM"/>
+                                        <constraint firstItem="StI-qY-CyF" firstAttribute="top" secondItem="rUT-hC-2mg" secondAttribute="top" id="f3J-Jp-sAc"/>
+                                        <constraint firstAttribute="trailing" secondItem="StI-qY-CyF" secondAttribute="trailing" id="fdO-lX-nQ9"/>
+                                        <constraint firstAttribute="bottom" secondItem="StI-qY-CyF" secondAttribute="bottom" id="fmr-K3-5Ca"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="gfI-lb-h6Y"/>
+                                </constraints>
+                                <blurEffect style="systemUltraThinMaterialDark"/>
+                                <connections>
+                                    <outlet property="button" destination="StI-qY-CyF" id="ffa-hH-eTD"/>
+                                </connections>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s87-9f-HOm">
+                                <rect key="frame" x="322" y="8" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="Gp3-4H-8Ri"/>
+                                    <constraint firstAttribute="height" constant="45" id="U6Q-nF-94P"/>
+                                </constraints>
+                                <color key="tintColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="xmark.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="closeActionWithSender:" destination="oQ5-dH-z7U" eventType="touchUpInside" id="KHP-nd-dvk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UvF-6K-fCo"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="RCJ-Qy-Ekr" secondAttribute="bottom" id="5uw-W0-7mt"/>
+                            <constraint firstItem="K5y-9R-r8j" firstAttribute="width" secondItem="YpP-mB-nU2" secondAttribute="width" id="6NE-4O-WnO"/>
+                            <constraint firstAttribute="trailing" secondItem="DOO-b7-ACC" secondAttribute="trailing" id="8ok-fm-iOy"/>
+                            <constraint firstItem="iuc-ep-rPd" firstAttribute="top" secondItem="YpP-mB-nU2" secondAttribute="top" id="D0J-2u-SsW"/>
+                            <constraint firstItem="UvF-6K-fCo" firstAttribute="trailing" secondItem="LzX-BZ-juT" secondAttribute="trailing" constant="16" id="DQk-ds-hJe"/>
+                            <constraint firstItem="RCJ-Qy-Ekr" firstAttribute="leading" secondItem="YpP-mB-nU2" secondAttribute="leading" id="Dsr-cp-Zue"/>
+                            <constraint firstAttribute="bottom" secondItem="iuc-ep-rPd" secondAttribute="bottom" id="FbA-bS-McA"/>
+                            <constraint firstItem="iuc-ep-rPd" firstAttribute="leading" secondItem="UvF-6K-fCo" secondAttribute="leading" id="HV9-hM-psV"/>
+                            <constraint firstItem="DOO-b7-ACC" firstAttribute="leading" secondItem="YpP-mB-nU2" secondAttribute="leading" id="Iad-lq-3l4"/>
+                            <constraint firstAttribute="trailing" secondItem="s87-9f-HOm" secondAttribute="trailing" constant="8" id="JFr-6I-DLE"/>
+                            <constraint firstAttribute="trailing" secondItem="RCJ-Qy-Ekr" secondAttribute="trailing" id="McJ-T6-bkd"/>
+                            <constraint firstItem="LzX-BZ-juT" firstAttribute="leading" secondItem="UvF-6K-fCo" secondAttribute="leading" constant="16" id="Q5a-SY-EMp"/>
+                            <constraint firstItem="s87-9f-HOm" firstAttribute="top" secondItem="YpP-mB-nU2" secondAttribute="top" constant="8" id="Wh0-sE-ngH"/>
+                            <constraint firstItem="UvF-6K-fCo" firstAttribute="bottom" secondItem="LzX-BZ-juT" secondAttribute="bottom" constant="16" id="Xep-VI-n49"/>
+                            <constraint firstItem="DOO-b7-ACC" firstAttribute="top" secondItem="UvF-6K-fCo" secondAttribute="top" id="eMT-Th-N75"/>
+                            <constraint firstItem="UvF-6K-fCo" firstAttribute="bottom" secondItem="DOO-b7-ACC" secondAttribute="bottom" id="hFy-Yb-QeV"/>
+                            <constraint firstItem="UvF-6K-fCo" firstAttribute="trailing" secondItem="iuc-ep-rPd" secondAttribute="trailing" id="pI4-LH-jj2"/>
+                            <constraint firstItem="RCJ-Qy-Ekr" firstAttribute="top" secondItem="YpP-mB-nU2" secondAttribute="top" id="tzB-ea-1pt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="actionButtonView" destination="LzX-BZ-juT" id="dfz-2E-SJo"/>
+                        <outlet property="benefitsView" destination="2Uj-lA-24Y" id="92i-yV-EDu"/>
+                        <outlet property="closeButton" destination="s87-9f-HOm" id="URe-kb-qpB"/>
+                        <outlet property="discountLabel" destination="6dZ-sq-ecl" id="yo6-p9-lPR"/>
+                        <outlet property="discountLabelBlurView" destination="NsZ-hW-pJM" id="1De-fL-rGg"/>
+                        <outlet property="hintLabel" destination="T5l-OV-0ok" id="PPA-v4-4ZV"/>
+                        <outlet property="subscriptionOptionsView" destination="UQW-hC-n73" id="pGU-Os-rsG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z9Y-H0-4zq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153.62318840579712" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rating" width="473" height="429"/>
+        <image name="Reviews1" width="1106" height="416"/>
+        <image name="Reviews2" width="1106" height="416"/>
+        <image name="Reviews3" width="1106" height="416"/>
+        <image name="Reviews4" width="1106" height="416"/>
+        <image name="Reviews5" width="1106" height="416"/>
+        <image name="Reviews6" width="1106" height="416"/>
+        <image name="Reviews7" width="1106" height="416"/>
+        <image name="bg_subscription" width="1561" height="2701"/>
+        <image name="checkmark.circle" catalog="system" width="128" height="121"/>
+        <image name="checkmark.seal.fill" catalog="system" width="128" height="128"/>
+        <image name="xmark.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

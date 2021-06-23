@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4Wq-uW-iFx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Alternate Icons View Controller-->
+        <scene sceneID="srE-Ow-c7J">
+            <objects>
+                <viewController id="4Wq-uW-iFx" customClass="AlternateIconsViewController" customModule="Hearing_Aid_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H1L-OB-p3p"/>
+                        <viewControllerLayoutGuide type="bottom" id="J31-Kw-g7u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cx1-P8-bUK" customClass="SpringView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="340" height="172"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zYC-4a-zuP">
+                                <rect key="frame" x="0.0" y="0.0" width="340" height="172"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WyL-ZD-ern">
+                                    <rect key="frame" x="0.0" y="0.0" width="340" height="172"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hPE-b3-c18">
+                                            <rect key="frame" x="16" y="16" width="308" height="140"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Da1-QL-W42" customClass="IconView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="308" height="70"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2b-sm-Q0J">
+                                                            <rect key="frame" x="124" y="5" width="60" height="60"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="60" id="NXu-xR-8yS"/>
+                                                                <constraint firstAttribute="width" constant="60" id="ebd-Xm-svN"/>
+                                                            </constraints>
+                                                            <state key="normal" backgroundImage="appIcon"/>
+                                                            <connections>
+                                                                <action selector="buttonAction" destination="Da1-QL-W42" eventType="touchUpInside" id="7eq-5F-hyN"/>
+                                                                <action selector="changeIconActionWithSender:" destination="4Wq-uW-iFx" eventType="touchUpInside" id="HkG-9x-fBO"/>
+                                                            </connections>
+                                                        </button>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YFO-Lz-QcZ">
+                                                            <rect key="frame" x="172" y="-2.5" width="20" height="19"/>
+                                                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="Y7Q-Vg-5QF"/>
+                                                                <constraint firstAttribute="height" constant="20" id="wVL-XO-H0a"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="W2b-sm-Q0J" firstAttribute="centerY" secondItem="Da1-QL-W42" secondAttribute="centerY" id="O9c-3H-Uus"/>
+                                                        <constraint firstItem="YFO-Lz-QcZ" firstAttribute="trailing" secondItem="W2b-sm-Q0J" secondAttribute="trailing" constant="8" id="ZMZ-82-CuT"/>
+                                                        <constraint firstItem="W2b-sm-Q0J" firstAttribute="centerX" secondItem="Da1-QL-W42" secondAttribute="centerX" id="hiC-vu-dm3"/>
+                                                        <constraint firstItem="YFO-Lz-QcZ" firstAttribute="top" secondItem="W2b-sm-Q0J" secondAttribute="top" constant="-8" id="uzp-pZ-IMY"/>
+                                                        <constraint firstAttribute="height" constant="70" id="z9u-lM-oFX"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="checkmarkIcon" destination="YFO-Lz-QcZ" id="3VC-uy-GbW"/>
+                                                        <outlet property="iconButton" destination="W2b-sm-Q0J" id="SZN-sR-oL2"/>
+                                                    </connections>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HZk-V0-Wrr">
+                                                    <rect key="frame" x="0.0" y="70" width="308" height="70"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XtL-HF-ED9" customClass="IconView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MqS-1N-Hvb">
+                                                                    <rect key="frame" x="5" y="5" width="60" height="60"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="60" id="4IY-Qe-mBU"/>
+                                                                        <constraint firstAttribute="height" constant="60" id="sdT-KL-ClU"/>
+                                                                    </constraints>
+                                                                    <state key="normal" backgroundImage="appIcon"/>
+                                                                    <connections>
+                                                                        <action selector="buttonAction" destination="XtL-HF-ED9" eventType="touchUpInside" id="Jg9-Kf-HwQ"/>
+                                                                        <action selector="changeIconActionWithSender:" destination="4Wq-uW-iFx" eventType="touchUpInside" id="hSh-iL-a8n"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Qrc-eg-Vc1">
+                                                                    <rect key="frame" x="53" y="-2.5" width="20" height="19"/>
+                                                                    <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="20" id="J2J-ef-Tp7"/>
+                                                                        <constraint firstAttribute="width" constant="20" id="oKI-lo-YLp"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="70" id="1Lt-gA-HDR"/>
+                                                                <constraint firstItem="MqS-1N-Hvb" firstAttribute="centerY" secondItem="XtL-HF-ED9" secondAttribute="centerY" id="4b8-X9-p5p"/>
+                                                                <constraint firstItem="Qrc-eg-Vc1" firstAttribute="top" secondItem="MqS-1N-Hvb" secondAttribute="top" constant="-8" id="839-C2-8VW"/>
+                                                                <constraint firstAttribute="height" constant="70" id="KFX-pk-jQh"/>
+                                                                <constraint firstItem="MqS-1N-Hvb" firstAttribute="centerX" secondItem="XtL-HF-ED9" secondAttribute="centerX" id="UR4-VF-rqL"/>
+                                                                <constraint firstItem="Qrc-eg-Vc1" firstAttribute="trailing" secondItem="MqS-1N-Hvb" secondAttribute="trailing" constant="8" id="byY-xl-bz1"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <outlet property="checkmarkIcon" destination="Qrc-eg-Vc1" id="pzb-lA-lTl"/>
+                                                                <outlet property="iconButton" destination="MqS-1N-Hvb" id="I3m-wl-uqm"/>
+                                                            </connections>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSJ-xb-hVP" customClass="IconView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                            <rect key="frame" x="79.5" y="0.0" width="70" height="70"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I00-xc-gKs">
+                                                                    <rect key="frame" x="5" y="5" width="60" height="60"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="60" id="H6s-rN-84N"/>
+                                                                        <constraint firstAttribute="height" constant="60" id="tRc-he-P4v"/>
+                                                                    </constraints>
+                                                                    <state key="normal" backgroundImage="appIcon"/>
+                                                                    <connections>
+                                                                        <action selector="buttonAction" destination="oSJ-xb-hVP" eventType="touchUpInside" id="mWC-yG-D9J"/>
+                                                                        <action selector="changeIconActionWithSender:" destination="4Wq-uW-iFx" eventType="touchUpInside" id="oHu-eN-g1C"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="C35-oR-DJ1">
+                                                                    <rect key="frame" x="53" y="-2.5" width="20" height="19"/>
+                                                                    <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="20" id="YJ1-JI-UOG"/>
+                                                                        <constraint firstAttribute="width" constant="20" id="rYE-Ox-Q7K"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="70" id="JKG-sS-RtO"/>
+                                                                <constraint firstItem="I00-xc-gKs" firstAttribute="centerY" secondItem="oSJ-xb-hVP" secondAttribute="centerY" id="Zuo-PA-X8p"/>
+                                                                <constraint firstAttribute="height" constant="70" id="hmg-wE-Aeg"/>
+                                                                <constraint firstItem="C35-oR-DJ1" firstAttribute="top" secondItem="I00-xc-gKs" secondAttribute="top" constant="-8" id="nYa-ck-riU"/>
+                                                                <constraint firstItem="C35-oR-DJ1" firstAttribute="trailing" secondItem="I00-xc-gKs" secondAttribute="trailing" constant="8" id="qXf-yY-W9W"/>
+                                                                <constraint firstItem="I00-xc-gKs" firstAttribute="centerX" secondItem="oSJ-xb-hVP" secondAttribute="centerX" id="xbc-5I-6Ig"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <outlet property="checkmarkIcon" destination="C35-oR-DJ1" id="Csh-Ug-Zdz"/>
+                                                                <outlet property="iconButton" destination="I00-xc-gKs" id="70o-qf-6Qq"/>
+                                                            </connections>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2f-dn-8bE" customClass="IconView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                            <rect key="frame" x="158.5" y="0.0" width="70" height="70"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vF-YH-jjz">
+                                                                    <rect key="frame" x="5" y="5" width="60" height="60"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="60" id="NWY-PZ-IsI"/>
+                                                                        <constraint firstAttribute="height" constant="60" id="bMt-3X-fvw"/>
+                                                                    </constraints>
+                                                                    <state key="normal" backgroundImage="appIcon"/>
+                                                                    <connections>
+                                                                        <action selector="buttonAction" destination="R2f-dn-8bE" eventType="touchUpInside" id="ibv-5x-Nvx"/>
+                                                                        <action selector="changeIconActionWithSender:" destination="4Wq-uW-iFx" eventType="touchUpInside" id="Vdd-nM-GAB"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yfi-t1-KZg">
+                                                                    <rect key="frame" x="53" y="-2.5" width="20" height="19"/>
+                                                                    <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="20" id="4B0-Kd-k6d"/>
+                                                                        <constraint firstAttribute="height" constant="20" id="OC1-Gh-Ge9"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="4vF-YH-jjz" firstAttribute="centerX" secondItem="R2f-dn-8bE" secondAttribute="centerX" id="PhM-jB-QJi"/>
+                                                                <constraint firstItem="4vF-YH-jjz" firstAttribute="centerY" secondItem="R2f-dn-8bE" secondAttribute="centerY" id="PvW-ea-YML"/>
+                                                                <constraint firstItem="yfi-t1-KZg" firstAttribute="trailing" secondItem="4vF-YH-jjz" secondAttribute="trailing" constant="8" id="cp4-Nb-lGW"/>
+                                                                <constraint firstItem="yfi-t1-KZg" firstAttribute="top" secondItem="4vF-YH-jjz" secondAttribute="top" constant="-8" id="jaa-vW-caZ"/>
+                                                                <constraint firstAttribute="width" constant="70" id="qvu-FG-ebG"/>
+                                                                <constraint firstAttribute="height" constant="70" id="r3m-Xm-JWh"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <outlet property="checkmarkIcon" destination="yfi-t1-KZg" id="cGV-dB-7e5"/>
+                                                                <outlet property="iconButton" destination="4vF-YH-jjz" id="re7-9Z-daG"/>
+                                                            </connections>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4g2-nh-ia6" customClass="IconView" customModule="Hearing_Aid_App" customModuleProvider="target">
+                                                            <rect key="frame" x="238" y="0.0" width="70" height="70"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7TK-dv-WGj">
+                                                                    <rect key="frame" x="5" y="5" width="60" height="60"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="TbU-oc-ttz"/>
+                                                                        <constraint firstAttribute="width" constant="60" id="vbh-Gc-xG9"/>
+                                                                    </constraints>
+                                                                    <state key="normal" backgroundImage="appIcon"/>
+                                                                    <connections>
+                                                                        <action selector="buttonAction" destination="4g2-nh-ia6" eventType="touchUpInside" id="to1-67-5ka"/>
+                                                                        <action selector="changeIconActionWithSender:" destination="4Wq-uW-iFx" eventType="touchUpInside" id="3Wm-vh-WsR"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZMh-ga-i8d">
+                                                                    <rect key="frame" x="53" y="-2.5" width="20" height="19"/>
+                                                                    <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="20" id="cca-wB-K2z"/>
+                                                                        <constraint firstAttribute="width" constant="20" id="nqc-1U-NQi"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="70" id="Mib-ij-lhd"/>
+                                                                <constraint firstItem="7TK-dv-WGj" firstAttribute="centerX" secondItem="4g2-nh-ia6" secondAttribute="centerX" id="Uhj-w4-fI8"/>
+                                                                <constraint firstItem="7TK-dv-WGj" firstAttribute="centerY" secondItem="4g2-nh-ia6" secondAttribute="centerY" id="mhC-Mg-mGV"/>
+                                                                <constraint firstItem="ZMh-ga-i8d" firstAttribute="trailing" secondItem="7TK-dv-WGj" secondAttribute="trailing" constant="8" id="n4L-m1-etd"/>
+                                                                <constraint firstAttribute="width" constant="70" id="n9T-7T-VV6"/>
+                                                                <constraint firstItem="ZMh-ga-i8d" firstAttribute="top" secondItem="7TK-dv-WGj" secondAttribute="top" constant="-8" id="ug7-fo-FAT"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <outlet property="checkmarkIcon" destination="ZMh-ga-i8d" id="IbR-Jp-JMz"/>
+                                                                <outlet property="iconButton" destination="7TK-dv-WGj" id="4ic-Qj-Nyv"/>
+                                                            </connections>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQh-r9-Lg7">
+                                            <rect key="frame" x="295" y="0.0" width="45" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="45" id="T0A-NA-SH6"/>
+                                                <constraint firstAttribute="height" constant="45" id="lhG-MP-o4a"/>
+                                            </constraints>
+                                            <state key="normal" image="xmark.circle" catalog="system"/>
+                                            <connections>
+                                                <action selector="closeActionWithSender:" destination="4Wq-uW-iFx" eventType="touchUpInside" id="9rd-II-OFG"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="hPE-b3-c18" firstAttribute="leading" secondItem="WyL-ZD-ern" secondAttribute="leading" constant="16" id="173-P2-YgO"/>
+                                        <constraint firstItem="RQh-r9-Lg7" firstAttribute="top" secondItem="WyL-ZD-ern" secondAttribute="top" id="Xcx-Gz-Qdc"/>
+                                        <constraint firstItem="hPE-b3-c18" firstAttribute="top" secondItem="WyL-ZD-ern" secondAttribute="top" constant="16" id="f78-HY-WQv"/>
+                                        <constraint firstAttribute="trailing" secondItem="RQh-r9-Lg7" secondAttribute="trailing" id="k5j-j6-QNI"/>
+                                        <constraint firstAttribute="trailing" secondItem="hPE-b3-c18" secondAttribute="trailing" constant="16" id="qLM-RJ-Lxj"/>
+                                        <constraint firstAttribute="bottom" secondItem="hPE-b3-c18" secondAttribute="bottom" constant="16" id="x2m-Ab-NPC"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J31-Kw-g7u" firstAttribute="top" secondItem="zYC-4a-zuP" secondAttribute="bottom" id="633-dW-Ojs"/>
+                            <constraint firstItem="zYC-4a-zuP" firstAttribute="leading" secondItem="Cx1-P8-bUK" secondAttribute="leading" id="7dE-sX-UBR"/>
+                            <constraint firstItem="zYC-4a-zuP" firstAttribute="top" secondItem="Cx1-P8-bUK" secondAttribute="top" id="HJJ-gl-3IU"/>
+                            <constraint firstAttribute="trailing" secondItem="zYC-4a-zuP" secondAttribute="trailing" id="jw7-xV-hBO"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="340" height="172"/>
+                    <connections>
+                        <outlet property="bgBlurView" destination="zYC-4a-zuP" id="zDU-n6-o0e"/>
+                        <outlet property="blueIcon" destination="4g2-nh-ia6" id="6xb-D4-qqc"/>
+                        <outlet property="closeButton" destination="RQh-r9-Lg7" id="pHy-2v-16K"/>
+                        <outlet property="defaultIcon" destination="Da1-QL-W42" id="eRv-v2-BDd"/>
+                        <outlet property="orangeIcon" destination="oSJ-xb-hVP" id="1wt-mk-JsX"/>
+                        <outlet property="purpuleIcon" destination="XtL-HF-ED9" id="yGz-jg-m3b"/>
+                        <outlet property="redIcon" destination="R2f-dn-8bE" id="TD3-1o-OE1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ym3-Rd-Tjc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76.811594202898561" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="appIcon" width="250" height="250"/>
+        <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="xmark.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
